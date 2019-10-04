@@ -1,0 +1,474 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'buenaparkjf';
+    src: url('font/design.jasonwalcott.buenaparkjf-webfont.woff2') format('woff2'),
+         url('font/design.jasonwalcott.buenaparkjf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	font-family: lato, monospace;
+}
+
+.nav-handle{
+	display: none;
+}
+/*style navigation bar*/
+.nav-bar{
+	background-color: navy;
+}
+
+.nav-bar-wrapper{
+	width: 70%;
+	margin: 0 auto;
+}
+
+.nav-items{
+	list-style: none;
+	margin: 0;
+  	padding: 0;
+ 	overflow: hidden;
+ 	display: flex;
+ 	justify-content: flex-start;
+}
+.nav-link{
+	display: block;
+	text-align: center;
+	color: grey;
+	padding: 2vw;
+	text-decoration: none;
+	font-weight: 750;
+	transition: color .5s;
+
+.fa-bars{
+	display: none;
+}
+}
+
+#hov-red:hover{
+	color:red;
+}
+
+#hov-green:hover{
+	opacity: 1;
+	color: #66FF00;
+}
+#hov-blue:hover{
+	color: #4dffff;
+}
+
+#hov-navy:hover{
+	color:#FF8300;
+}
+/*navigation style end*/
+
+/*gnarly and page title style*/
+.gnarly{
+	/*h1*/
+	font-family: "buenaparkjf";
+	font-weight: 600;
+	text-align: center;
+	font-style: italic!important; 
+	letter-spacing: -.1vw;
+	/*[possible animation for letter spacing]*/
+}
+.side-page{
+ 	font-size: 3vh;
+}
+
+.g{
+	color:red;
+}
+.n{
+	color:green;
+}
+.a{
+	color: blue;
+}
+.r{
+	color:orange;	
+}
+.l{
+	color:purple;
+}
+.y{
+	color:#F4E135;
+}
+.exclamation{
+	color:darkgreen;
+}
+
+.sub-page-title{
+	color:orange;
+	font-size: 4vh;
+	font-family: "buenaparkjf";
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: .3vw;
+	margin-left:1vw;
+	margin-top: -.5vh; 
+}
+
+
+/*gnarly and page title style end*/
+
+/*style products*/
+.products-page-wrapper{
+	max-width: 85%;
+	margin: 0 auto;
+	margin-top: 3vh;
+}
+
+.products-wrapper{
+	margin: 0 auto 3vh auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+
+}
+
+.product{
+	flex-basis: calc(85%/3-2em);
+	margin: 2vh 2vw;
+	padding: 1em;
+}
+
+.product img{
+	transform: rotate(90deg);
+	width: 20vw;
+	height: 40vh;
+	object-fit: cover;
+}
+
+
+
+/*products style end*/
+
+/*style footer*/
+footer{
+	background-color: lightgreen; 
+}
+.newsletter-title{
+	font-weight: 500;
+	color:navy;
+	font-family: "buenaparkjf", sans-serif;
+	font-size: 5vh;
+	text-align: center;
+}
+.newsletter-subtitle{
+	font-weight: 500;
+	color:navy;
+	font-family: "Work Sans", sans-serif;
+	font-size: 3vh;
+	text-align: center;
+	margin-top: -1vh;
+}
+ .newsletter-text-input{
+  width: 15vw;
+  height: 5vh;
+  padding: 0 2vw;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 2px 3px grey;
+}
+.newsletter-text-input:focus, .newsletter-text-input:focus{
+	background-color: lightblue;
+}
+
+.form-table{
+	margin: 0 auto;
+}
+th,td{
+	padding: 1.5vh;
+}
+
+::-webkit-input-placeholder{
+	position: fixed;
+	font-family: buenaparkjf;
+	color: pink;
+	text-indent: 2px;
+	text-transform: capitalize;
+	text-align: center; 
+}
+input:focus::placeholder{
+	color: purple;
+}
+
+.submit{
+	font-size: 1.5vw;
+    font-family: monospace;
+	background-color: powderblue;
+	font-family: buenaparkjf;
+	color: #e8b246;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.bottom-links{
+	padding: 0 0 2vh 10vw;
+}
+.fa-instagram {
+  color: white;
+  margin: 0 1.5vw;
+  text-decoration: none;
+}
+
+.contact-us{
+	text-decoration: none;
+	color:white; 
+	font-size: 2vh;
+}
+.jobs{
+	margin-left: 3vh;
+	cursor: pointer;
+	display: inline-block;
+}
+/*footer style ends*/
+
+
+/*style lookbook*/
+.lb-page-wrapper{
+	width: 75%;
+	overflow-wrap: hidden;
+	margin: 0 auto;
+}
+.title-box{
+	margin-top: 3vh;
+}
+.lb-content{
+	display: flex;
+	flex-flow: row;
+}
+
+.sidebar{
+	margin-top: 10vh;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-flow: column;
+	justify-content: center;
+}
+.lb-button{
+	border: none;
+	cursor: pointer;
+	margin: 4vh 0;
+	font-family: "buenaparkjf";
+	background-color: transparent;
+}
+#lb-button1{
+	color:red;
+}
+#lb-button2{
+	color:green;
+}
+#lb-button3{
+	color:blue;
+}
+#lb-button4{
+	color:orange;
+}
+
+.main-image{
+	margin-top: 20vh;
+}
+
+.main-image img{
+	transform: rotate(90deg);
+	width: 80vh;
+	height: 30vw;
+	object-fit: cover;	
+}
+.lb-images{
+	margin-top: 14vh;
+}
+
+.lb-images{
+	max-width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+ .lb-image{
+	transform: rotate(90deg);
+	width: 8vw;
+	height: 16vh;
+	object-fit: cover;
+}
+
+.lb-image:hover{
+	opacity: .7;
+	cursor: pointer;
+}
+
+.lb-footer{
+	margin-top: 15vh; 
+}
+
+/*lookbook style ends*/
+
+/*extras style*/
+.extras-nav-wrapper{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.extras-nav{
+	margin-top: 4vh;
+	background-color: navy;
+	display: block;
+	width: 100%;
+}
+.extras-nav-but{
+	padding: 2vh 2vw;
+	color: green;
+	background-color: orange;
+	border: none;
+	margin: none;
+	cursor: pointer;
+	border-radius:2px 15px 0px 0px;
+	margin: 0 -.08vw;
+
+}
+
+.extras-page{
+	height: 100vh;
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	background-color: lightblue;
+	border-bottom: 3px solid grey;
+}
+.center-hor-vert{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	color:brown;
+}
+.contact-page-title{
+	color:brown;
+	font-size: 3vw;
+	padding-top: 3vh;
+}
+.contact-us-form{
+	display: flex;
+	flex-flow: column;
+	width: 50%;
+	margin-left: 10vw;
+	text-align: left !important;
+	margin-top: 15vh;
+
+}
+
+.contact-us-field{
+	width: 15vw;
+	height: 5vh;
+	padding: 0 2vw;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-bottom: 3vh;
+}
+.contact-us-field:focus{
+	border-color: brown; 
+}
+.contact-mail{
+	font-size: 4em;
+	font-weight: 500;
+}
+
+.thanked-person{
+	display: block;
+	font-family: "buenaparkjf";
+	font-weight: 200;
+}
+
+/*extras style ends*/
+
+/*productX style begins*/
+
+.productX-page-wrapper{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.productX-content-wrapper{
+	display: flex;
+	flex-flow: row;
+	margin-top: 5vh;
+}
+
+.left-col{
+	display: flex;
+	flex-flow: column;
+	margin-top: 7.5vh;
+	margin-left: 8vw;
+	position: relative;
+	align-content: flex-start;
+	align-items: flex-start;
+}
+
+.main-prod-image{
+	transform: rotate(90deg);
+	width: 70vh;
+	height: 30vw;
+	object-fit: cover;
+	
+}
+
+.alt-images{
+	display: flex;
+	flex-flow: row;
+	position: absolute;
+	top: 65.3vh;
+	left: 1.5vw;
+}
+
+.alt-image:hover{
+	opacity: .7;
+	cursor: pointer;
+}
+
+.alt-image{
+	transform: rotate(90deg);
+	width: 12vh;
+	height: 6vw;
+	object-fit: cover;
+	margin: 0 1vw;	
+}
+
+.right-col{
+	display: flex;
+	flex-flow: column;
+	margin-top: 1vh;
+}
+.prod-title{
+	font-family: "buenaparkjf";
+	font-size: 4em;
+}
+.prod-price{
+	font-family: "Work Sans";
+	font-size: 2em;
+}
+.detail-list{
+	margin: 4vh 0 2vh 2vh;
+
+}
+.detail{
+	font-family: "Work Sans";
+	color: darkgrey;
+}
+.productX-footer{
+	margin-top: 25vh;
+}
+
+
+/*responsive*/
+

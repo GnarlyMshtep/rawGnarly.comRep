@@ -327,7 +327,6 @@ input:focus::placeholder{
 	object-fit: cover;
 	width: 60vh;
 	height: 60vw;
-	margin-right: 100vw;
 }
 .alt-images{
 	display: flex;

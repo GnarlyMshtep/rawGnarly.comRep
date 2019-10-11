@@ -39,3 +39,7 @@ function changeExtrasPage(button){
 function alertJobs(str){
 	alert(str);
 }
+
+function navToJobs(){
+	window.location.href = "extras.html";
+}

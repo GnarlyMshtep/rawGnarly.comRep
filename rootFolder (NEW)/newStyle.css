@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+img{
+	image-orientation: from-image;
+}
+
 @font-face {
     font-family: 'buenaparkjf';
     src: url('font/design.jasonwalcott.buenaparkjf-webfont.woff2') format('woff2'),
@@ -351,6 +355,8 @@ input:focus::placeholder{
 	top: 50%;
 	transform: translateY(-50%);
 	color:brown;
+	font-family: "buenaparkjf";
+	line-height: 4vh;
 }
 .contact-page-title{
 	color:brown;
@@ -365,6 +371,9 @@ input:focus::placeholder{
 	text-align: left !important;
 	margin-top: 15vh;
 
+}
+.heavy-font{
+	font-weight: 900 !important;
 }
 
 .contact-us-field{
@@ -382,6 +391,9 @@ input:focus::placeholder{
 .contact-mail{
 	font-size: 4em;
 	font-weight: 500;
+}
+.jobs-p{
+	font-family: "buenaparkjf";
 }
 
 .thanked-person{

@@ -8,6 +8,7 @@
 	display: block;
 	padding: 2vw 1vw;
 	font-weight: 700;
+	background-color: darkgrey;
 
 }
 
@@ -338,9 +339,39 @@ input:focus::placeholder{
 	object-fit: cover;
 	width: 20vh;
 	height: 20vw;
-	margin-left: -60vw;	 
 }
 .productX-footer{
 	margin-top: 20vh;
 }
+
+
+/*index styling*/
+.title-box-index{
+	height: 80vh;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.shop{
+	font-family: monospace;
+	color:navy;
+	font-size: 4vw;
+	font-weight: 150;
+	display: block;
+	letter-spacing: 1
+}
+.main-page{
+	font-size: 10vw;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+
 }

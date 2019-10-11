@@ -6,11 +6,15 @@ function changeMainImg(press){
 	/*setInterval(function(){for(let i = 1.4,  i >= 1; i-=.01){
 	mainImg.style.transform="scale("i")"}, 5);*/
 }
-//products js begins
+//productX js begins
 function changeMainProdImg(press){
 	let mainImg = document.getElementsByClassName("main-prod-image")[0];
 	mainImg.src=press.src;
 }
+window.onload = function() {
+  document.getElementsByClassName("alt-images")[0].style.maxWidth= document.getElementsByClassName("main-prod-image")[0].style.width;
+;
+};
 
 //products js ends
 

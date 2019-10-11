@@ -5,7 +5,7 @@
 	<meta name = "keywords"content = "rawGnarly!,gnarly,GNARLY!">
 	<meta name = "author" content="gnarlyMshtep">
 	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-	<meta charset "UTF-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="newStyle.css">
@@ -53,15 +53,16 @@
 			</h1>
 
 			<h2 class="sub-page-title">Extras</h2>
+		</div>
 	</div>
 	<nav class="extras-nav">
 		<div  class="extras-nav-wrapper">	
-			<button onclick="changeExtrasPage(this)"class="extras-nav-but" id="0">SPONSERED</button>
+			<button onclick="changeExtrasPage(this)" class="extras-nav-but" id="0">SPONSERED</button>
 			<button onclick="changeExtrasPage(this)" class="extras-nav-but" id="1">VIDEOS</button>
-			<button onclick="changeExtrasPage(this)"class="extras-nav-but" id="2">ABOUT</button>
-			<button onclick="changeExtrasPage(this)"class="extras-nav-but" id="3">CONTACT</button>
-			<button onclick="changeExtrasPage(this)"class="extras-nav-but" id="4">JOBS</button>
-			<button onclick="changeExtrasPage(this)"class="extras-nav-but" id="5">SPECIAL THANKS</button>
+			<button onclick="changeExtrasPage(this)" class="extras-nav-but" id="2">ABOUT</button>
+			<button onclick="changeExtrasPage(this)" class="extras-nav-but" id="3">CONTACT</button>
+			<button onclick="changeExtrasPage(this)" class="extras-nav-but" id="4">JOBS</button>
+			<button onclick="changeExtrasPage(this)" class="extras-nav-but" id="5">SPECIAL THANKS</button>
 		</div>
 	</nav>
 	<div class="sponsered-page extras-page">
@@ -107,28 +108,34 @@
 		</p>
 	</div>
 	<footer>
-			<h2 class="newsletter-title">Sign Up for our newsletter!</h2>
-			<br>
-			<sup class="newsletter-subtitle">we avoid spamming &#128077;</sup>
-			<form>
-				<table class="form-table">
-					<tr>
-						<th>First Name:</th>
-						<th>Surname</th>
-						<th>Email</th>
-					</tr>
-					<tr>
-						<td><input type="text" name="fisrtname" placeholder="Jeff" class="newsletter-text-input"></td>
-						<td><input type="text" name="lastname" placeholder="Spicoli" class="newsletter-text-input"></td>
-						<td><input type="Email" name="email" placeholder="GnarlySpicoli@gmail.com"  class="newsletter-text-input"></td>
-					</tr>
-				</table>
-			</form>
-			<div class="bottom-links">
-				<a href="ihttps://www.instagram.com/raw_gnarly/" class="fa fa-instagram fa-2x"></a>
-				<a href="#contact" class="contact-us">contact us</a>
-			</div>
-		</footer>
+		<h2 class="newsletter-title">Sign Up for our newsletter!</h2>
+		<br>
+		<sup class="newsletter-subtitle">we avoid spamming &#128077;</sup>
+		<form>
+			<table class="form-table">
+				<tr>
+					<th>First Name:</th>
+					<th>Surname</th>
+					<th>Email</th>
+				</tr>
+				<tr>
+					<td><input type="text" name="fisrtname" placeholder="Jeff" class="newsletter-text-input"></td>
+					<td><input type="text" name="lastname" placeholder="Spicoli" class="newsletter-text-input"></td>
+					<td><input type="Email" name="email" placeholder="GnarlySpicoli@gmail.com"  class="newsletter-text-input"></td>
+				</tr>
+			</table>
+		</form>
+		<div class="bottom-links">
+			<a href="ihttps://www.instagram.com/raw_gnarly/" class="fa fa-instagram fa-2x"></a>
+			<a href="#contact" class="contact-us">contact us</a>
+		</div>
+	</footer>
 </body>
 <script type="text/javascript" src="gnarly.js" ></script>
+
+<script>
+	if (window.location.href.substring(window.location.href.indexOf("extras")).includes("#jobs")) {
+		changeExtrasPage(document.getElementById("4"))
+	}
+</script>
 </html>

@@ -40,6 +40,9 @@ function alertJobs(str){
 	alert(str);
 }
 
+var extrasPage = 0;
 function navToJobs(){
-	window.location.href = "extras.html";
+    extrasPage = 1;
+	window.location.href = "extras.html#jobs";
+	console.log(extrasPage)
 }

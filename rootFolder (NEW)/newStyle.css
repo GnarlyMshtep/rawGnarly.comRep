@@ -79,7 +79,7 @@ body{
 	font-weight: 600;
 	text-align: center;
 	font-style: italic!important; 
-	letter-spacing: -.4vw;
+	letter-spacing: -.1vw;
 	/*[possible animation for letter spacing]*/
 }
 .side-page{
@@ -495,6 +495,7 @@ input:focus::placeholder{
 	font-size: 3vh;
 	font-weight: 150;
 	display: block;
+	letter-spacing: 1
 }
 .main-page{
 	font-size: 10vh;

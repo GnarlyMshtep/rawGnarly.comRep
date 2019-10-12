@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <!--TO DO
 	-php with logan
-	-set product zoom?
-	-better prod x positioning (use js?)
-	-make menu Icon display
+	-set product zoom? (currently not necessery)
 	-submit button not existing
-	-specifics(diffrent pages and lookbooks)
-	-animate letter spacing
-	-handle of menu on mobile (no icon either)
+	-specifics(diffrent pages and lookbooks) (matan)
+	-handle of menu (no icon)
 	-alt images width fixed to be same as main images prodX
+	-weird margins with lookbook
+	-productX on mobile (matan)
+	-lookbook on mobile (ill try)
 -->
 <html lang="en-US">
 <head>
@@ -28,10 +28,7 @@
 </head>
 
 <body>
-	<div class="nav-handle">Menu 
-		<i class="fas fa-bars"></i>	
-	</div>
-	<nav class="nav-bar">
+		<nav class="nav-bar">
 		<div class="nav-bar-wrapper">
 				<ul class="nav-items">
 
@@ -53,6 +50,7 @@
 				</ul>
 		</div>
 	</nav>
+	<div class="nav-handle" onclick="toggleNav()">Menu </div>
 	<div class="products-page-wrapper">
 		<div class="title-box">		
 			<h1 class="gnarly side-page">

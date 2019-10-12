@@ -1,18 +1,56 @@
+ @font-face {
+    font-family: 'buenaparkjf';
+    src: url('font/design.jasonwalcott.buenaparkjf-webfont.woff2') format('woff2'),
+         url('font/design.jasonwalcott.buenaparkjf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
   /*style navigation bar*/
 .nav-bar{
 	background-color: navy;
 }
 .nav-handle{
 	width: 100%;
-	text-align: left;
+	text-align: center;
 	display: block;
-	padding: 2vw 1vw;
 	font-weight: 700;
-	background-color: darkgrey;
+	font-family: 'buenaparkjf';
+	background-color: #614e1a;
+	height: 5vh;
+	cursor: pointer;
+	color:navy;
 
 }
 
 .nav-items{
+	max-height: 0vh;
+	transition: max-height .4s ease-in-out;
+	webkit-transition: max-height 0.4s;
+	ms-transition: max-height 0.4s;
+	mozila-transition: max-height 0.4s;
+	o-transition: max-height 0.4s;
+
+
+	width: 100%;
+	list-style: none;
+	margin: 0 auto;
+  	padding: 0;
+ 	overflow: hidden;
+ 	display: flex;
+ 	justify-content: flex-start;
+ 	flex-flow: column;
+}
+
+.nav-items-showing{
+	max-height: 24vh;
 	width: 100%;
 	list-style: none;
 	margin: 0 auto;
@@ -28,7 +66,8 @@
 	display: block;
 	text-align: center;
 	color: grey;
-	padding: 3vw 1vw;
+	font-family: 'buenaparkjf';
+	padding: 3vw 0;
 	text-decoration: none;
 	font-weight: 500;
 	transition: color .3s;
@@ -52,40 +91,84 @@
 /*navigation style end*/
 
 /*gnarly and page title style*/
+.gnarly{
+	/*h1*/
+	font-family: "buenaparkjf";
+	font-weight: 900 !important;
+	text-align: center;
+	font-style: italic!important; 
+	letter-spacing: -.1vw;
+	/*[possible animation for letter spacing]*/
+}
 .side-page{
- 	font-size: 2vh;
+ 	font-size: 3vh;
+}
+
+.g{
+	color:red;
+	text-shadow: 1px 0 red;
+}
+.n{
+	color:green;
+	text-shadow: 1px 0 green;
+
+}
+.a{
+	color: blue;
+	text-shadow: 1px 0 blue;
+
+}
+.r{
+	color:orange;
+	text-shadow: 1px 0 orange;
+	
+}
+.l{
+	color:purple;
+	text-shadow: 1px 0 purple;
+
+}
+.y{
+	color:#F4E135;
+	text-shadow: 1px 0 #F4E135;
+
+}
+.exclamation{
+	color:darkgreen;
+	text-shadow: 1px 0 darkgreen;
+
 }
 /*title style ends*/
 
 /*style products*/
 .products-page-wrapper{
 	max-width: 100%;
+
 }
 
 .products-wrapper{
-	margin: 1.5vh 0 3vh 0;
+	margin: 0;
 	display: flex;
-	justify-content: space-between;
+	flex-flow: row;
+	justify-content: flex-start;
 	flex-wrap: wrap;
-
-
 }
 
 .product{
-	box-sizing: border-box;
-	flex-basis: 30%;
-	margin: 2vh 0;
+	max-width: 45%
 }
 
 .product img{
-	transform: rotate(90deg);
 	width: 40vw;
-	height: 20vh;
+	height: auto;
 	object-fit: cover;
 }
-
-
-
+.product-title{
+	font-family: buenaparkjf;
+	font-weight: 500;
+	color: #242426;
+	font-size: 3.5vw;
+}
 /*products style end*/
 
 /*footer style*/
@@ -315,35 +398,74 @@ input:focus::placeholder{
 }
 
 .productX-content-wrapper{
-	width: 100%;
 	display: flex;
-	flex-flow: column !important;	
+	flex-flow: column;
+	margin-top: 0vh;
 }
+
 .left-col{
 	display: flex;
 	flex-flow: column;
-}
-.main-prod-image{
-	transform: rotate(90deg);
-	object-fit: cover;
-	width: 60vh;
-	height: 60vw;
-}
-.alt-images{
-	display: flex;
-	flex-flow: row;
-	overflow: hidden;
-}
-.alt-images img{
-	transform: rotate(90deg);
-	object-fit: cover;
-	width: 20vh;
-	height: 20vw;
-}
-.productX-footer{
-	margin-top: 20vh;
+	margin: 4vh auto 2vh;
 }
 
+.main-prod-image{
+	width: 85vw;
+	height: 60vh;
+	object-fit: cover;
+	
+}
+
+.alt-images{
+	margin: 1vh 0 0 -1.1vw;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+}
+
+.alt-image:hover{
+	opacity: .7;
+	cursor: pointer;
+}
+
+.alt-image{
+	width: 15vw;
+	height: auto;
+	object-fit: cover;
+}
+
+.right-col{
+	display: flex;
+	flex-flow: column;
+	text-align: center;
+
+}
+.prod-title{
+	font-family: "buenaparkjf";
+	font-size: 3em;
+	text-align: center;
+
+}
+.prod-price{
+	font-family: "Work Sans";
+	font-size: 1.4em;
+}
+.detail-list{
+	margin-top: 1vh;
+	text-align: center;
+
+}
+.detail{
+	font-family: "buenaparkjf";
+	color: darkgrey;
+	font-size: 1.2em
+}
+.productX-footer{
+	margin-top: 4.5vh;
+}
+.shopify-here{
+	margin:0 auto;
+}
 
 /*index styling*/
 .title-box-index{
@@ -358,15 +480,26 @@ input:focus::placeholder{
 	font-size: 4vw;
 	font-weight: 150;
 	display: block;
-	letter-spacing: 1
+	letter-spacing: 1;
+	position:relative;
+	top: 48%;
+	transform: translateY(-52%);
 }
-.main-page{
-	font-size: 10vw;
+.main-page-normal{
+	font-size: 5vh;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+	transition: letter-spacing 1s ease-in-out;
+	letter-spacing: .1vw;
 }
-
+.main-page-stretched{
+	font-size: 5vh;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: letter-spacing .5s ease-in-out;
+	letter-spacing: 2vw;
 
 
 

@@ -1,4 +1,16 @@
+
 console.log("yo");
+
+//index js begins
+function animateLetterSpacing() {
+  var element = document.getElementsByClassName("main-page-stretched")[0];
+    element.classList.remove("main-page-stretched");
+    element.classList.add("main-page-normal");
+    console.log("did it");
+}
+
+//index js ends
+
 document.getElementsByClassName("nav-bar")
 function changeMainImg(press){
 	let mainImg = document.getElementsByClassName("main-image-img")[0];
@@ -11,12 +23,14 @@ function changeMainProdImg(press){
 	let mainImg = document.getElementsByClassName("main-prod-image")[0];
 	mainImg.src=press.src;
 }
-window.onload = function() {
-  document.getElementsByClassName("alt-images")[0].style.maxWidth= document.getElementsByClassName("main-prod-image")[0].style.width;
-;
-};
 
-//products js ends
+function toggleNav(){
+	console.log("handle clicked")
+	var element = document.getElementsByClassName("nav-items")[0];
+    element.classList.toggle("nav-items-showing");
+}
+
+//productX js ends
 
 //extras js begins
 
@@ -31,7 +45,10 @@ function changeExtrasPage(button){
 	for(let i = 0, length1 = exPage.length; i < length1; i++){
 		exPage[i].style.display="none";
 	}
+	if (window.location.href == "extras.html") {
+		// statement
 	exPage[button.id].style.display="block";
+}
 }
 
 

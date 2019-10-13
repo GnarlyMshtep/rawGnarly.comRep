@@ -7,42 +7,42 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 	<meta charset "UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="newStyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet"> <link rel="stylesheet" type="text/css" href="newStyle.css" media="only screen and (min-width: 650px)">
+	<link media="only screen and (max-width: 650px)"
+	href="mobileStyle.css" type="text/css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="gnarly.js" ></script>
 
 
 </head>
-<body>
-	<nav class="nav-bar">
-		<div class="nav-bar-wrapper">
-			<ul class="nav-items">
+<body class="lb-body">
+	<div class="lb-nav-block">
+		<nav class="nav-bar lb-nav">
+			<div class="nav-bar-wrapper">
+					<ul class="nav-items">
 
-				<li class="nav-item">
-					<a class="nav-link" href="#HOME" id="hov-red">HOME </a>
-				</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html" id="hov-red">HOME </a>
+						</li>
 
-				<li class="nav-item">
-					<a class="nav-link" href="#PRODUCTS" id="hov-green">PRODUCTS</a>
-				</li>
+						<li class="nav-item">
+							<a class="nav-link" href="products.html" id="hov-green">PRODUCTS</a>
+						</li>
 
-				<li class="nav-item">
-					<a class="nav-link" href="#LOOKBOOK" id="hov-blue">LOOKBOOK</a>
-				</li>
+						<li class="nav-item">
+							<a class="nav-link" href="LookBook.html" id="hov-blue">LOOKBOOK</a>
+						</li>
 
-				<li class="nav-item">
-					<a class="nav-link" href="EXTRAS" id="hov-navy">EXTRAS</a>
-				</li>
+						<li class="nav-item">
+							<a class="nav-link" href="extras.html" id="hov-navy">EXTRAS</a>
+						</li>
+					</ul>
+			</div>
+		</nav>
+		<div class="nav-handle lb-handle-unclicked lb-handle-clicked" onclick="toggleNav()">Menu </div>
+	</div>
 
-				<li>
-					<i class="fas fa-shopping-cart" id = "cart-icon"><a href="CART" class="nav-link"></a></i>
-				</li>
-			</ul>
-		</div>
-	</nav>
-
-	<div class="lb-page-wrapper">
+	<div>
 		<div class="title-box">		
 			<h1 class="gnarly side-page">
 				<span class="g">G</span>
@@ -65,26 +65,25 @@
 			</div>
 
 			<div class="main-image">
-				<img class="main-image-img"src="images/OgGnarlyTee/IMG_2781.jpg" alt="mainImage">
+				<img class="main-image-img" src="images/lb1/img1.jpg">
 			</div>
 			<div class="lb-images">
-						<img class= "lb-image"src="images/OgGnarlyTee/IMG_2781.jpg" onclick="changeMainImg(this)">
-						<img class= "lb-image"src="images/OgGnarlyTee/IMG_2781.jpg" onclick="changeMainImg(this)">
-						<img class= "lb-image"src="images/surfForestTee/prodImg2.jpg" onclick="changeMainImg(this)">
-						<img class= "lb-image"src="images/surfForestTee/prodImg2.jpg" onclick="changeMainImg(this)">
-						<img class= "lb-image"src="images/OgGnarlyTee/IMG_2781.jpg" onclick="changeMainImg(this)">
-						<img class= "lb-image"src="images/surfForestTee/prodImg2.jpg" onclick="changeMainImg(this)">
-						<img class= "lb-image"src="images/surfForestTee/prodImg2.jpg" onclick="changeMainImg(this)">
-						<img class= "lb-image"src="images/OgGnarlyTee/IMG_2781.jpg" onclick="changeMainImg(this)">
-						<img class= "lb-image"src="images/OgGnarlyTee/IMG_2781.jpg" onclick="changeMainImg(this)">
+						<img class= "lb-image" src="images/lb1/img1.jpg"onclick="changeMainImg(this)">
+						<img class= "lb-image" src="images/lb1/img2.jpg"onclick="changeMainImg(this)">
+						<img class= "lb-image" src="images/lb1/img3.jpg" onclick="changeMainImg(this)">
+						<img class= "lb-image" src="images/lb1/img4.jpg" onclick="changeMainImg(this)">
+						<img class= "lb-image" src="images/lb1/img5.jpg"onclick="changeMainImg(this)">
+						<img class= "lb-image" src="images/lb1/img6.jpg" onclick="changeMainImg(this)">
+						<img class= "lb-image" src="images/lb1/img7.jpg" onclick="changeMainImg(this)">
+						<img class= "lb-image" src="images/lb1/img8.jpg"onclick="changeMainImg(this)">
+						<img class= "lb-image" src="images/lb1/img9.jpg"onclick="changeMainImg(this)">
 
 			</div>
 		</div>
-
+	</div>
 		<footer class="lb-footer">
 			<h2 class="newsletter-title">Sign Up for our newsletter!</h2>
-			<br>
-			<sup class="newsletter-subtitle">we avoid spamming &#128077;</sup>
+			<h6 class="newsletter-subtitle">we avoid spamming &#128077;</h6>
 			<form>
 				<table class="form-table">
 					<tr>
@@ -93,15 +92,18 @@
 						<th>Email</th>
 					</tr>
 					<tr>
-						<td><input type="text" name="fisrtname" placeholder="Jeff"></td>
-						<td><input type="text" name="lastname" placeholder="Spicoli"></td>
-						<td><input type="Email" name="email" placeholder="GnarlySpicoli@gmail.com"></td>
+						<td><input type="text" name="fisrtname" placeholder="Jeff" class="newsletter-text-input"></td>
+						<td><input type="text" name="lastname" placeholder="Spicoli" class="newsletter-text-input"></td>
+						<td><input type="Email" name="email" placeholder="GnarlySpicoli@gmail.com"  class="newsletter-text-input"></td>
 					</tr>
 				</table>
+				<button class="submit"></button> 
 			</form>
 			<div class="bottom-links">
-				<a href="instagram.com" class="fa fa-instagram fa-2x"></a>
+				<a href="instagram.com" class="fa fa-instagram fa-large"></a>
 				<a href="#contact" class="contact-us">contact us</a>
+				<a class="contact-us jobs" onclick ="navToJobs()" 	>Jobs
+				</a>
 			</div>
 		</footer>
 	</body>

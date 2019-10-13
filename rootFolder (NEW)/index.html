@@ -8,26 +8,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="newStyle.css">
+	<link rel="stylesheet" type="text/css" href="newStyle.css" media="only screen and (min-width: 650px)">
 	<link media="only screen and (max-width: 650px)"
 	href="mobileStyle.css" type="text/css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="gnarly.js" ></script>
 </head>
 <body onload="animateLetterSpacing()">
-	<div class="nav-handle">Menu 
-		<i class="fas fa-bars"></i>	
-	</div>
 	<nav class="nav-bar">
 		<div class="nav-bar-wrapper">
 				<ul class="nav-items">
 
 					<li class="nav-item">
-						<a class="nav-link" href="#HOME" id="hov-red">HOME </a>
+						<a class="nav-link" href="index.html" id="hov-red">HOME </a>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="produxts.html" id="hov-green">PRODUCTS</a>
+						<a class="nav-link" href="products.html" id="hov-green">PRODUCTS</a>
 					</li>
 
 					<li class="nav-item">
@@ -40,6 +37,8 @@
 				</ul>
 		</div>
 	</nav>
+	<div class="nav-handle" onclick="toggleNav()">Menu </div>
+
 	<div class="home-page-wrapper">
 		<div class="title-box-index">
 			<span class="shop">SHOP</span>
@@ -54,7 +53,7 @@
 				</h1>
 			</div>
 	</div>
-				<footer>
+		<footer>
 			<h2 class="newsletter-title">Sign Up for our newsletter!</h2>
 			<h6 class="newsletter-subtitle">we avoid spamming &#128077;</h6>
 			<form>
@@ -75,10 +74,7 @@
 			<div class="bottom-links">
 				<a href="instagram.com" class="fa fa-instagram fa-large"></a>
 				<a href="#contact" class="contact-us">contact us</a>
-
-				<a class="contact-us jobs" onclick ="navToJobs()"> 	
-				<a class="contact-us jobs" onclick ="alertJobs('sorry all avalabible positions are currently full ,but Please email us if you thing you can bring something special to GNARLY!')">
-				<a class="contact-us jobs" onclick ="alertJobs('sorry all avalabible positions are currently full ,but Please email us if you thing you can bring something special to GNARLY!')">
+				<a class="contact-us jobs" onclick ="navToJobs()" 	>Jobs
 				</a>
 			</div>
 		</footer>

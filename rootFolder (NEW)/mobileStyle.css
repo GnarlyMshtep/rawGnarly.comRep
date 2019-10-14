@@ -264,13 +264,9 @@ input:focus::placeholder{
 	
 /*lb phone stle begins*/
 .lb-body{
-	min-width: 1000px;
 }
 .lb-nav-block{
-	position: fixed;
-	top:0;
-	left: 0;
-	right: 0;
+	
 }
 
 .lb-handle-clicked{
@@ -278,8 +274,8 @@ input:focus::placeholder{
 }
 
 .lb-page-wrapper{
-	width: 100%;
-	overflow-wrap: hidden;
+	width: 100vw;
+	overflow-wrap: unset;
 	margin: 0 auto;
 }
 .title-box{
@@ -333,20 +329,18 @@ input:focus::placeholder{
     flex-wrap: wrap;
     justify-content: space-between;
     flex-flow: row;
-    overflow: visible;
+    overflow: scroll;
+    margin: 4vh 0 3vh 0;
  }
 
  .lb-image{
 	width: 80vw;
 	height: auto;
 	object-fit: cover;
+	margin: 0 5vh 0 5vh;
 }
 
 .lb-footer{
-	position: fixed;
-	right: 0;
-	left: 0;
-	bottom: 0;
 }
 /*extras style*/
 .extras-nav-wrapper{
@@ -496,7 +490,9 @@ input:focus::placeholder{
 	color: darkgrey;
 	font-size: 1.2em
 }
-
+.productX-footer{
+	margin-top: 4.5vh;
+}
 .shopify-here{
 	margin:0 auto;
 	margin-bottom: 2vh;

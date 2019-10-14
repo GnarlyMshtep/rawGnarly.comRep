@@ -1,6 +1,6 @@
-
+locOrientation = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation || screen.orientation.lock;
+locOrientation('portrait');
 console.log("yo");
-
 //index js begins
 function animateLetterSpacing() {
   var element = document.getElementsByClassName("main-page-stretched")[0];

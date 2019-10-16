@@ -233,13 +233,15 @@ input:focus::placeholder{
 }
 
 .submit{
-	font-size: 1.5vw;
+	font-size: 4vw;
     font-family: monospace;
 	background-color: powderblue;
 	font-family: buenaparkjf;
 	color: #e8b246;
 	border-radius: 4px;
 	cursor: pointer;
+	width: 20%;
+	margin-bottom: 1vh;
 }
 .bottom-links{
 	padding: 0 0 2vh 3vw;
@@ -459,8 +461,8 @@ input:focus::placeholder{
 }
 
 .alt-image{
-	width: 15vw;
-	height: auto;
+	width: 18vw;
+	height: 12vh;
 	object-fit: cover;
 }
 
@@ -490,12 +492,10 @@ input:focus::placeholder{
 	color: darkgrey;
 	font-size: 1.2em
 }
-.productX-footer{
-	margin-top: 4.5vh;
-}
 .shopify-here{
 	margin:0 auto;
-	margin-bottom: 2vh;
+	margin-top: 1vh;
+	margin-bottom: 4vh;
 }
 
 /*index styling*/

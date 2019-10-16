@@ -50,6 +50,7 @@ body{
 	text-decoration: none;
 	font-weight: 750;
 	transition: color .5s;
+	font-family: buenaparkjf;
 }
 
 #hov-red:hover{
@@ -215,6 +216,7 @@ input:focus::placeholder{
 	color: #e8b246;
 	border-radius: 4px;
 	cursor: pointer;
+	margin-left: 46pvw;
 }
 .bottom-links{
 	padding: 0 0 2vh 10vw;
@@ -250,6 +252,7 @@ input:focus::placeholder{
 .lb-content{
 	display: flex;
 	flex-flow: row;
+	margin-bottom: 4vh;
 }
 
 .sidebar{
@@ -316,9 +319,6 @@ input:focus::placeholder{
 	cursor: pointer;
 }
 
-.lb-footer{
-	margin-top: 4vh;
-}
 
 /*lookbook style ends*/
 
@@ -401,6 +401,7 @@ input:focus::placeholder{
 }
 .jobs-p{
 	font-family: "buenaparkjf";
+	line-height: 5vh;
 }
 
 .thanked-person{
@@ -454,7 +455,7 @@ input:focus::placeholder{
 .alt-image{
 	margin: 0 1vw;
 	width: 5.3vw;
-	height: auto;
+	height: 13.7vh;
 	object-fit: cover;
 }
 

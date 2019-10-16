@@ -207,7 +207,15 @@ th,td{
 input:focus::placeholder{
 	color: purple;
 }
+.inline-b1{
+	display: inline-block;
+	width: 45%;
+}
 
+.inline-b2{
+	display: inline-block;
+	width: 45%;
+}
 .submit{
 	font-size: 1.5vw;
     font-family: monospace;
@@ -216,7 +224,9 @@ input:focus::placeholder{
 	color: #e8b246;
 	border-radius: 4px;
 	cursor: pointer;
-	margin-left: 46pvw;
+	margin: 0 auto;
+	display: inline-block;
+	width: 10vw;
 }
 .bottom-links{
 	padding: 0 0 2vh 10vw;

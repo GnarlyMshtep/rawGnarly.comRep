@@ -210,11 +210,15 @@ input:focus::placeholder{
 .inline-b1{
 	display: inline-block;
 	width: 45%;
+	float: left;
+	height: 1vh;
 }
 
 .inline-b2{
 	display: inline-block;
 	width: 45%;
+	float: right;
+	height: 1vh;
 }
 .submit{
 	font-size: 1.5vw;

@@ -32,7 +32,7 @@
 
 .nav-items{
 	max-height: 0vh;
-	transition: max-height .4s ease-in-out;
+	transition: max-height .5s ease-in-out;
 	webkit-transition: max-height 0.4s;
 	ms-transition: max-height 0.4s;
 	mozila-transition: max-height 0.4s;
@@ -233,12 +233,14 @@ input:focus::placeholder{
 }
 .inline-b1{
 	display: inline-block;
-	width: 45%;
+	width: 40%;
+	float: left;
 }
 
 .inline-b2{
 	display: inline-block;
 	width: 40%;
+	float: right;
 }
 
 .submit{
@@ -274,15 +276,6 @@ input:focus::placeholder{
 /*phone footer style ends*/
 	
 /*lb phone stle begins*/
-.lb-body{
-}
-.lb-nav-block{
-	
-}
-
-.lb-handle-clicked{
-
-}
 
 .lb-page-wrapper{
 	width: 100vw;

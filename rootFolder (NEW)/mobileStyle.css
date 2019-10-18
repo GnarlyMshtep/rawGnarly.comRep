@@ -231,6 +231,15 @@ th,td{
 input:focus::placeholder{
 	color: purple;
 }
+.inline-b1{
+	display: inline-block;
+	width: 45%;
+}
+
+.inline-b2{
+	display: inline-block;
+	width: 40%;
+}
 
 .submit{
 	font-size: 4vw;

@@ -1,87 +1,85 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<title> GNARLY! , online , products</title>
-	<meta name = "keywords"content = "rawGnarly!,gnarly,GNARLY!">
-	<meta name = "author" content="gnarlyMshtep">
-	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-	<meta charset "UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="newStyle.css">
-	<link media="only screen and (max-width: 650px)"
-	href="mobileStyle.css" type="text/css" rel="stylesheet" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script type="text/javascript" src="gnarly.js" ></script>
+  <title> GNARLY! , online , products</title>
+  <meta name = "keywords"content = "rawGnarly!,gnarly,GNARLY!">
+  <meta name = "author" content="gnarlyMshtep">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <meta charset "UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+  <link media="only screen and (max-width: 650px)"
+  href="mobileStyle.css" type="text/css" rel="stylesheet" />
+  <link media="only screen and (min-width: 650px)"rel="stylesheet" type="text/css" href="newStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="gnarly.js" ></script>
 
 </head>
 <body>
-	<nav class="nav-bar">
-		<div class="nav-bar-wrapper">
-			<ul class="nav-items">
+  <nav class="nav-bar">
+    <div class="nav-bar-wrapper">
+        <ul class="nav-items">
 
-				<li class="nav-item">
-					<a class="nav-link" href="#HOME" id="hov-red">HOME </a>
-				</li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" id="hov-red">HOME </a>
+          </li>
 
-				<li class="nav-item">
-					<a class="nav-link" href="#PRODUCTS" id="hov-green">PRODUCTS</a>
-				</li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html" id="hov-green">PRODUCTS</a>
+          </li>
 
-				<li class="nav-item">
-					<a class="nav-link" href="#LOOKBOOK" id="hov-blue">LOOKBOOK</a>
-				</li>
+          <li class="nav-item">
+            <a class="nav-link" href="LookBook.html" id="hov-blue">LOOKBOOK</a>
+          </li>
 
-				<li class="nav-item">
-					<a class="nav-link" href="EXTRAS" id="hov-navy">EXTRAS</a>
-				</li>
+          <li class="nav-item">
+            <a class="nav-link" href="extras.html" id="hov-navy">EXTRAS</a>
+          </li>
+        </ul>
+    </div>
+  </nav>
+  <div class="nav-handle" onclick="toggleNav()">Menu </div>
 
-				<li>
-					<i class="fas fa-shopping-cart" id = "cart-icon"><a href="CART" class="nav-link"></a></i>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<div class="productX-page-wrapper">
-		<div class="title-box">		
-			<h1 class="gnarly side-page">
-				<span class="g">G</span>
-				<span class="n">N</span>
-				<span class="a">A</span>
-				<span class="r">R</span>
-				<span class="l">L</span>
-				<span class="y">Y</span>
-				<span class="exclamation">!</span>
-			</h1>
+  <div class="productX-page-wrapper">
+    <div class="title-box">   
+      <h1 class="gnarly side-page">
+        <span class="g">G</span>
+        <span class="n">N</span>
+        <span class="a">A</span>
+        <span class="r">R</span>
+        <span class="l">L</span>
+        <span class="y">Y</span>
+        <span class="exclamation">!</span>
+      </h1>
 
-		</div>
-		<div class= "productX-content-wrapper">
-			<div class= "left-col">
-				<img src="images/surfBurntTee/prodImg1.JPG" class="main-prod-image">
-				<div class="alt-images">
-					<img onclick="changeMainProdImg(this)"class= "alt-image" src="images/surfBurntTee/prodImg1.JPG">
+    </div>
+    <div class= "productX-content-wrapper">
+      <div class= "left-col">
+        <img src="images/OgGnarlyTee/prodImg1.JPG" class="main-prod-image">
+        <div class="alt-images">
+          <img onclick="changeMainProdImg(this)"class= "alt-image" src="images/OgGnarlyTee/prodImg1.JPG">
 
-					<img onclick="changeMainProdImg(this)" class= "alt-image"src="images/surfBurntTee/prodImg2.JPG">
+          <img onclick="changeMainProdImg(this)" class= "alt-image"src="images/OgGnarlyTee/prodImg2.JPG">
 
-					<img onclick="changeMainProdImg(this)" class= "alt-image"src="images/surfBurntTee/prodImg3.JPG">
+          <img onclick="changeMainProdImg(this)" class= "alt-image"src="images/OgGnarlyTee/prodImg3.JPG">
 
-					<img onclick="changeMainProdImg(this)" class= "alt-image" src="images/surfBurntTee/prodImg4.JPG">
-				</div>
-			</div>
-			<div class="right-col">
-				<h3 class="prod-title">Surf Burnt Orange</h3>
-				<h6 class="prod-price">20$</h6>
-				<div class="prod-details">
-					<ul class="detail-list">
-						<li class="detail">makes yah cool</li>
-						<li class="detail">100% cotton</li>
-						<li class="detail">ribbed collar</li>
-						<li class="detail">relaxed fit</li>
-						<li class="detail">limited edition (mybe?)</li>
-					</ul>
-				</div>
-				<div class="shopify-here">
-					<div id='product-component-1570736727069'></div>
+          <img onclick="changeMainProdImg(this)" class= "alt-image" src="images/OgGnarlyTee/prodImg4.JPG">
+        </div>
+      </div>
+      <div class="right-col">
+        <h3 class="prod-title">Burnt Orange Surf Tee</h3>
+        <h6 class="prod-price">20$</h6>
+        <div class="prod-details">
+          <ul class="detail-list">
+            <li class="detail">makes yah cool</li>
+            <li class="detail">100% cotton</li>
+            <li class="detail">ribbed collar</li>
+            <li class="detail">relaxed fit</li>
+            <li class="detail">limited edition (mybe?)</li>
+          </ul>
+        </div>
+        <div class="shopify-here">
+          <div id='product-component-1571362817093'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
@@ -110,7 +108,7 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
         id: '4119934304290',
-        node: document.getElementById('product-component-1570736727069'),
+        node: document.getElementById('product-component-1571362817093'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -123,19 +121,20 @@
         }
       },
       "button": {
-        "font-family": "Droid Sans, sans-serif",
-        "color": "#d4c2fc",
+        "font-family": "Lato, sans-serif",
+        "font-weight": "bold",
+        "color": "#b8a3d9",
         ":hover": {
-          "color": "#d4c2fc",
+          "color": "#b8a3d9",
           "background-color": "#0000da"
         },
         "background-color": "#000080",
         ":focus": {
           "background-color": "#0000da"
         },
-        "border-radius": "20px",
-        "padding-left": "39px",
-        "padding-right": "39px"
+        "border-radius": "31px",
+        "padding-left": "29px",
+        "padding-right": "29px"
       }
     },
     "contents": {
@@ -147,7 +146,7 @@
       "button": "Add to cart"
     },
     "googleFonts": [
-      "Droid Sans"
+      "Lato"
     ]
   },
   "productSet": {
@@ -175,23 +174,24 @@
         }
       },
       "button": {
-        "font-family": "Droid Sans, sans-serif",
-        "color": "#d4c2fc",
+        "font-family": "Lato, sans-serif",
+        "font-weight": "bold",
+        "color": "#b8a3d9",
         ":hover": {
-          "color": "#d4c2fc",
+          "color": "#b8a3d9",
           "background-color": "#0000da"
         },
         "background-color": "#000080",
         ":focus": {
           "background-color": "#0000da"
         },
-        "border-radius": "20px",
-        "padding-left": "39px",
-        "padding-right": "39px"
+        "border-radius": "31px",
+        "padding-left": "29px",
+        "padding-right": "29px"
       }
     },
     "googleFonts": [
-      "Droid Sans"
+      "Lato"
     ],
     "text": {
       "button": "Add to cart"
@@ -200,38 +200,42 @@
   "option": {
     "styles": {
       "label": {
-        "color": "#1b1717"
+        "font-size": "15px",
+        "color": "#1d1e7c"
       }
     }
   },
   "cart": {
     "styles": {
       "button": {
-        "font-family": "Droid Sans, sans-serif",
-        "color": "#d4c2fc",
+        "font-family": "Lato, sans-serif",
+        "font-weight": "bold",
+        "color": "#b8a3d9",
         ":hover": {
-          "color": "#d4c2fc",
+          "color": "#b8a3d9",
           "background-color": "#0000da"
         },
         "background-color": "#000080",
         ":focus": {
           "background-color": "#0000da"
         },
-        "border-radius": "20px"
+        "border-radius": "31px"
       }
     },
     "text": {
       "total": "Subtotal",
+      "empty": "Nothing to see.",
       "button": "Checkout"
     },
     "googleFonts": [
-      "Droid Sans"
+      "Lato"
     ]
   },
   "toggle": {
     "styles": {
       "toggle": {
-        "font-family": "Droid Sans, sans-serif",
+        "font-family": "Lato, sans-serif",
+        "font-weight": "bold",
         "background-color": "#000080",
         ":hover": {
           "background-color": "#0000da"
@@ -241,17 +245,17 @@
         }
       },
       "count": {
-        "color": "#d4c2fc",
+        "color": "#b8a3d9",
         ":hover": {
-          "color": "#d4c2fc"
+          "color": "#b8a3d9"
         }
       },
       "iconPath": {
-        "fill": "#d4c2fc"
+        "fill": "#b8a3d9"
       }
     },
     "googleFonts": [
-      "Droid Sans"
+      "Lato"
     ]
   }
 },
@@ -261,11 +265,12 @@
 })();
 /*]]>*/
 </script>
-</div>
-			</div>
-		</div>
-	</div>
-	<footer>
+    </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <footer>
       <h2 class="newsletter-title">Sign Up for our newsletter!</h2>
       <h6 class="newsletter-subtitle">we avoid spamming &#128077;</h6>
       <form>

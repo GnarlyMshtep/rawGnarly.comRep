@@ -221,7 +221,6 @@ th,td{
 }
 
 ::-webkit-input-placeholder{
-	position: fixed;
 	font-family: buenaparkjf;
 	color: pink;
 	text-indent: 2px;

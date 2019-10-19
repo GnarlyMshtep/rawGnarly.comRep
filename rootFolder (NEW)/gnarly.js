@@ -1,5 +1,5 @@
-locOrientation = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation || screen.orientation.lock;
-locOrientation('portrait');
+/*locOrientation = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation || screen.orientation.lock;
+locOrientation('portrait');*/
 console.log("yo");
 //index js begins
 function animateLetterSpacing() {

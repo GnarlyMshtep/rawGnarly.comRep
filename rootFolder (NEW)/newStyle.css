@@ -436,7 +436,7 @@ input:focus::placeholder{
 	display: flex;
 	flex-flow: row;
 	margin-top: 5vh;
-	margin-bottom: 3vh; 
+	margin-bottom: 3vh;
 }
 
 .left-col{

@@ -1,6 +1,16 @@
 /*locOrientation = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation || screen.orientation.lock;
 locOrientation('portrait');*/
 console.log("yo");
+
+//nav js begins
+
+function toggleNav(){
+	console.log("handle clicked")
+	var element = document.getElementsByClassName("nav-items")[0];
+    element.classList.toggle("nav-items-showing");}
+
+//nav js ends
+
 //index js begins
 function animateLetterSpacing() {
   var element = document.getElementsByClassName("main-page-stretched")[0];
@@ -24,14 +34,6 @@ function changeMainProdImg(press){
 	mainImg.src=press.src;
 }
 
-function toggleNav(){
-	console.log("handle clicked")
-	var element = document.getElementsByClassName("nav-items")[0];
-    element.classList.toggle("nav-items-showing");
-    /*let handle = document.getElementsByClassName("nav-handle")[0];
-    handle.style.top= "24vh"*/
-}
-
 //productX js ends
 
 //extras js begins
@@ -42,13 +44,13 @@ for(let i = 0, length1 = exPage.length; i < length1; i++){
 }
 exPage[0].style.display="block";
 
-function changeExtrasPage(id){
+function changeExtrasPage(button){
 	console.log("buttonClick!");
 	for(let i = 0, length1 = exPage.length; i < length1; i++){
 		exPage[i].style.display="none";
 	}
 	try {
-		exPage[id].style.display="block";
+		exPage[button.id].style.display="block";
 	} catch(e) {
 		console.log(e);
 	}
@@ -59,11 +61,6 @@ function changeExtrasPage(id){
 
 
 //footer js
-
-function alertJobs(str){
-	alert(str);
-}
-
 var extrasPage = 0;
 function navToJobs(){
     extrasPage = 1;

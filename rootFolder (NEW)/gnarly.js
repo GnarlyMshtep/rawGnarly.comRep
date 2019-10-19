@@ -42,13 +42,13 @@ for(let i = 0, length1 = exPage.length; i < length1; i++){
 }
 exPage[0].style.display="block";
 
-function changeExtrasPage(button){
+function changeExtrasPage(id){
 	console.log("buttonClick!");
 	for(let i = 0, length1 = exPage.length; i < length1; i++){
 		exPage[i].style.display="none";
 	}
 	try {
-		exPage[button.id].style.display="block";
+		exPage[id].style.display="block";
 	} catch(e) {
 		console.log(e);
 	}

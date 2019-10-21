@@ -233,12 +233,14 @@ input:focus::placeholder{
 .inline-b1{
 	display: inline-block;
 	width: 40%;
+	height: 4px;
 	float: left;
 }
 
 .inline-b2{
 	display: inline-block;
 	width: 40%;
+	height: 4px;
 	float: right;
 }
 

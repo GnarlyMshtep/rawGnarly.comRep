@@ -531,6 +531,8 @@ input:focus::placeholder{
 	transform: translateY(-60%);
 	transition: letter-spacing 1s ease-in-out;
 	letter-spacing: .07rem;
+	white-space: nowrap;
+
 }
 .main-page-stretched{
 	margin-left: -1.5vw;
@@ -540,5 +542,5 @@ input:focus::placeholder{
 	transform: translateY(-60%);
 	transition: letter-spacing .5s ease-in-out;
 	letter-spacing: 3.5vw;
-	overflow: hidden; 
+	white-space: nowrap;
 }

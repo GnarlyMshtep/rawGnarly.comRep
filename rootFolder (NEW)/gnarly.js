@@ -67,3 +67,7 @@ function navToJobs(){
 	window.location.href = "extras.html#jobs";
 	console.log(extrasPage)
 }
+
+
+//form js starts
+

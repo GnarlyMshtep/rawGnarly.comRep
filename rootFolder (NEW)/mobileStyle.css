@@ -537,11 +537,4 @@ input:focus::placeholder{
 	transition: letter-spacing .5s ease-in-out;
 	letter-spacing: 2.1vw;
 	white-space: nowrap;
-
-
-
-
-
-
-
 }

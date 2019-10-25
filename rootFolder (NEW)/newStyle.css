@@ -158,12 +158,12 @@ body{
 
 /*style footer*/
 footer{
-	background-color: #E1E8E1; 
+	background-color: lightgreen; 
 }
 .newsletter-title{
 	font-weight: 500;
 	color:navy;
-	font-family: "arial", sans-serif;
+	font-family: "buenaparkjf", sans-serif;
 	font-size: 5vh;
 	text-align: center;
 	padding-top: 1.3vh;
@@ -232,27 +232,23 @@ input:focus::placeholder{
 	width: 10vw;
 }
 .bottom-links{
-	color:black;
 	padding: 0 0 2vh 10vw;
 }
 .fa-instagram {
-  color:black;
+  color: white;
   margin: 0 1.5vw;
   text-decoration: none;
 }
 
 .contact-us{
 	text-decoration: none;
-		color:black;
- 
+	color:white; 
 	font-size: 2vh;
 }
 .jobs{
 	margin-left: 3vh;
 	cursor: pointer;
 	display: inline-block;
-		color:black;
-
 }
 /*footer style ends*/
 
@@ -506,14 +502,14 @@ input:focus::placeholder{
 
 
 /*index styling*/
-.index-bod{
+/*.index-bod{
 	background-image: url(images/lb1/img1.JPG) ,url(images/lb1/img2.JPG);
-	background-position: 55% 55%;
+	background-position: 55% 55;
 	background-repeat: no-repeat , no-repeat;
 	background-size: cover;
 
 
-}
+}*/
 
 .home-page-wrapper{
 	max-height: 80vh;
@@ -526,9 +522,9 @@ input:focus::placeholder{
 }
 .shop{
 	font-family: monospace;
-	color:white;
-	font-size: 3.5vh;
-	font-weight: 300;
+	color:navy;
+	font-size: 3vh;
+	font-weight: 150;
 	display: block;
 	letter-spacing: 1;
 	position: relative;

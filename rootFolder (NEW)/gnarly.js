@@ -42,8 +42,11 @@ exPage = document.getElementsByClassName("extras-page")
 for(let i = 0, length1 = exPage.length; i < length1; i++){
 	exPage[i].style.display="none";
 }
+try{
 exPage[0].style.display="block";
-
+}catch(e){
+	console.log(e);
+}
 function changeExtrasPage(button){
 	console.log("buttonClick!");
 	for(let i = 0, length1 = exPage.length; i < length1; i++){
@@ -71,3 +74,12 @@ function navToJobs(){
 
 //form js starts
 
+let subButs=document.getElementsByClassName("submit");
+console.log(subButs.length)
+for(let i = 0, length1 = subButs.length; i < length1; i++){
+	subButs[i].addEventListener('click', onClickSubmit());
+
+}
+function onClickSubmit(){
+	alert("newsletter is currently not active")
+}

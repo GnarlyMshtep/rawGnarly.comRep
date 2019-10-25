@@ -20,6 +20,11 @@ img{
 body{
 	font-family: lato, monospace;
 }
+.mobile-only{
+	display: none;
+	text-align: center;
+	display: block;
+}
 
 .nav-handle{
 	display: none;
@@ -332,6 +337,9 @@ input:focus::placeholder{
 	cursor: pointer;
 }
 
+.mobile-only-scroll-tag{
+	display: none;
+}
 
 /*lookbook style ends*/
 

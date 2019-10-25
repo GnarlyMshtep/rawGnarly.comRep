@@ -340,13 +340,17 @@ input:focus::placeholder{
 
  .lb-image{
 	width: 80vw;
-	height: 70%;
+	height: 70vh;
 	object-fit: cover;
 	margin: 0 5vh 0 5vh;
 }
-
-.lb{
+.mobile-only-scroll-tag{
+	display: none;
+	text-align: center;
+	display: block;
+	margin: -1.8vh auto .5vh;
 }
+
 /*extras style*/
 .extras-nav-wrapper{
 	width: 100%;

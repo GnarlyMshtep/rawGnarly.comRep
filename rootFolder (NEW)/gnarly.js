@@ -73,13 +73,30 @@ function navToJobs(){
 
 
 //form js starts
+window.onload = function(){
 
 let subButs=document.getElementsByClassName("submit");
 console.log(subButs.length)
 for(let i = 0, length1 = subButs.length; i < length1; i++){
-	subButs[i].addEventListener('click', onClickSubmit());
+	subButs[i].addEventListener("click", onClickSubmit);
 
 }
 function onClickSubmit(){
-	alert("newsletter is currently not active")
+	if (formValid()){
+		alert("form is correct, yet I don't know php")
+	}
 }
+
+function formValid(){
+	let fname = document.forms[0].elements[0].value;
+	let lname = document.forms[0].elements[1].value;
+	let email = document.forms[0].elements[2].value;
+	if ((fname=="")||(lname=="")||(email=="")){
+		alert("please complete the form before submission");
+		return false;
+	}
+	return true;
+}
+
+
+} //onload

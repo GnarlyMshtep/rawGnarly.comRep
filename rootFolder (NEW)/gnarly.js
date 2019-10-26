@@ -1,7 +1,7 @@
 /*locOrientation = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation || screen.orientation.lock;
 locOrientation('portrait');*/
 console.log("yo");
-window.onload()=function(){
+window.onload =function(){
 	let x= document.getElementsByClassName('hidden-shopify')
 	x[0].style.display = "none";
 }

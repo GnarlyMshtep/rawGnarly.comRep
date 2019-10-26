@@ -23,7 +23,9 @@ body{
 .mobile-only{
 	display: none;
 	text-align: center;
-	display: block;
+}
+.hidden-shopify{
+	display: none;
 }
 
 .nav-handle{

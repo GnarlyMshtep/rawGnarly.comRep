@@ -142,7 +142,7 @@ body{
 }
 
 .product-title{
-	font-family: buenaparkjf;
+	font-family: Work Sans;
 	font-weight: 500;
 	color: #242426;
 }
@@ -240,16 +240,18 @@ input:focus::placeholder{
 }
 .bottom-links{
 	padding: 0 0 2vh 10vw;
+	color:navy;
+	font-weight: 800;
 }
 .fa-instagram {
-  color: white;
   margin: 0 1.5vw;
   text-decoration: none;
+  color:navy;
+	font-weight: 800;
 }
 
 .contact-us{
 	text-decoration: none;
-	color:white; 
 	font-size: 2vh;
 }
 .jobs{

@@ -10,7 +10,9 @@ window.onload =function(){
 function toggleNav(){
 	console.log("handle clicked")
 	var element = document.getElementsByClassName("nav-items")[0];
-    element.classList.toggle("nav-items-showing");}
+    element.classList.toggle("nav-items-showing");
+    document.getElementsByClassName("nav-handle")[0].classList.toggle("nav-handle-color");
+}
 
 //nav js ends
 

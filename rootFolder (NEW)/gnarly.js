@@ -1,8 +1,8 @@
 console.log("yo");
-window.onload =function(){
+
+	console.log("windowLoaded");
 	let x= document.getElementsByClassName('hidden-shopify')
 	x[0].style.display = "none";
-}
 //nav js begins
 
 function toggleNav(){
@@ -16,15 +16,11 @@ function toggleNav(){
 
 //index js begins
 function animateLetterSpacing() {
-	try {
 	var element = document.getElementsByClassName("main-page-stretched")[0];
     element.classList.remove("main-page-stretched");
     element.classList.add("main-page-normal");
     console.log("did it");
-	} catch(e) {
-		// statements
-		console.log(e);
-	}
+		
 }
 
 //index js ends
@@ -50,22 +46,21 @@ setInterval(function(){
 	// statements
 	console.log(e);
 }
-
+try{
 carouselSlide.addEventListener('transitionend', function(){
-	try {
 		if(carouselImages[counter].id === 'first-clone'){
 		carouselSlide.style.transition = "none";
 		counter=carouselImages.length-counter;
 		carouselSlide.style.transform = 'translateX(' + (-size*counter)+ 'px)';
 	// statements
-	} 
+	}
+	}); 
 	}catch(e) {
 		// statements
 		console.log(e);
 	}
 		
-	
-});
+
 
 document.getElementsByClassName("nav-bar")
 function changeMainImg(press){

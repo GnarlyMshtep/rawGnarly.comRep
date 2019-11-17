@@ -1,5 +1,3 @@
-/*locOrientation = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation || screen.orientation.lock;
-locOrientation('portrait');*/
 console.log("yo");
 window.onload =function(){
 	let x= document.getElementsByClassName('hidden-shopify')
@@ -18,13 +16,55 @@ function toggleNav(){
 
 //index js begins
 function animateLetterSpacing() {
-  var element = document.getElementsByClassName("main-page-stretched")[0];
+	try {
+	var element = document.getElementsByClassName("main-page-stretched")[0];
     element.classList.remove("main-page-stretched");
     element.classList.add("main-page-normal");
     console.log("did it");
+	} catch(e) {
+		// statements
+		console.log(e);
+	}
 }
 
 //index js ends
+try {
+	
+var carouselSlide = document.querySelector('.carousel-slide');
+var carouselImages = document.querySelectorAll(".carousel-slide img");
+var counter = 1;
+console.log(document.getElementById("last-clone"))
+var size = carouselImages[0].clientWidth;
+carouselSlide.style.transform = "translateX(" + (-size*counter) + "px";
+
+
+setInterval(function(){
+	carouselSlide.style.transition = ".5s ease-in-out";
+	counter++;
+	console.log(counter);
+	carouselSlide.style.transform = "translateX(" + (-size*counter) + "px";
+	
+}, 1500);
+
+} catch(e) {
+	// statements
+	console.log(e);
+}
+
+carouselSlide.addEventListener('transitionend', function(){
+	try {
+		if(carouselImages[counter].id === 'first-clone'){
+		carouselSlide.style.transition = "none";
+		counter=carouselImages.length-counter;
+		carouselSlide.style.transform = 'translateX(' + (-size*counter)+ 'px)';
+	// statements
+	} catch(e) {
+		// statements
+		console.log(e);
+	}
+		
+	
+});
 
 document.getElementsByClassName("nav-bar")
 function changeMainImg(press){
@@ -102,6 +142,8 @@ function formValid(){
 	}
 	return true;
 }
+
+//slide
 
 
 } //onload

@@ -538,13 +538,13 @@ input:focus::placeholder{
 	font-weight: 150;
 	display: block;
 	letter-spacing: 1;
-	position:relative;
+	position:absolute;
 	top: 35%;
 	transform: translateY(65%);
 }
 .main-page-normal{
 	font-size: 5vh;
-	position: relative;
+	position: absolute;
 	top: 42%;
 	transform: translateY(-58%);
 	transition: letter-spacing 1s ease-in-out;
@@ -554,10 +554,31 @@ input:focus::placeholder{
 }
 .main-page-stretched{
 	font-size: 5vh;
-	position: relative;
+	position: absolute;
 	top: 42%;
 	transform: translateY(-58%);
 	transition: letter-spacing .5s ease-in-out;
 	letter-spacing: 2.1vw;
 	white-space: nowrap;
 }
+
+.carousel-container{
+	width:100%;
+}
+
+.carousel-slide{
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+	text-align: center;
+}
+.carousel-img{
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+

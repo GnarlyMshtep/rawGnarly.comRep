@@ -1,10 +1,10 @@
 console.log("yo");
-
+/*
 	console.log("windowLoaded");
 	let x= document.getElementsByClassName('hidden-shopify')
 	x[0].style.display = "none";
 //nav js begins
-
+*/
 function toggleNav(){
 	console.log("handle clicked")
 	var element = document.getElementsByClassName("nav-items")[0];
@@ -40,7 +40,7 @@ setInterval(function(){
 	console.log(counter);
 	carouselSlide.style.transform = "translateX(" + (-size*counter) + "px";
 	
-}, 1500);
+}, 15000);
 
 } catch(e) {
 	// statements

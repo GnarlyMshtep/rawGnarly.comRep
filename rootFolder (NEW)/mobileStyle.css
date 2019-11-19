@@ -577,7 +577,7 @@ input:focus::placeholder{
 	text-align: center;
 }
 .carousel-img{
-	width: 100%;
+	width: 100vw;
 	height: auto;
 	object-fit: cover;
 }

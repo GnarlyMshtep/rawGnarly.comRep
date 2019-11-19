@@ -24,10 +24,12 @@ function animateLetterSpacing() {
 }
 
 //index js ends
-try {
-	
+window.onload = function(){
+alert("window loaded");
+}
 var carouselSlide = document.querySelector('.carousel-slide');
 var carouselImages = document.querySelectorAll(".carousel-slide img");
+alert("l"+carouselImages.length);
 var counter = 1;
 console.log(document.getElementById("last-clone"))
 var size = carouselImages[0].clientWidth;
@@ -40,27 +42,18 @@ setInterval(function(){
 	console.log(counter);
 	carouselSlide.style.transform = "translateX(" + (-size*counter) + "px";
 	
-}, 15000);
+}, 6000);
 
-} catch(e) {
-	// statements
-	console.log(e);
-}
-try{
+
 carouselSlide.addEventListener('transitionend', function(){
 		if(carouselImages[counter].id === 'first-clone'){
 		carouselSlide.style.transition = "none";
 		counter=carouselImages.length-counter;
 		carouselSlide.style.transform = 'translateX(' + (-size*counter)+ 'px)';
 	// statements
-	}
+		}
 	}); 
-	}catch(e) {
-		// statements
-		console.log(e);
-	}
 		
-
 
 document.getElementsByClassName("nav-bar")
 function changeMainImg(press){

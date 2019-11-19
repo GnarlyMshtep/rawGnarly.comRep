@@ -575,9 +575,10 @@ input:focus::placeholder{
 	justify-content: space-between;
 	position: relative;
 	text-align: center;
+
 }
 .carousel-img{
-	width: 100vw;
+	width: 100%;
 	height: auto;
 	object-fit: cover;
 }

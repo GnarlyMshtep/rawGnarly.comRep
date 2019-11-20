@@ -544,7 +544,7 @@ input:focus::placeholder{
 .main-page-normal{
 	margin-left: -1.5vw;
 	font-size: 10vh;
-	position: fixed;
+	position: relative;
 	top: 40%;
 	transform: translateY(-60%);
 	transition: letter-spacing 1s ease-in-out;
@@ -555,7 +555,7 @@ input:focus::placeholder{
 .main-page-stretched{
 	margin-left: -1.5vw;
 	font-size: 10vh;
-	position: fixed;
+	position: relative;
 	top: 40%;
 	transform: translateY(-60%);
 	transition: letter-spacing .5s ease-in-out;

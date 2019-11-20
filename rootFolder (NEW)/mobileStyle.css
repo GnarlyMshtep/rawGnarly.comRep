@@ -540,22 +540,22 @@ input:focus::placeholder{
 }
 .main-page-normal{
 	font-size: 5vh;
-	position: absolute;
+	position: relative;
 	top: 42%;
 	transform: translateY(-58%);
-	transition: letter-spacing 1s ease-in-out;
-	letter-spacing: -.9vw;
+	transition: letter-spacing .6s ease-in-out;
+	letter-spacing: -.7vw;
 	white-space: nowrap;
-
 }
 .main-page-stretched{
 	font-size: 5vh;
-	position: absolute;
 	top: 42%;
+	position: relative;
 	transform: translateY(-58%);
-	transition: letter-spacing .5s ease-in-out;
+	transition: letter-spacing .6s ease-in-out;
 	letter-spacing: 2.1vw;
 	white-space: nowrap;
+
 }
 
 .carousel-container{

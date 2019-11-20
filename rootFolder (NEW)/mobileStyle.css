@@ -17,7 +17,7 @@
 }
   /*style navigation bar*/
 .nav-bar{
-	background-color: #1D3461;
+	background-color:#1D3461;
 }
 .nav-handle{
 	min-width: 100%;
@@ -25,7 +25,7 @@
 	display: block;
 	font-weight: 700;
 	font-family: 'buenaparkjf';
-	background-color: #614e1a;
+	background-color:#1D3461;
 	padding: 12px;
 	cursor: pointer;
 	color: #90C3C8;
@@ -190,18 +190,17 @@
 
 /*footer style*/
 footer{
-	background-color: #247BA0; 
+	background-color: #516F96; 
+	color: #E09F3E ;
 }
 .newsletter-title{
 	font-weight: 500;
-	color:#90C3C8;
 	font-family: "buenaparkjf", sans-serif;
 	font-size: 5vh;
 	text-align: center;
 }
 .newsletter-subtitle{
 	font-weight: 500;
-	color:#90C3C8;
 	font-family: "Work Sans", sans-serif;
 	font-size: 3vh;
 	text-align: center;
@@ -222,7 +221,6 @@ footer{
 
 .form-table{
 	margin: 0 auto;
-		color:#90C3C8;
 
 }
 th,td{
@@ -266,20 +264,17 @@ input:focus::placeholder{
 }
 .bottom-links{
 	padding: 0 0 2vh 3vw;
-	color:#90C3C8;
 	font-weight: 800;
 }
 .fa-instagram {
   margin: 0 1.5vw;
   text-decoration: none;
-	color:#90C3C8;
 
 }
 
 .contact-us{
 	text-decoration: none;
 	font-size: 2vh;
-	color:#90C3C8;
 
 }
 .jobs{
@@ -468,9 +463,10 @@ input:focus::placeholder{
 }
 
 .main-prod-image{
-	width: 85vw;
+	width: 95vw;
 	height: 60vh;
 	object-fit: cover;
+	margin: 0 auto;
 	
 }
 
@@ -564,6 +560,7 @@ input:focus::placeholder{
 
 .carousel-container{
 	width:100%;
+	display: none;
 }
 
 .carousel-slide{

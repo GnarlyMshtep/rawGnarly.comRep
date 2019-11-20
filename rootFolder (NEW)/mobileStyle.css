@@ -17,7 +17,7 @@
 }
   /*style navigation bar*/
 .nav-bar{
-	background-color: #1F5673;
+	background-color: #1D3461;
 }
 .nav-handle{
 	min-width: 100%;
@@ -190,7 +190,7 @@
 
 /*footer style*/
 footer{
-	background-color: #614e1a; 
+	background-color: #247BA0; 
 }
 .newsletter-title{
 	font-weight: 500;
@@ -568,7 +568,6 @@ input:focus::placeholder{
 
 .carousel-slide{
 	width: 100%;
-	height: 100%;
 	object-fit: cover;
 	display: flex;
 	flex-direction: row;

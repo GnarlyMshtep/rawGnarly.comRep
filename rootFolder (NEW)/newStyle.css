@@ -33,7 +33,7 @@ body{
 }
 /*style navigation bar*/
 .nav-bar{
-	background-color: navy;
+	background-color:#1D3461;
 }
 
 .nav-bar-wrapper{
@@ -85,6 +85,7 @@ body{
 	text-align: center;
 	font-style: italic!important; 
 	letter-spacing: -.1vw;
+	opacity: .7;
 	/*[possible animation for letter spacing]*/
 }
 .side-page{
@@ -152,6 +153,7 @@ body{
 	flex-basis: calc(85%/3-2em);
 	margin: 2vh 2vw;
 	padding: 1em;
+	justify-content: center;
 }
 
 .product img{
@@ -166,11 +168,11 @@ body{
 
 /*style footer*/
 footer{
-	background-color: lightgreen; 
+	background-color: #516F96; 
+	color: #E09F3E ;
 }
 .newsletter-title{
 	font-weight: 500;
-	color:navy;
 	font-family: "buenaparkjf", sans-serif;
 	font-size: 5vh;
 	text-align: center;
@@ -178,7 +180,6 @@ footer{
 }
 .newsletter-subtitle{
 	font-weight: 500;
-	color:navy;
 	font-family: "Work Sans", sans-serif;
 	font-size: 3vh;
 	text-align: center;
@@ -230,9 +231,9 @@ input:focus::placeholder{
 .submit{
 	font-size: 1.5vw;
     font-family: monospace;
-	background-color: powderblue;
+	background-color: #9E2A2B;
 	font-family: buenaparkjf;
-	color: #e8b246;
+	color: #E09F3E;
 	border-radius: 4px;
 	cursor: pointer;
 	margin: 0 auto;
@@ -241,14 +242,12 @@ input:focus::placeholder{
 }
 .bottom-links{
 	padding: 0 0 2vh 10vw;
-	color:navy;
 	font-weight: 800;
 }
 .fa-instagram {
   margin: 0 1.5vw;
   text-decoration: none;
-  color:navy;
-	font-weight: 800;
+  font-weight: 800;
 }
 
 .contact-us{
@@ -545,7 +544,7 @@ input:focus::placeholder{
 .main-page-normal{
 	margin-left: -1.5vw;
 	font-size: 10vh;
-	position: relative;
+	position: fixed;
 	top: 40%;
 	transform: translateY(-60%);
 	transition: letter-spacing 1s ease-in-out;
@@ -556,15 +555,21 @@ input:focus::placeholder{
 .main-page-stretched{
 	margin-left: -1.5vw;
 	font-size: 10vh;
-	position: relative;
+	position: fixed;
 	top: 40%;
 	transform: translateY(-60%);
 	transition: letter-spacing .5s ease-in-out;
 	letter-spacing: 3.5vw;
 	white-space: nowrap;
 }
+.main-page-down{
+	top: 50%;
+	transform: translateY(-50%);
+}
 .carousel-container{
 	width:100%;
+	display: none;
+	position: relative; 
 }
 
 .carousel-slide{
@@ -580,6 +585,7 @@ input:focus::placeholder{
 .carousel-img{
 	width: 96vw;
     margin: 0 auto;
-	height: 96vh;
+	height: auto;
 	object-fit: cover;
 }
+

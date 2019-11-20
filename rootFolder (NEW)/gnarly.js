@@ -24,12 +24,13 @@ function animateLetterSpacing() {
 }
 
 //index js ends
+
 window.onload = function(){
-alert("window loaded");
+//alert("window loaded");
 }
 var carouselSlide = document.querySelector('.carousel-slide');
 var carouselImages = document.querySelectorAll(".carousel-slide img");
-alert("l"+carouselImages.length);
+//alert("l"+carouselImages.length);
 var counter = 1;
 console.log(document.getElementById("last-clone"))
 var size = carouselImages[0].clientWidth;
@@ -37,12 +38,11 @@ carouselSlide.style.transform = "translateX(" + (-size*counter) + "px";
 
 
 setInterval(function(){
-	carouselSlide.style.transition = ".5s ease-in-out";
 	counter++;
-	console.log(counter);
+	carouselSlide.style.transition = ".5s ease-in-out";
 	carouselSlide.style.transform = "translateX(" + (-size*counter) + "px";
 	
-}, 6000);
+}, 5000);
 
 
 carouselSlide.addEventListener('transitionend', function(){
@@ -53,14 +53,12 @@ carouselSlide.addEventListener('transitionend', function(){
 	// statements
 		}
 	}); 
-		
+	
 
 document.getElementsByClassName("nav-bar")
 function changeMainImg(press){
 	let mainImg = document.getElementsByClassName("main-image-img")[0];
 	mainImg.src=press.src;
-	/*setInterval(function(){for(let i = 1.4,  i >= 1; i-=.01){
-	mainImg.style.transform="scale("i")"}, 5);*/
 }
 //productX js begins
 function changeMainProdImg(press){

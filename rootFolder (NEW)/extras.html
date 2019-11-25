@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-US">
 <head>
 	<title> GNARLY! , online , extras</title>
@@ -56,33 +56,64 @@
 		</div>
 	</div>
 	<nav class="extras-nav">
-		<div  class="extras-nav-wrapper">	
+		<div class="extras-nav-wrapper">	
 			<button onclick="changeExtrasPage(this)" class="extras-nav-but" id="0">SPONSERED</button>
 			<button onclick="changeExtrasPage(this)" class="extras-nav-but" id="1">VIDEOS</button>
-			<button onclick="changeExtrasPage(this)" class="extras-nav-but" id="2">ABOUT</button>
+			<button onclick="changeExtrasPage(this)" class="extras-nav-but" id="2">INFO</button>
 			<button onclick="changeExtrasPage(this)" class="extras-nav-but" id="3">CONTACT</button>
 			<button onclick="changeExtrasPage(this)" class="extras-nav-but" id="4">JOBS</button>
 			<button onclick="changeExtrasPage(this)" class="extras-nav-but" id="5">SPECIAL THANKS</button>
 		</div>
 	</nav>
 	<div class="sponsered-page extras-page">
-		<p class="center-hor-vert">coming soon.</p>
+        <p class="extras-p sponsered-page-p">COMING SOON.</p>
 	</div>
 	<div class="videos-page extras-page">
-		<p class="center-hor-vert">coming soon.</p>
+		<p class="extras-p videos-page-p">COMING SOON.</p>
 	</div>
-	<div class="about-page extras-page">
-		<p class="about-p center-hor-vert" >						Yo wadap! <br>
-					you are currently surfing the website of the world's coolest clothing company.<br>
-					In GNARLY we believe in some bullshit like believing in yourself and being individualistic yada yada yada...<br>
-					Stay <span class="heavy-font">GNARLY!</span><br>
-					the brand is fully created by Matan Shtepel and the website coded by him as well
-		</p>
+	<div class="info-page extras-page">
+        <p class="info-p extras-p">
+            <ul>
+                <li class="info-li">
+                    <h3>RETURN AND EXCHANGE</h3>
+                    <p class="extras-p">
+                     We allow refunds if the product recieved is defective. In that case contact raw.gnarly@gmail.com
+                    within 4 days of recieving your order.<br>
+                    Because of our tricky inventory situation we currently can not allow refunds based on size.<br>
+                    Fortunatley all sizing info is avalabile on the respective product page. For more sizing info contact raw.gnarly@gmail.com  
+                    </p>
+                </li>
+                <li class="info-li">
+                    <h3>MISC. INFO</h3>
+
+                        <h5 class="info-h5">SHIPPING INFO</h5>
+                        <p class="extras-p">Depending on the order products may arrive separatley. No extra shipping will be charged.<br>
+                        Some items are made per-order and for those garments fullfiment may take around two weeks.</p>
+                    
+                        <h5 class="info-h5">PRIVACY</h5>
+                        <p class="extras-p">GNARLY! will not share any customer information with anyone</p>
+
+
+                    
+
+                </li>
+
+            </ul>
+
+
+            <!--Yo wadap! <br>
+    You are currently surfing the website of the world's coolest clothing company.<br>
+    In GNARLY we believe in some bullshit like believing in yourself and being individualistic yada yada yada...<br>
+    Stay GNARLY!<br>
+    The brand is fully curated by Matan Shtepel and the website was coded by him as well.-->
+        </p>
 	</div>
 	<div class="contact-page extras-page">
-		<h3 class="contact-page-title">contact us!</h3>
-		<p class="contact-us-p center-hor-vert">for any questions or concerns, please, do not hesitate to contact us at <br><br><span class="contact-mail"> rawgnarly@gmail.com </span><br><br> ussaly about 1-3 days to respond &#128516 </p>
-		<!--<form class="contact-us-form">
+		<h3 class="contact-page-title">CONTACT US</h3>
+        <p class="contact-us-p ">
+            for any questions or concerns contact us at rawgnarly@gmail.com.
+            we ussaly respond within 1-3 days
+        </p>		<!--<form class="contact-us-form">
 			Name:
 			<input autofocus="autofocus" wrap="soft" required="required" type="text" name="name" class="contact-us-field" placeholder="Jeff Spicoli">
 			Email:
@@ -93,16 +124,17 @@
 		</form> -->
 	</div>
 	<div class="jobs-page extras-page">
-		<p class="jobs-p center-hor-vert" >						Postions Avalabile: 1<br>
-			Title Description: Business Manager <br>
-			looking for buissness savy ambitionate young person<br> 
-			to work some technical and menagerial aspects of <br>
-			<span class="heavy-font">GNARLY! </span><br>
+		<p class="jobs-p extras-p" >						
+            <h3 >POSITIONS AVALABILE : 1.</h3><br>
+			Title Name: Business Manager. <br>
+			looking for buissness savy ambitionate young person 
+			to work some technical and menagerial aspects of 
+			GNARLY!
 			please contact us at raw.gnarly@gmail.com
 		</p>
 	</div>
 	<div class="special-thanks extras-page">
-		<p class="center-hor-vert">
+		<p class="extras-p">
 			<span class="thanked-person">Logan Dickey</span>
 			<span class="thanked-person">Derek Lopez</span>
 		</p>
@@ -135,426 +167,7 @@
 				<a class="contact-us jobs" onclick ="navToJobs()" 	>Jobs
 				</a>
 			</div>
-		</footer>	<div class="hidden-shopify">
-		<div id='product-component-1572039548996'></div>
-<script type="text/javascript">
-/*<![CDATA[*/
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: 'rawgnarly.myshopify.com',
-      storefrontAccessToken: 'b418411c58a86bef131a53bd0a38133b',
-    });
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: '4250212499490',
-        node: document.getElementById('product-component-1572039548996'),
-        moneyFormat: '%24%7B%7Bamount%7D%7D',
-        options: {
-  "product": {
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "calc(25% - 20px)",
-          "margin-left": "20px",
-          "margin-bottom": "50px"
-
-        }
-      },
-      "button": {
-        "font-family": "Lato, sans-serif",
-        "font-weight": "bold",
-        "font-size": "16px",
-        "padding-top": "16px",
-        "padding-bottom": "16px",
-        "color": "#f28888",
-        ":hover": {
-          "color": "#f28888",
-          "background-color": "#0000da"
-        },
-        "background-color": "#000080",
-        ":focus": {
-          "background-color": "#0000da"
-        },
-        "border-radius": "31px",
-        "padding-left": "29px",
-        "padding-right": "29px"
-      },
-      "quantityInput": {
-        "font-size": "16px",
-        "padding-top": "16px",
-        "padding-bottom": "16px"
-      }
-    },
-    "contents": {
-      "img": false,
-      "title": false,
-      "price": false
-    },
-    "text": {
-      "button": "Add to cart"
-    },
-    "googleFonts": [
-      "Lato"
-    ]
-  },
-  "productSet": {
-    "styles": {
-      "products": {
-        "@media (min-width: 601px)": {
-          "margin-left": "-20px"
-        }
-      }
-    }
-  },
-  "modalProduct": {
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "button": false,
-      "buttonWithQuantity": true
-    },
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0px",
-          "margin-bottom": "0px"
-        }
-      },
-      "button": {
-        "font-family": "Lato, sans-serif",
-        "font-weight": "bold",
-        "font-size": "16px",
-        "padding-top": "16px",
-        "padding-bottom": "16px",
-        "color": "#f28888",
-        ":hover": {
-          "color": "#f28888",
-          "background-color": "#0000da"
-        },
-        "background-color": "#000080",
-        ":focus": {
-          "background-color": "#0000da"
-        },
-        "border-radius": "31px",
-        "padding-left": "29px",
-        "padding-right": "29px"
-      },
-      "quantityInput": {
-        "font-size": "16px",
-        "padding-top": "16px",
-        "padding-bottom": "16px"
-      }
-    },
-    "googleFonts": [
-      "Lato"
-    ],
-    "text": {
-      "button": "Add to cart"
-    }
-  },
-  "option": {
-    "styles": {
-      "label": {
-        "font-size": "15px",
-        "color": "#1d1e7c"
-      }
-    }
-  },
-  "cart": {
-    "styles": {
-      "button": {
-        "font-family": "Lato, sans-serif",
-        "font-weight": "bold",
-        "font-size": "16px",
-        "padding-top": "16px",
-        "padding-bottom": "16px",
-        "color": "#f28888",
-        ":hover": {
-          "color": "#f28888",
-          "background-color": "#0000da"
-        },
-        "background-color": "#000080",
-        ":focus": {
-          "background-color": "#0000da"
-        },
-        "border-radius": "31px"
-      }
-    },
-    "text": {
-      "total": "Subtotal",
-      "empty": "Nothing to see.",
-      "button": "Checkout"
-    },
-    "googleFonts": [
-      "Lato"
-    ]
-  },
-  "toggle": {
-    "styles": {
-      "toggle": {
-        "font-family": "Lato, sans-serif",
-        "font-weight": "bold",
-        "background-color": "#000080",
-        ":hover": {
-          "background-color": "#0000da"
-        },
-        ":focus": {
-          "background-color": "#0000da"
-        }
-      },
-      "count": {
-        "font-size": "16px",
-        "color": "#f28888",
-        ":hover": {
-          "color": "#f28888"
-        }
-      },
-      "iconPath": {
-        "fill": "#f28888"
-      }
-    },
-    "googleFonts": [
-      "Lato"
-    ]
-  }
-},
-      });
-    });
-  }
-})();
-/*]]>*/
-</script>
-		
-	</div>
-			<div class="hidden-shopify">
-		<div id='product-component-1572039548996'></div>
-<script type="text/javascript">
-/*<![CDATA[*/
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: 'rawgnarly.myshopify.com',
-      storefrontAccessToken: 'b418411c58a86bef131a53bd0a38133b',
-    });
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: '4250212499490',
-        node: document.getElementById('product-component-1572039548996'),
-        moneyFormat: '%24%7B%7Bamount%7D%7D',
-        options: {
-  "product": {
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "calc(25% - 20px)",
-          "margin-left": "20px",
-          "margin-bottom": "50px"
-
-        }
-      },
-      "button": {
-        "font-family": "Lato, sans-serif",
-        "font-weight": "bold",
-        "font-size": "16px",
-        "padding-top": "16px",
-        "padding-bottom": "16px",
-        "color": "#f28888",
-        ":hover": {
-          "color": "#f28888",
-          "background-color": "#0000da"
-        },
-        "background-color": "#000080",
-        ":focus": {
-          "background-color": "#0000da"
-        },
-        "border-radius": "31px",
-        "padding-left": "29px",
-        "padding-right": "29px"
-      },
-      "quantityInput": {
-        "font-size": "16px",
-        "padding-top": "16px",
-        "padding-bottom": "16px"
-      }
-    },
-    "contents": {
-      "img": false,
-      "title": false,
-      "price": false
-    },
-    "text": {
-      "button": "Add to cart"
-    },
-    "googleFonts": [
-      "Lato"
-    ]
-  },
-  "productSet": {
-    "styles": {
-      "products": {
-        "@media (min-width: 601px)": {
-          "margin-left": "-20px"
-        }
-      }
-    }
-  },
-  "modalProduct": {
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "button": false,
-      "buttonWithQuantity": true
-    },
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0px",
-          "margin-bottom": "0px"
-        }
-      },
-      "button": {
-        "font-family": "Lato, sans-serif",
-        "font-weight": "bold",
-        "font-size": "16px",
-        "padding-top": "16px",
-        "padding-bottom": "16px",
-        "color": "#f28888",
-        ":hover": {
-          "color": "#f28888",
-          "background-color": "#0000da"
-        },
-        "background-color": "#000080",
-        ":focus": {
-          "background-color": "#0000da"
-        },
-        "border-radius": "31px",
-        "padding-left": "29px",
-        "padding-right": "29px"
-      },
-      "quantityInput": {
-        "font-size": "16px",
-        "padding-top": "16px",
-        "padding-bottom": "16px"
-      }
-    },
-    "googleFonts": [
-      "Lato"
-    ],
-    "text": {
-      "button": "Add to cart"
-    }
-  },
-  "option": {
-    "styles": {
-      "label": {
-        "font-size": "15px",
-        "color": "#1d1e7c"
-      }
-    }
-  },
-  "cart": {
-    "styles": {
-      "button": {
-        "font-family": "Lato, sans-serif",
-        "font-weight": "bold",
-        "font-size": "16px",
-        "padding-top": "16px",
-        "padding-bottom": "16px",
-        "color": "#f28888",
-        ":hover": {
-          "color": "#f28888",
-          "background-color": "#0000da"
-        },
-        "background-color": "#000080",
-        ":focus": {
-          "background-color": "#0000da"
-        },
-        "border-radius": "31px"
-      }
-    },
-    "text": {
-      "total": "Subtotal",
-      "empty": "Nothing to see.",
-      "button": "Checkout"
-    },
-    "googleFonts": [
-      "Lato"
-    ]
-  },
-  "toggle": {
-    "styles": {
-      "toggle": {
-        "font-family": "Lato, sans-serif",
-        "font-weight": "bold",
-        "background-color": "#000080",
-        ":hover": {
-          "background-color": "#0000da"
-        },
-        ":focus": {
-          "background-color": "#0000da"
-        }
-      },
-      "count": {
-        "font-size": "16px",
-        "color": "#f28888",
-        ":hover": {
-          "color": "#f28888"
-        }
-      },
-      "iconPath": {
-        "fill": "#f28888"
-      }
-    },
-    "googleFonts": [
-      "Lato"
-    ]
-  }
-},
-      });
-    });
-  }
-})();
-/*]]>*/
-</script>
-		
-	</div>
+		</footer>	
 </body>
 <script type="text/javascript" src="gnarly.js" ></script>
 

@@ -9,7 +9,9 @@
 .hidden-shopify{
 	display: none;
 }
-
+body {
+    font-family: lato, monospace;
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -367,80 +369,76 @@ input:focus::placeholder{
 }
 
 /*extras style*/
-.extras-nav-wrapper{
-	width: 100%;
-	margin: 0 auto;
+.extras-nav-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    
 }
 
-.extras-nav{
-	margin-top: 4vh;
-	background-color: transparent;
-	display: block;
-	width: 100%;
-	overflow: auto;
-	white-space: nowrap;
-	border-bottom: 2px solid grey;
+.extras-nav {
+    margin-top: 4vh;
+    background-color: black;
+    display: block;
+    margin-bottom: 4vh;
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
 }
-.extras-nav-but{
-	padding: 2vh 2vw;
-	color: green;
-	background-color: orange;
-	border: none;
-	margin: none;
-	cursor: pointer;
-	border-radius:2px 15px 0px 0px;
-	margin: 0 -.08vw;
-
+.extras-nav-but {
+    padding: 2vh 2vw;
+    color: white;
+    background-color: black;
+    border: none;
+    margin: none;
+    cursor: pointer;
+    margin: 0 -.08vw;
 }
 
 .extras-page{
-	height: 88vh;
-	width: 100%;
-	margin: 0 auto;
-	display: block;
-	text-align: center;
-	background-color: lightblue;
-	border-bottom: 3px solid blue;
-}
-.center-hor-vert{
+	min-height: 50vh;
 	width: 90%;
 	margin: 0 auto;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	color:brown;
-	font-family: "buenaparkjf";
-	line-height: 4vh;
-}
-}
-.contact-page-title{
-	text-align: center;
-	color:red;
-	font-size: 5vw;
-}
-.contact-us-form{
-	display: flex;
-	flex-flow: column;
-	width: 50%;
-	margin-left: 10vw;
-	text-align: left !important;
-	margin-top: 15vh;
-
-}
-
-.contact-mail{
-	font-size: 7vw;
-	font-weight: 500;
-}
-.heavy-font{
-	font-weight: 600 !important;
-	font-size: 2rem;
-}
-
-.thanked-person{
 	display: block;
-	font-family: "buenaparkjf";
-	font-weight: 200;
+}
+.extras-p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 2.4vh;
+    font-size: 1.8vh;
+}
+.sponsered-page-p {
+    text-align: center;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.videos-page-p {
+    text-align: center;
+    font-weight: 800;
+    font-size: 2rem;
+}
+.contact-page-title {
+    color: black;
+    font-size: 3vw;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+.info-li {
+    margin-bottom: 3vh;
+}
+
+.info-h5 {
+    margin-top: 1.5vh;
+    text-decoration: underline;
+}
+
+.thanked-person {
+    text-align: center;
+    display: block;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 3vh;
 }
 
 /*extras style ends*/

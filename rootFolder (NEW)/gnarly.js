@@ -33,28 +33,32 @@ var carouselImages = document.querySelectorAll(".carousel-slide img");
 //alert("l"+carouselImages.length);
 var counter = 1;
 console.log(document.getElementById("last-clone"))
-var size = carouselImages[0].clientWidth;
-carouselSlide.style.transform = "translateX(" + (-size*counter) + "px";
+try {
+    var size = carouselImages[0].clientWidth;
+
+    carouselSlide.style.transform = "translateX(" + (-size * counter) + "px";
 
 
-setInterval(function(){
-	counter++;
-	carouselSlide.style.transition = ".5s ease-in-out";
-	carouselSlide.style.transform = "translateX(" + (-size*counter) + "px";
-	
-}, 5000);
+    setInterval(function () {
+        counter++;
+        carouselSlide.style.transition = ".5s ease-in-out";
+        carouselSlide.style.transform = "translateX(" + (-size * counter) + "px";
+
+    }, 5000);
 
 
-carouselSlide.addEventListener('transitionend', function(){
-		if(carouselImages[counter].id === 'first-clone'){
-		carouselSlide.style.transition = "none";
-		counter=carouselImages.length-counter;
-		carouselSlide.style.transform = 'translateX(' + (-size*counter)+ 'px)';
-	// statements
-		}
-	}); 
-	
+    carouselSlide.addEventListener('transitionend', function () {
+        if (carouselImages[counter].id === 'first-clone') {
+            carouselSlide.style.transition = "none";
+            counter = carouselImages.length - counter;
+            carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+            // statements
+        }
+    });
 
+} catch (e) {
+    console.log(e);
+}
 document.getElementsByClassName("nav-bar")
 function changeMainImg(press){
 	let mainImg = document.getElementsByClassName("main-image-img")[0];
@@ -69,27 +73,26 @@ function changeMainProdImg(press){
 //productX js ends
 
 //extras js begins
-
-exPage = document.getElementsByClassName("extras-page")
-for(let i = 0, length1 = exPage.length; i < length1; i++){
-	exPage[i].style.display="none";
-}
-try{
-exPage[0].style.display="block";
-}catch(e){
-	console.log(e);
-}
-function changeExtrasPage(button){
-	console.log("buttonClick!");
-	for(let i = 0, length1 = exPage.length; i < length1; i++){
-		exPage[i].style.display="none";
-	}
-	try {
-		exPage[button.id].style.display="block";
-	} catch(e) {
-		console.log(e);
-	}
-	}
+    exPage = document.querySelectorAll('.extras-page');
+    for (let i = 0, length1 = exPage.length; i < length1; i++) {
+        exPage[i].style.display = "none";
+    }
+    try {
+        exPage[0].style.display = "block";
+    } catch (e) {
+        alert(e);
+    }
+    function changeExtrasPage(button) {
+        console.log("buttonClick!");
+        for (let i = 0, length1 = exPage.length; i < length1; i++) {
+            exPage[i].style.display = "none";
+        }
+        try {
+            exPage[button.id].style.display = "block";
+        } catch (e) {
+            console.log(e);
+        }
+    }
 
 
 //extras js ends

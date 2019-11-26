@@ -80,7 +80,7 @@ function changeMainProdImg(press){
     try {
         exPage[0].style.display = "block";
     } catch (e) {
-        alert(e);
+        console.log(e);
     }
     function changeExtrasPage(button) {
         console.log("buttonClick!");

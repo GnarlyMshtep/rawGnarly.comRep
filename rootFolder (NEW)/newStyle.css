@@ -4,7 +4,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+button:focus, input[type="button"]:focus {
+    outline: none;
+}
 img{
 	image-orientation: from-image;
 }
@@ -276,13 +278,12 @@ input:focus::placeholder{
 	flex-flow: row;
 	margin-bottom: 4vh;
 }
-
-.sidebar{
-	margin-top: 3vh;
-	display: flex;
-	flex-wrap: nowrap;
-	flex-flow: column;
-	justify-content: center;
+.sidebar {
+    margin-top: 3vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: column;
+    justify-content: center;
 }
 .lb-button{
 	border: none;
@@ -292,8 +293,11 @@ input:focus::placeholder{
 	background-color: transparent;
 	font-size: 1.8vh;
 }
+.lb-button {
+    opacity: .5;
+}
 .lb-button:hover{
-	opacity: .8;
+	opacity: 1;
 }
 .lb-block-this{
 	display: block;
@@ -313,7 +317,6 @@ input:focus::placeholder{
 
 .main-image{
 	margin: 6vh 2vw 0 6.5vw;
-
 }
 
 .main-image img{

@@ -1,18 +1,28 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--TO DO
 	-set product zoom? (currently not necessery)
 	-newslter activate
 	-redo EXTRAS! (necessery text and overal design + add FAQ)
-	-color scheme on desktop
+	-color scheme
   -shopify buttons reformat and color
   -mobile lb last pic no space from end.
   -slideshow below home page
-	-new products shoot
+	-
 	-shorten footer (especially on mobile)
   -reactive images like deblnck website
 -->
 <html lang="en-US">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153211573-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-153211573-1');
+  </script>
+
 	<title> GNARLY! , online , products</title>
 	<meta name = "keywords"content = "rawGnarly!,gnarly,GNARLY!">
 	<meta name = "author" content="gnarlyMshtep">
@@ -159,29 +169,16 @@
 		<footer>
 			<h2 class="newsletter-title">Sign Up for our newsletter!</h2>
 			<h6 class="newsletter-subtitle">we avoid spamming &#128077;</h6>
-			<form>
-				<table class="form-table">
-					<tr>
-						<th>First Name:</th>
-						<th>Surname:</th>
-						<th>Email:</th>
-					</tr>
-					<tr>
-						<td><input type="text" name="fisrtname" placeholder="Jeff" class="newsletter-text-input"></td>
-						<td><input type="text" name="lastname" placeholder="Spicoli" class="newsletter-text-input"></td>
-						<td><input type="Email" name="email" placeholder="GnarlySpicoli@gmail.com"  class="newsletter-text-input"></td>
-					</tr>
-				</table>
-
-			</form>
-			<div class="inline-b1"></div>
-        			<button type="button" class="submit">Click Me!</button>
-				<div class="inline-b2"></div>
-				
+      <div class="submit-area">
+      <button class="submit" type="button">submit</button>
+    		<form>
+    					<input type="Email" name="email" placeholder="GnarlySpicoli@gmail.com"  class="newsletter-text-input">
+		    </form>
+			</div>	
 			<div class="bottom-links">
-				<a href="https://www.instagram.com/raw_gnarly/" class="fa fa-instagram fa-large" target="_blank"></a>
-				<a href="#contact" class="contact-us">contact us</a>
-				<a class="contact-us jobs" onclick ="navToJobs()" 	>Jobs
+				<a href="https://www.instagram.com/raw_gnarly/" class="fa fa-instagram fa-large" target="_blank" style="color:#8abca7;"></a>
+				<a style="color:#8abca7;"href="#contact" class="contact-us">contact us</a>
+				<a style="color:#8abca7;"class="contact-us jobs" onclick ="navToJobs()" 	>Jobs
 				</a>
 			</div>
 		</footer>

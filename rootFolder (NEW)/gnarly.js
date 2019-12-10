@@ -19,8 +19,7 @@ function animateLetterSpacing() {
 	var element = document.getElementsByClassName("main-page-stretched")[0];
     element.classList.remove("main-page-stretched");
     element.classList.add("main-page-normal");
-    console.log("did it");
-		
+    console.log("did it")
 }
 
 //index js ends
@@ -107,6 +106,10 @@ function navToJobs(){
 }
 
 
+document.body.innerHTML += '<footer>			<h2 class="newsletter-title">Sign Up for our newsletter!</h2>			<h6 class="newsletter-subtitle">we avoid spamming &#128077;</h6>      <div class="submit-area">      <button class="submit" type="button">submit</button>    		<form>    					<input type="Email" name="email" placeholder="GnarlySpicoli@gmail.com"  class="newsletter-text-input">		    </form>			</div>				<div class="bottom-links">				<a href="https://www.instagram.com/raw_gnarly/" class="fa fa-instagram fa-large" target="_blank" style="color:#8abca7;"></a>				<a style="color:#8abca7;"href="#contact" class="contact-us">contact us</a>				<a style="color:#8abca7;"class="contact-us jobs" onclick ="navToJobs()" 	>Jobs				</a>			</div>		</footer>';
+
+
+
 //form js starts
 window.onload = function () {
 
@@ -150,3 +153,4 @@ function changeLb(button) {
     }
     changeMainImg(lbImages[0]);
 }
+

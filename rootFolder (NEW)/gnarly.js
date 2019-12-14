@@ -23,10 +23,7 @@ function animateLetterSpacing() {
 }
 
 //index js ends
-
-window.onload = function(){
-//alert("window loaded");
-}
+/* OLD SLIDER / IMAGE  carousel CODE!
 var carouselSlide = document.querySelector('.carousel-slide');
 var carouselImages = document.querySelectorAll(".carousel-slide img");
 //alert("l"+carouselImages.length);
@@ -63,6 +60,17 @@ function changeMainImg(press){
 	let mainImg = document.getElementsByClassName("main-image-img")[0];
 	mainImg.src=press.src;
 }
+*/
+
+
+
+
+//=== New Slider/carousel code
+
+var carouselDiv = document.getElementById('carousel') // Get the div with the images
+var slides = carouselDiv.children // Get all the images
+slides[0].classList.add("active")
+
 //productX js begins
 function changeMainProdImg(press){
 	let mainImg = document.getElementsByClassName("main-prod-image")[0];
@@ -72,6 +80,7 @@ function changeMainProdImg(press){
 //productX js ends
 
 //extras js begins
+/*  
     exPage = document.querySelectorAll('.extras-page');
     for (let i = 0, length1 = exPage.length; i < length1; i++) {
         exPage[i].style.display = "none";
@@ -92,6 +101,7 @@ function changeMainProdImg(press){
             console.log(e);
         }
     }
+    */
 
 
 //extras js ends

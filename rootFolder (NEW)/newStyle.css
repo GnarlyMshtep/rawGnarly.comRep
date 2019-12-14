@@ -514,7 +514,9 @@ input:focus::placeholder{
 .title-box-index{
 	height: 85vh;
 	margin: 0 auto;
-	text-align: center;
+	left: 35vw;
+	position: absolute;
+	z-index: 1;
 }
 .shop{
 	font-family: monospace;

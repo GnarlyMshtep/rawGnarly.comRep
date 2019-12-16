@@ -1,10 +1,40 @@
-console.log("yo");
+
+document.body.innerHTML += '<footer>			<h2 class="newsletter-title">Sign Up for our newsletter!</h2>			<h6 class="newsletter-subtitle">we avoid spamming &#128077;</h6>      <div class="submit-area">      <button class="submit" type="button">submit</button>    		<form>    					<input type="Email" name="email" placeholder="GnarlySpicoli@gmail.com"  class="newsletter-text-input">		    </form>			</div>				<div class="bottom-links">				<a href="https://www.instagram.com/raw_gnarly/" class="fa fa-instagram fa-large" target="_blank" style="color:#8abca7;"></a>				<a style="color:#8abca7;"href="#contact" class="contact-us">contact us</a>				<a style="color:#8abca7;"class="contact-us jobs" onclick ="navToJobs()" 	>Jobs				</a>			</div>		</footer>';
+
 /*
 	console.log("windowLoaded");
 	let x= document.getElementsByClassName('hidden-shopify')
 	x[0].style.display = "none";
 //nav js begins
 */
+
+//extras js begins
+window.onload = function(){
+		console.log("ONLOAD RUNS");
+
+    exPage = document.querySelectorAll('.extras-page');
+    for (let i = 0, length1 = exPage.length; i < length1; i++) {
+        exPage[i].style.display = "none";
+    }
+    try {
+        exPage[0].style.display = "block";
+    } catch (e) {
+        console.log(e);
+    }
+}
+    function changeExtrasPage(button) {
+        console.log("buttonClick!");
+        for (let i = 0, length1 = exPage.length; i < length1; i++) {
+            exPage[i].style.display = "none";
+        }
+        try {
+            exPage[button.id].style.display = "block";
+        } catch (e) {
+            console.log(e);
+        }
+    }
+
+
 function toggleNav(){
 	console.log("handle clicked")
 	var element = document.getElementsByClassName("nav-items")[0];
@@ -19,7 +49,7 @@ function animateLetterSpacing() {
 	var element = document.getElementsByClassName("main-page-stretched")[0];
     element.classList.remove("main-page-stretched");
     element.classList.add("main-page-normal");
-    console.log("did it")
+    console.log("did it");
 }
 
 //index js ends
@@ -79,29 +109,7 @@ function changeMainProdImg(press){
 
 //productX js ends
 
-//extras js begins
-/*  
-    exPage = document.querySelectorAll('.extras-page');
-    for (let i = 0, length1 = exPage.length; i < length1; i++) {
-        exPage[i].style.display = "none";
-    }
-    try {
-        exPage[0].style.display = "block";
-    } catch (e) {
-        console.log(e);
-    }
-    function changeExtrasPage(button) {
-        console.log("buttonClick!");
-        for (let i = 0, length1 = exPage.length; i < length1; i++) {
-            exPage[i].style.display = "none";
-        }
-        try {
-            exPage[button.id].style.display = "block";
-        } catch (e) {
-            console.log(e);
-        }
-    }
-    */
+   
 
 
 //extras js ends
@@ -116,7 +124,6 @@ function navToJobs(){
 }
 
 
-document.body.innerHTML += '<footer>			<h2 class="newsletter-title">Sign Up for our newsletter!</h2>			<h6 class="newsletter-subtitle">we avoid spamming &#128077;</h6>      <div class="submit-area">      <button class="submit" type="button">submit</button>    		<form>    					<input type="Email" name="email" placeholder="GnarlySpicoli@gmail.com"  class="newsletter-text-input">		    </form>			</div>				<div class="bottom-links">				<a href="https://www.instagram.com/raw_gnarly/" class="fa fa-instagram fa-large" target="_blank" style="color:#8abca7;"></a>				<a style="color:#8abca7;"href="#contact" class="contact-us">contact us</a>				<a style="color:#8abca7;"class="contact-us jobs" onclick ="navToJobs()" 	>Jobs				</a>			</div>		</footer>';
 
 
 

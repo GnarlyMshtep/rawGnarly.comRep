@@ -168,48 +168,50 @@ body{
 
 /*products style end*/
 
-/*style footer*/
 footer{
 	background-color: #516F96; 
-	color: #E09F3E ;
+	color: navy ;
+	display: block;
 }
 .newsletter-title{
-	font-weight: 500;
-	font-family: "buenaparkjf", sans-serif;
+	font-weight: 900;
+	font-family: "Arial", sans-serif;
 	font-size: 5vh;
 	text-align: center;
-	padding-top: 1.3vh;
 }
 .newsletter-subtitle{
-	font-weight: 500;
+	font-weight: 300;
 	font-family: "Work Sans", sans-serif;
-	font-size: 3vh;
+	font-size: 2vh;
 	text-align: center;
-	margin-top: -1vh;
+	margin-top: -.5vh;
+}
+.submit-area{
+	margin-left: 18vw;
+	margin-top: 1.2vh;
 }
  .newsletter-text-input{
-  width: 15vw;
-  height: 5vh;
-  padding: 0 2vw;
+  width: 56vw;
+  height: 6vh;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 0 4px 4px 0;
   box-sizing: border-box;
-  box-shadow: 2px 3px grey;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 .newsletter-text-input:focus, .newsletter-text-input:focus{
-	background-color: lightblue;
-}
+	/*background-color: navy;*/
+	font-family: buenaparkjf;
+	text-indent: 4px;
+	font-size: .8rem;
 
-.form-table{
-	margin: 0 auto;
-}
-th,td{
-	padding: 1.5vh;
+
 }
 
 ::-webkit-input-placeholder{
-	font-family: buenaparkjf;
-	color: pink;
+	font-family: lato;
+	font-weight: 700
+;	color: navy;
 	text-indent: 2px;
 	text-transform: capitalize;
 	text-align: center; 
@@ -217,52 +219,43 @@ th,td{
 input:focus::placeholder{
 	color: purple;
 }
-.inline-b1{
-	display: inline-block;
-	width: 45%;
-	float: left;
-	height: 1vh;
-}
-
-.inline-b2{
-	display: inline-block;
-	width: 45%;
-	float: right;
-	height: 1vh;
-}
 .submit{
-	font-size: 1.5vw;
-    font-family: monospace;
-	background-color: #9E2A2B;
-	font-family: buenaparkjf;
-	color: #E09F3E;
-	border-radius: 4px;
-	cursor: pointer;
-	margin: 0 auto;
-	display: inline-block;
-	width: 10vw;
+	font-size: 1rem;
+    font-family: Arial;
+	background-color: black;
+	height: 6vh;
+	color: white;
+	border-radius: 4px 0 0 4px;
+	cursor: pointer; 
+	border: none;
+	margin-right: .025vw;
+	padding: .5rem;
 }
 .bottom-links{
-	padding: 0 0 2vh 10vw;
+	padding: 1vh 0 2vh 3vw;
 	font-weight: 800;
+	color: navy !important;
+	font-family: arial;
 }
 .fa-instagram {
   margin: 0 1.5vw;
   text-decoration: none;
-  font-weight: 800;
-}
 
+}
+form{
+	display: inline-block;
+}
 .contact-us{
 	text-decoration: none;
 	font-size: 2vh;
+
 }
 .jobs{
-	margin-left: 3vh;
+	margin-left: .5vh;
 	cursor: pointer;
 	display: inline-block;
 }
-/*footer style ends*/
-
+/*footer ends*/
 
 /*style lookbook*/
 .lb-page-wrapper{
@@ -372,7 +365,7 @@ input:focus::placeholder{
 	border: none;
 	margin: none;
 	cursor: pointer;
-	margin: 0 -.08vw;
+	margin: 0.08vw;
 
 }
 

@@ -162,7 +162,6 @@ body {
 	margin: 0 auto;
 
 }
-
 .products-wrapper{
 	margin-top: 3vh;
 	display: flex;
@@ -216,7 +215,7 @@ footer{
 	margin-top: 1.2vh;
 }
  .newsletter-text-input{
-  width: 50vw;
+  width: 53vw;
   height: 5vh;
   border: 1px solid #ccc;
   border-radius: 0 4px 4px 0;
@@ -226,7 +225,7 @@ footer{
 }
 .newsletter-text-input:focus, .newsletter-text-input:focus{
 	/*background-color: navy;*/
-	font-family: buenaparkjf;
+	font-family: "Work Sans";
 	text-indent: 4px;
 	font-size: .8rem;
 
@@ -241,8 +240,11 @@ footer{
 	text-transform: capitalize;
 	text-align: center; 
 }
-input:focus::placeholder{
-	color: purple;
+
+input::placeholder{
+	color: black;
+	font-family: "Work Sans", sans-serif;
+	font-size: 1rem;
 }
 .submit{
 	font-size: 1rem;

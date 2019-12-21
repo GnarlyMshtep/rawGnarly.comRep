@@ -1,5 +1,7 @@
+var footerElement = document.createElement("e")
+footerElement.innerHTML = `<footer>			<h2 class="newsletter-title">Sign Up for our newsletter!</h2>			<h6 class="newsletter-subtitle">we avoid spamming &#128077;</h6>      <div class="submit-area">      <button class="submit" type="button">submit</button>    		<form>    					<input type="Email" name="email" placeholder="GnarlySpicoli@gmail.com"  class="newsletter-text-input">		    </form>			</div>				<div class="bottom-links">				<a href="https://www.instagram.com/raw_gnarly/" class="fa fa-instagram fa-large" target="_blank" style="color:#8abca7;"></a>				<a style="color:#8abca7;"href="#contact" class="contact-us">contact us</a>				<a style="color:#8abca7;"class="contact-us jobs" onclick ="navToJobs()" 	>Jobs				</a>			</div>		</footer>`
 
-document.body.innerHTML += '<footer>			<h2 class="newsletter-title">Sign Up for our newsletter!</h2>			<h6 class="newsletter-subtitle">we avoid spamming &#128077;</h6>      <div class="submit-area">      <button class="submit" type="button">submit</button>    		<form>    					<input type="Email" name="email" placeholder="GnarlySpicoli@gmail.com"  class="newsletter-text-input">		    </form>			</div>				<div class="bottom-links">				<a href="https://www.instagram.com/raw_gnarly/" class="fa fa-instagram fa-large" target="_blank" style="color:#8abca7;"></a>				<a style="color:#8abca7;"href="#contact" class="contact-us">contact us</a>				<a style="color:#8abca7;"class="contact-us jobs" onclick ="navToJobs()" 	>Jobs				</a>			</div>		</footer>';
+
 
 /*
 	console.log("windowLoaded");
@@ -10,7 +12,10 @@ document.body.innerHTML += '<footer>			<h2 class="newsletter-title">Sign Up for 
 
 //extras js begins
 window.onload = function(){
-		console.log("ONLOAD RUNS");
+        console.log("ONLOAD RUNS");
+        
+        
+
 
     exPage = document.querySelectorAll('.extras-page');
     for (let i = 0, length1 = exPage.length; i < length1; i++) {
@@ -46,10 +51,14 @@ function toggleNav(){
 
 //index js begins
 function animateLetterSpacing() {
+    try{
 	var element = document.getElementsByClassName("main-page-stretched")[0];
     element.classList.remove("main-page-stretched");
     element.classList.add("main-page-normal");
     console.log("did it");
+    }catch(e){
+
+    }
 }
 
 //index js ends
@@ -86,20 +95,23 @@ try {
     console.log(e);
 }
 document.getElementsByClassName("nav-bar")
+
+*/
+
+
 function changeMainImg(press){
 	let mainImg = document.getElementsByClassName("main-image-img")[0];
 	mainImg.src=press.src;
 }
-*/
-
-
-
 
 //=== New Slider/carousel code
-
+try{
 var carouselDiv = document.getElementById('carousel') // Get the div with the images
 var slides = carouselDiv.children // Get all the images
 slides[0].classList.add("active")
+}catch(e){
+
+}
 
 //productX js begins
 function changeMainProdImg(press){
@@ -129,7 +141,7 @@ function navToJobs(){
 
 //form js starts
 window.onload = function () {
-
+    document.body.appendChild(footerElement)
     let subButs = document.getElementsByClassName("submit");
     console.log(subButs.length)
     for (let i = 0, length1 = subButs.length; i < length1; i++) {

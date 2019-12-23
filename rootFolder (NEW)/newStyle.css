@@ -531,6 +531,7 @@ form{
 	transition: letter-spacing 1s ease-in-out;
 	letter-spacing: .07rem;
 	white-space: nowrap;
+	left: 0%;
 
 }
 .main-page-stretched{
@@ -540,7 +541,8 @@ form{
 	top: 40%;
 	transform: translateY(-60%);
 	transition: letter-spacing .5s ease-in-out;
-	letter-spacing: 3.5vw;
+	letter-spacing: 1.5vw;
+	left: 10%;
 	white-space: nowrap;
 }
 .main-page-down{

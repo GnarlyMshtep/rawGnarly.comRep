@@ -1,5 +1,5 @@
 var footerElement = document.createElement("e")
-footerElement.innerHTML = `<footer>			<h2 class="newsletter-title">Sign Up for our newsletter!</h2>			<h6 class="newsletter-subtitle">we avoid spamming &#128077;</h6>      <div class="submit-area">      <button class="submit" type="button">submit</button>    		<form>    					<input type="Email" name="email" placeholder="GnarlySpicoli@gmail.com"  class="newsletter-text-input">		    </form>			</div>				<div class="bottom-links">				<a href="https://www.instagram.com/raw_gnarly/" class="fa fa-instagram fa-large" target="_blank" style="color:#8abca7;"></a>				<a style="color:#8abca7;"href="#contact" class="contact-us">contact us</a>				<a style="color:#8abca7;"class="contact-us jobs" onclick ="navToJobs()" 	>Jobs				</a>			</div>		</footer>`
+footerElement.innerHTML = `<footer>			<h2 class="newsletter-title">Sign Up for our newsletter!</h2>			<h6 class="newsletter-subtitle">we avoid spamming &#128077;</h6>      <div class="submit-area">      <button class="submit" type="button">submit</button>    		<form>    					<input type="Email" name="email" placeholder="GnarlySpicoli@gmail.com"  class="newsletter-text-input">		    </form>			</div>				<div class="bottom-links">				<a href="https://www.instagram.com/raw_gnarly/" class="fa fa-instagram fa-large" target="_blank" style="color:#8abca7;"></a>				<a style="color:#8abca7;"href="extras.html#contact" class="contact-us">contact us</a>				<a style="color:#8abca7;"class="contact-us jobs" onclick ="navToJobs()" 	>Jobs				</a>			</div>		</footer>`
 
 
 
@@ -106,7 +106,15 @@ function changeMainImg(press){
 
 //=== New Slider/carousel code
 try{
-var carouselDiv = document.getElementById('carousel') // Get the div with the images
+var carouselDiv = null
+
+if(window.innerWidth < 601){
+    carouselDiv = document.getElementById('carouselMobile') // Get the div with the images on mobile
+}else{
+    carouselDiv = document.getElementById('carousel') // Get the div with the images
+}
+
+
 var slides = carouselDiv.children // Get all the images
 slides[0].classList.add("active")
 }catch(e){

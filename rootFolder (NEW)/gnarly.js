@@ -50,16 +50,8 @@ function toggleNav(){
 //nav js ends
 
 //index js begins
-function animateLetterSpacing() {
-    try{
-	var element = document.getElementsByClassName("main-page-stretched")[0];
-    element.classList.remove("main-page-stretched");
-    element.classList.add("main-page-normal");
-    console.log("did it");
-    }catch(e){
 
-    }
-}
+
 
 //index js ends
 /* OLD SLIDER / IMAGE  carousel CODE!
@@ -174,7 +166,7 @@ window.onload = function () {
     }
 
     //slide
-    setTimeout(function () { animateLetterSpacing(); }, 1000);
+  
 
 
 }//onload

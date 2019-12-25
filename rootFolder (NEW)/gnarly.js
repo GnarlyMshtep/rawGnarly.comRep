@@ -1,5 +1,5 @@
 var footerElement = document.createElement("e")
-footerElement.innerHTML = `<footer>			<h2 class="newsletter-title">Sign Up for our newsletter!</h2>			<h6 class="newsletter-subtitle">we avoid spamming &#128077;</h6>      <div class="submit-area">      <button class="submit" type="button">submit</button>    		<form>    					<input type="Email" name="email" placeholder="GnarlySpicoli@gmail.com"  class="newsletter-text-input">		    </form>			</div>				<div class="bottom-links">				<a href="https://www.instagram.com/raw_gnarly/" class="fa fa-instagram fa-large" target="_blank" style="color:#8abca7;"></a>				<a style="color:#8abca7;"href="extras.html#contact" class="contact-us">contact us</a>				<a style="color:#8abca7;"class="contact-us jobs" onclick ="navToJobs()" 	>Jobs				</a>			</div>		</footer>`
+footerElement.innerHTML = `<footer>			<h2 class="newsletter-title">Sign Up for our newsletter!</h2>			<h6 class="newsletter-subtitle">we avoid spamming &#128077;</h6>      <div class="submit-area">      <button class="submit" type="button">submit</button>    		<form>    					<input type="Email" name="email" placeholder="GnarlySpicoli@gmail.com"  class="newsletter-text-input">		    </form>			</div>				<div class="bottom-links">				<a href="https://www.instagram.com/raw_gnarly/" class="fa fa-instagram fa-large" target="_blank" style="color:#8abca7;"></a>				<a style="color:#8abca7;" onclick="navToContact()" class="contact-us">contact us</a>				<a style="color:#8abca7;"class="contact-us jobs" onclick ="navToJobs()" 	>Jobs				</a>			</div>		</footer>`
 
 
 
@@ -17,7 +17,7 @@ window.onload = function(){
         
 
 
-    exPage = document.querySelectorAll('.extras-page');
+    var exPage = document.querySelectorAll('.extras-page');
     for (let i = 0, length1 = exPage.length; i < length1; i++) {
         exPage[i].style.display = "none";
     }
@@ -28,6 +28,7 @@ window.onload = function(){
     }
 }
     function changeExtrasPage(button) {
+        var exPage = document.querySelectorAll('.extras-page');
         console.log("buttonClick!");
         for (let i = 0, length1 = exPage.length; i < length1; i++) {
             exPage[i].style.display = "none";
@@ -133,6 +134,9 @@ function navToJobs(){
     extrasPage = 1;
 	window.location.href = "extras.html#jobs";
 	console.log(extrasPage)
+}
+function navToContact(){
+
 }
 
 

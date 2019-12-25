@@ -1,5 +1,5 @@
 var footerElement = document.createElement("e")
-footerElement.innerHTML = `<footer>			<h2 class="newsletter-title">Sign Up for our newsletter!</h2>			<h6 class="newsletter-subtitle">we avoid spamming &#128077;</h6>      <div class="submit-area">      <button class="submit" type="button">submit</button>    		<form>    					<input type="Email" name="email" placeholder="GnarlySpicoli@gmail.com"  class="newsletter-text-input">		    </form>			</div>				<div class="bottom-links">				<a href="https://www.instagram.com/raw_gnarly/" class="fa fa-instagram fa-large" target="_blank" style="color:#8abca7;"></a>				<a style="color:#8abca7;"href="#contact" class="contact-us">contact us</a>				<a style="color:#8abca7;"class="contact-us jobs" onclick ="navToJobs()" 	>Jobs				</a>			</div>		</footer>`
+footerElement.innerHTML = `<footer>			<h2 class="newsletter-title">Sign Up for our newsletter!</h2>			<h6 class="newsletter-subtitle">we avoid spamming &#128077;</h6>      <div class="submit-area">      <button class="submit" type="button">submit</button>    		<form>    					<input type="Email" name="email" placeholder="GnarlySpicoli@gmail.com"  class="newsletter-text-input">		    </form>			</div>				<div class="bottom-links">				<a href="https://www.instagram.com/raw_gnarly/" class="fa fa-instagram fa-large" target="_blank" style="color:#8abca7;"></a>				<a style="color:#8abca7;" onclick="navToContact()" class="contact-us">contact us</a>				<a style="color:#8abca7;"class="contact-us jobs" onclick ="navToJobs()" 	>Jobs				</a>			</div>		</footer>`
 
 
 
@@ -17,7 +17,7 @@ window.onload = function(){
         
 
 
-    exPage = document.querySelectorAll('.extras-page');
+    var exPage = document.querySelectorAll('.extras-page');
     for (let i = 0, length1 = exPage.length; i < length1; i++) {
         exPage[i].style.display = "none";
     }
@@ -28,6 +28,7 @@ window.onload = function(){
     }
 }
     function changeExtrasPage(button) {
+        var exPage = document.querySelectorAll('.extras-page');
         console.log("buttonClick!");
         for (let i = 0, length1 = exPage.length; i < length1; i++) {
             exPage[i].style.display = "none";
@@ -50,16 +51,8 @@ function toggleNav(){
 //nav js ends
 
 //index js begins
-function animateLetterSpacing() {
-    try{
-	var element = document.getElementsByClassName("main-page-stretched")[0];
-    element.classList.remove("main-page-stretched");
-    element.classList.add("main-page-normal");
-    console.log("did it");
-    }catch(e){
 
-    }
-}
+
 
 //index js ends
 /* OLD SLIDER / IMAGE  carousel CODE!
@@ -106,7 +99,15 @@ function changeMainImg(press){
 
 //=== New Slider/carousel code
 try{
-var carouselDiv = document.getElementById('carousel') // Get the div with the images
+var carouselDiv = null
+
+if(window.innerWidth < 601){
+    carouselDiv = document.getElementById('carouselMobile') // Get the div with the images on mobile
+}else{
+    carouselDiv = document.getElementById('carousel') // Get the div with the images
+}
+
+
 var slides = carouselDiv.children // Get all the images
 slides[0].classList.add("active")
 }catch(e){
@@ -133,6 +134,9 @@ function navToJobs(){
     extrasPage = 1;
 	window.location.href = "extras.html#jobs";
 	console.log(extrasPage)
+}
+function navToContact(){
+
 }
 
 
@@ -166,7 +170,7 @@ window.onload = function () {
     }
 
     //slide
-    setTimeout(function () { animateLetterSpacing(); }, 1000);
+  
 
 
 }//onload

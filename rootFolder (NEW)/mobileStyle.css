@@ -571,8 +571,9 @@ form{
 
 }
 .carousel-img{
-	width: 100%;
-	height: auto;
+	width: 96vw;
+	height: 95vh;
 	object-fit: cover;
+
 }
 

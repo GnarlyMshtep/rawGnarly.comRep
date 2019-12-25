@@ -553,6 +553,7 @@ form{
 	width:100%;
 	display: none;
 	position: relative; 
+	
 }
 
 .carousel-slide{
@@ -570,6 +571,7 @@ form{
     margin: 0 auto;
 	height: auto;
 	object-fit: cover;
+	filter: blur(0.5) !important;
 }
 @-webkit-keyframes fadeInUp {
 	from {

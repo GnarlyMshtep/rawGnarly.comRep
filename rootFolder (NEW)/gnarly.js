@@ -11,7 +11,7 @@ footerElement.innerHTML = `<footer>			<h2 class="newsletter-title">Sign Up for o
 */
 
 //extras js begins
-window.onload = function(){
+function extraInit(){
         console.log("ONLOAD RUNS");
         
         
@@ -26,6 +26,23 @@ window.onload = function(){
     } catch (e) {
         console.log(e);
     }
+
+    if(window.location.href.split("#")[1]){
+
+        var url = window.location.href.split("#")[1]
+        if(url == "jobs"){
+            changeExtrasPage(document.getElementById("4"))
+        }
+        if(url == "contact"){
+            changeExtrasPage(document.getElementById("3"))
+
+        }
+
+
+
+    }
+
+
 }
     function changeExtrasPage(button) {
         var exPage = document.querySelectorAll('.extras-page');
@@ -136,7 +153,8 @@ function navToJobs(){
 	console.log(extrasPage)
 }
 function navToContact(){
-
+    window.location.href = "extras.html#contact";
+	console.log(extrasPage)
 }
 
 

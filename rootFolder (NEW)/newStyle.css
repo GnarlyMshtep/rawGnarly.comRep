@@ -250,6 +250,7 @@ form{
 	font-size: 2vh;
 
 }
+
 .jobs{
 	margin-left: .5vh;
 	cursor: pointer;
@@ -370,7 +371,7 @@ form{
 }
 
 .extras-page{
-	height: 100vh;
+	min-height: 90vh;
 	width:75%;
 	margin: 0 auto;
 	display: none;
@@ -392,6 +393,48 @@ form{
     font-weight: 800;
     font-size: 2.5rem;
 }
+
+.music-header{
+	font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.music-list{
+	list-style-type: none;
+}
+
+.music-node{
+	margin: 3vh 0 3vh 0;
+}
+.music-node-title{
+	font-family: 'Work Sans';
+	font-weight: 600;
+	font-size: 1.2rem;
+	color:purple;
+	padding: 10px;
+}
+.mus-grid{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.mus-img{
+	transform: scale(.8);
+	-webkit-transform: scale(.8);
+}
+
+.info-page-title{
+	color: black;
+    font-size: 2.7rem;
+    text-align: center;
+    font-weight: 900;
+    font-family: Arial, Helvetica;
+    margin-top: -3vh;
+    padding-bottom: 1vh;
+}
+
 .info-li{
     margin-bottom:3vh;
 }
@@ -399,11 +442,13 @@ form{
     margin-top:1.5vh;
     text-decoration:underline;
 }
-.contact-page-title {
+#contact{
     color: black;
-    font-size: 3vw;
-    padding-bottom: 2vh;
+    font-size: 2.7rem;
     text-align: center;
+    font-weight: 900;
+    font-family: Arial, Helvetica;
+    margin-top: -2.5vh;
 }
 
 .thanked-person{
@@ -571,6 +616,7 @@ form{
     margin: 0 auto;
 	height: auto;
 	object-fit: cover;
+	height: 96vh;
 	filter: blur(0.5) !important;
 }
 @-webkit-keyframes fadeInUp {

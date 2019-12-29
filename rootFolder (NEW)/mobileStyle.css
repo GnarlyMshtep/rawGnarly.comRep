@@ -193,7 +193,7 @@ body {
 
 /*footer style*/
 footer{
-	background-color: #516F96; 
+	background-color: #e5cae8; 
 	color: navy ;
 	display: block;
 }
@@ -202,6 +202,8 @@ footer{
 	font-family: "Arial", sans-serif;
 	font-size: 3vh;
 	text-align: center;
+	padding: 1.5vh 0 1vh 0;
+
 }
 .newsletter-subtitle{
 	font-weight: 300;
@@ -218,10 +220,13 @@ footer{
   width: 53vw;
   height: 5vh;
   border: 1px solid #ccc;
+  border-bottom: 3.5px solid darkgrey;
   border-radius: 0 4px 4px 0;
   box-sizing: border-box;
   padding-top: 1vh;
   padding-bottom: 1vh;
+  color:navy;
+  font-weight: 900;
 }
 .newsletter-text-input:focus, .newsletter-text-input:focus{
 	/*background-color: navy;*/
@@ -249,9 +254,9 @@ input::placeholder{
 .submit{
 	font-size: 1rem;
     font-family: Arial;
-	background-color: black;
+	background-color: navy;
 	height: 5vh;
-	color: white;
+	color: #e5cae8;
 	border-radius: 4px 0 0 4px;
 	cursor: pointer; 
 	border: none;
@@ -261,8 +266,8 @@ input::placeholder{
 .bottom-links{
 	padding: 1vh 0 2vh 3vw;
 	font-weight: 800;
-	color: navy !important;
-	font-family: arial;
+	color: black !important;
+	font-family: Arial;
 }
 .fa-instagram {
   margin: 0 1.5vw;
@@ -404,13 +409,15 @@ form{
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
-    line-height: 2.4vh;
+    line-height: 5vh;
     font-size: 1.8vh;
+    margin-top: -3vh;
 }
 .sponsered-page-p {
     text-align: center;
     font-weight: 800;
     font-size: 2rem;
+    
 }
 
 .videos-page-p {
@@ -418,14 +425,38 @@ form{
     font-weight: 800;
     font-size: 2rem;
 }
+.music-header{
+	font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.7rem;
+    text-align: center;
+    line-height: 4vh;
+    margin-top: -2vh;
+}
+
+.mus-el-info{
+	padding: 1vh;
+}
+
 .contact-page-title {
-    color: black;
+    colwor: black;
     font-size: 3vw;
     padding-bottom: 2vh;
     text-align: center;
 }
+
+.info-page-title{
+	font-family: arial;
+	font-weight: 900;
+	font-size: 4vh;
+	text-align: center;
+	margin-top: -3.5vh;
+}
+.li-header{
+
+}
 .info-li {
-    margin-bottom: 3vh;
+    margin: 2vh 0 2vh 0;
 }
 
 .info-h5 {

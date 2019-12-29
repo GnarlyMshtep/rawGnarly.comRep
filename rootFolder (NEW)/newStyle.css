@@ -169,7 +169,7 @@ body{
 /*products style end*/
 
 footer{
-	background-color: #516F96; 
+	background-color: #e5cae8; 
 	color: navy ;
 	display: block;
 }
@@ -178,6 +178,7 @@ footer{
 	font-family: "Arial", sans-serif;
 	font-size: 5vh;
 	text-align: center;
+	padding: 1.5vh 0 0 0;
 }
 .newsletter-subtitle{
 	font-weight: 300;
@@ -345,7 +346,7 @@ form{
 /*lookbook style ends*/
 
 /*extras style*/
-.extras-nav {
+.extras-nav{
     margin-top: 4vh;
     background-color: black;
     display: block;
@@ -393,7 +394,9 @@ form{
     font-weight: 800;
     font-size: 2.5rem;
 }
-
+.video-grid{
+	margin-top: 6vh;
+}
 .music-header{
 	font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
@@ -411,7 +414,7 @@ form{
 .music-node-title{
 	font-family: 'Work Sans';
 	font-weight: 600;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	color:purple;
 	padding: 10px;
 }
@@ -420,11 +423,14 @@ form{
 	flex-direction: row;
 	justify-content: space-between;
 }
-.mus-img{
-	transform: scale(.8);
-	-webkit-transform: scale(.8);
+.mus-element{
+	margin-right: 15px;
 }
-
+.mus-el-info{
+	padding-top: 1vh;
+	text-align: center;
+	max-width: 330px;
+}
 .info-page-title{
 	color: black;
     font-size: 2.7rem;

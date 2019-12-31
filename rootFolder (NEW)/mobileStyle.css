@@ -610,4 +610,54 @@ form{
 	object-fit: cover;
 
 }
+.sliderLogo h1{ /* REPLACE H1 with IMG WHEN CHANGING*/
+	position: absolute;
+	top: 50%;  
+	left: 50%; 
+	transform: translate(-50%, -50%); 
+	font-family: "buenaparkjf";
+  font-weight: 600;
+  text-align: center;
+  font-style: italic!important; 
+  letter-spacing: -.1vw;
+  color:yellow;
+  animation: fade 2.5s forwards;
+}
+@-webkit-keyframes fade {
+	0% {
+	  opacity: 0;
+	  
+	}
+	30% {
+		opacity: 1;
+		
+	}
+	90% {
+		opacity: 1;
+	  
+	  }
+  100% {
+	  opacity: 0;
+	
+	}
+  }
+  
+  @keyframes fade {
+	0% {
+	  opacity: 0;
+	  
+	}
+	10% {
+		opacity: 1;
+		
+	}
+	90% {
+		opacity: 1;
+	  
+	  }
+  100% {
+	  opacity: 0;
+	
+	}
+  }
 

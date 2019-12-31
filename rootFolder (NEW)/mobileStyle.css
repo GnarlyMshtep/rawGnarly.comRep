@@ -27,14 +27,18 @@ body {
 	display: block;
 	font-weight: 700;
 	font-family: 'buenaparkjf';
-	background-color:#1D3461;
+	background-color: #e5cae8; 
 	padding: 12px;
 	cursor: pointer;
 	color: #90C3C8;
-	transition: color .5s ease-in-out;
+	transition: color .4s ease-in-out;
+	transition: background-color .4s ease-in-out;
 
 }
-
+.nav-handle-color{
+	background-color: #ad99b0;
+	color:navy;
+}
 .nav-handle-color{
 	color:#42595B !important;
 }
@@ -202,7 +206,8 @@ footer{
 	font-family: "Arial", sans-serif;
 	font-size: 3vh;
 	text-align: center;
-	padding: 1.5vh 0 1vh 0;
+	padding: 1.5vh 0 .7vh 0;
+	line-height: 4vh;
 
 }
 .newsletter-subtitle{
@@ -397,6 +402,7 @@ form{
     margin: none;
     cursor: pointer;
     margin: 0 -.08vw;
+    font-weight: 900;
 }
 
 .extras-page{
@@ -431,18 +437,33 @@ form{
     font-size: 1.7rem;
     text-align: center;
     line-height: 4vh;
-    margin-top: -2vh;
+    margin-top: -3vh;
+    margin-bottom: 2vh;
 }
-
+.music-node{
+	margin-bottom: 2vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.music-node-title{
+	padding-bottom: 1.5vh;
+}
 .mus-el-info{
-	padding: 1vh;
+	padding: .5vh 0 3vh 0;
+	text-align: center;
+	font-family: Arial;
+	font-weight: 900;
 }
 
 .contact-page-title {
-    colwor: black;
-    font-size: 3vw;
+    color: black;
+    font-size: 4vh;
     padding-bottom: 2vh;
     text-align: center;
+    margin-top: -3.5vh;
+    font-family: Arial;
+    font-weight: 900;
 }
 
 .info-page-title{
@@ -610,7 +631,12 @@ form{
 	object-fit: cover;
 
 }
-.sliderLogo h1{ /* REPLACE H1 with IMG WHEN CHANGING*/
+.logo-img{
+	object-fit: cover;
+	width: 40%;
+	height: auto; 
+}
+.sliderLogo img{ /* REPLACE H1 with IMG WHEN CHANGING*/
 	position: absolute;
 	top: 50%;  
 	left: 50%; 

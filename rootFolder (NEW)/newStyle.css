@@ -35,7 +35,7 @@ body{
 }
 /*style navigation bar*/
 .nav-bar{
-	background-color:#1D3461;
+	background-color: #e5cae8; 
 }
 
 .nav-bar-wrapper{
@@ -54,13 +54,14 @@ body{
 .nav-link{
 	display: block;
 	text-align: center;
-	color: grey;
+	color: navy;
 	padding: 2vw;
 	text-decoration: none;
 	font-weight: 750;
 	transition: color .5s;
 	font-family: buenaparkjf;
 }
+
 
 #hov-red:hover{
 	color:red;
@@ -625,6 +626,11 @@ form{
 	height: 96vh;
 	filter: blur(0.5) !important;
 }
+.logo-img{
+	object-fit: cover;
+	width: 20%;
+	height: auto; 
+}
 
   
   .fadeInUp {
@@ -738,7 +744,7 @@ form{
 	transition: transform 2s ease;
 	transition: transform 2s ease, -webkit-transform 2s ease;
   }
-  .sliderLogo h1{ /* REPLACE H1 with IMG WHEN CHANGING*/
+  .sliderLogo img{ /* REPLACE H1 with IMG WHEN CHANGING*/
 	  position: absolute;
 	  top: 50%;  
 	  left: 50%; 

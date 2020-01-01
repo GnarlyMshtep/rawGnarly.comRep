@@ -642,12 +642,12 @@ form{
 	left: 50%; 
 	transform: translate(-50%, -50%); 
 	font-family: "buenaparkjf";
-  font-weight: 600;
-  text-align: center;
-  font-style: italic!important; 
-  letter-spacing: -.1vw;
-  color:yellow;
-  animation: fade 2.5s forwards;
+	font-weight: 600;
+	text-align: center;
+	font-style: italic!important; 
+	letter-spacing: -.1vw;
+	color:yellow;
+	animation: fade 2.5s forwards;
 }
 @-webkit-keyframes fade {
 	0% {

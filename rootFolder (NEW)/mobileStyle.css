@@ -631,12 +631,12 @@ form{
 	object-fit: cover;
 
 }
-.logo-img{
+
+.sliderLogo img{ /* REPLACE H1 with IMG WHEN CHANGING*/
+	
 	object-fit: cover;
 	width: 40%;
-	height: auto; 
-}
-.sliderLogo img{ /* REPLACE H1 with IMG WHEN CHANGING*/
+	height: auto;
 	position: absolute;
 	top: 50%;  
 	left: 50%; 

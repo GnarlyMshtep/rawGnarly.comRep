@@ -5,7 +5,9 @@
     font-weight: normal;
     font-style: normal;
 }
-
+.hide-mobile{
+	display: none;
+}
 .hidden-shopify{
 	display: none;
 }
@@ -190,9 +192,11 @@ body {
 	font-weight: 900;
 	color: #242426;
 	font-size: 4vw;
+	line-height: 16px;
 }
 .product-price{
 	font-family:Work Sans;
+	font-size: 1rem;
 }
 /*products style end*/
 
@@ -517,10 +521,9 @@ form{
 
 .main-prod-image{
 	width: 95vw;
-	height: 60vh;
+	height: 65vh;
 	object-fit: cover;
 	margin: 0 auto;
-	
 }
 
 .alt-images{
@@ -536,7 +539,7 @@ form{
 }
 
 .alt-image{
-	width: 18vw;
+	width: 20vw;
 	height: 12vh;
 	object-fit: cover;
 }
@@ -554,22 +557,33 @@ form{
 
 }
 .prod-price{
-	font-family: "Work Sans";
+	font-family: "Arial";
 	font-size: 1.4em;
+	text-align: center;
+	font-weight: 900;
+	margin-top: -.5vh;
+}
+.prod-details{
+	width: 85%;
+	margin: 0 auto;
+	padding-left: 3vw;
 }
 .detail-list{
 	margin-top: 1vh;
-	text-align: center;
-
+	list-style-type: circle !important;
+	
 }
 .detail{
 	font-family: "buenaparkjf";
-	color: darkgrey;
-	font-size: 1.2em
+	color: black;
+	font-size: 17px;
+	font-weight: 900;
+	margin-top: .8vh;
+
 }
 .shopify-here{
 	margin:0 auto;
-	margin-top: 1vh;
+	margin-top: 2vh;
 	margin-bottom: 4vh;
 }
 

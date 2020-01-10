@@ -373,9 +373,10 @@ form{
 .mobile-only-scroll-tag{
 	text-align: center;
 	display: block;
-	margin: -1.8vh auto .5vh;
 	font-weight: 900;
 	color: #4357AD;
+	margin: auto;
+	padding-left: 25vw;
 	font-family: "Work Sans";
 }
 #last-lb-pic-margin::after{
@@ -701,4 +702,9 @@ form{
 	
 	}
   }
-
+.lb-images-mobile{
+	display: block;
+}
+.lb-images{
+	display: none;
+}

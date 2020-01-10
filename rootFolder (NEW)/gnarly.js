@@ -1,5 +1,5 @@
 var footerElement = document.createElement("e")
-footerElement.innerHTML = `<footer>			<h2 class="newsletter-title">SIGN UP FOR OUR NEWSLETTER!</h2>			<h6 class="newsletter-subtitle">we avoid spamming &#128077;</h6>      <div class="submit-area">      <button class="submit" type="button">submit</button>    		<form>    					<input type="Email" name="email" placeholder="GnarlySpicoli@gmail.com"  class="newsletter-text-input">		    </form>			</div>				<div class="bottom-links">				<a href="https://www.instagram.com/raw_gnarly/" class="fa fa-instagram fa-large" target="_blank" style="color:navy;"></a>				<a style="color:navy;" onclick="navToContact()" class="contact-us">contact us</a>				<a style="color:navy;"class="contact-us jobs" onclick ="navToJobs()" 	>Jobs				</a>			</div>		</footer>`
+    footerElement.innerHTML = `<footer>			<h2 class="newsletter-title">SIGN UP FOR OUR NEWSLETTER!</h2>			<h6 class="newsletter-subtitle">we avoid spamming &#128077;</h6>      <div class="submit-area">       		<form>    	 <button id="submit" class="submit" type="button">submit</button> 				<input type="Email" name="email" placeholder="GnarlySpicoli@gmail.com"  class="newsletter-text-input">     </form>			</div>				<div class="bottom-links">				<a href="https://www.instagram.com/raw_gnarly/" class="fa fa-instagram fa-large" target="_blank" style="color:navy;"></a>				<a style="color:navy;" onclick="navToContact()" class="contact-us">contact us</a>				<a style="color:navy;"class="contact-us jobs" onclick ="navToJobs()" 	>Jobs				</a>			</div>		</footer>`
 
 
 
@@ -172,20 +172,34 @@ window.onload = function () {
     }
     function onClickSubmit() {
         if (formValid()) {
-            alert("form is correct, yet I don't know php")
+            alert("Submitting..")
+            fetch('https://script.google.com/macros/s/AKfycbzAnt30FYFnG41WUfKHagJFjWa54yvM9qpiTJWU537ji-1UdA/exec', {
+                method: 'post',
+                headers: {"Content-Type":"application/x-www-form-urlencoded"},
+                body: 'email='+document.forms[0].elements[1].value
+              }).then(function(response) {
+                return response.json();
+              }).then(function(data) {
+               if(data.result == "success"){
+                alert("Signed Up!")
+               }else{
+                alert("Unable to sign you up, please try again later!")
+               }
+              
+              });
         }
     }
 
     function formValid() {
-        let fname = document.forms[0].elements[0].value;
-        let lname = document.forms[0].elements[1].value;
-        let email = document.forms[0].elements[2].value;
-        if ((fname == "") || (lname == "") || (email == "")) {
+    
+        let email = document.forms[0].elements[1].value;
+        if (email.includes("@") == false) {
             alert("please complete the form before submission");
             return false;
         }
         return true;
     }
+  
 
     //slide
   

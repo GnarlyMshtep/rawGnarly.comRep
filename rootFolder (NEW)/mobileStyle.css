@@ -5,7 +5,9 @@
     font-weight: normal;
     font-style: normal;
 }
-
+.hide-mobile{
+	display: none;
+}
 .hidden-shopify{
 	display: none;
 }
@@ -190,9 +192,11 @@ body {
 	font-weight: 900;
 	color: #242426;
 	font-size: 4vw;
+	line-height: 16px;
 }
 .product-price{
 	font-family:Work Sans;
+	font-size: 1rem;
 }
 /*products style end*/
 
@@ -219,7 +223,7 @@ footer{
 	margin-top: -.5vh;
 }
 .submit-area{
-	margin-left: 18vw;
+	margin-left: 0vw;
 	margin-top: 1.2vh;
 }
  .newsletter-text-input{
@@ -258,16 +262,8 @@ input::placeholder{
 	font-size: 1rem;
 }
 .submit{
-	font-size: 1rem;
-    font-family: Arial;
-	background-color: navy;
-	height: 5vh;
-	color: #e5cae8;
-	border-radius: 4px 0 0 4px;
-	cursor: pointer; 
-	border: none;
-	margin-right: -.4vw;
-	padding: .5rem;
+	background-color: navy !important;
+	color: white !important;
 }
 .bottom-links{
 	padding: 1vh 0 2vh 3vw;
@@ -368,10 +364,9 @@ form{
 }
 .mobile-only-scroll-tag{
 	text-align: center;
-	display: block;
-	margin: -1.8vh auto .5vh;
-	font-weight: 900;
 	color: #4357AD;
+	margin: auto;
+	padding-left: 32vw;
 	font-family: "Work Sans";
 }
 #last-lb-pic-margin::after{
@@ -516,10 +511,9 @@ form{
 
 .main-prod-image{
 	width: 95vw;
-	height: 60vh;
+	height: 65vh;
 	object-fit: cover;
 	margin: 0 auto;
-	
 }
 
 .alt-images{
@@ -535,7 +529,7 @@ form{
 }
 
 .alt-image{
-	width: 18vw;
+	width: 20vw;
 	height: 12vh;
 	object-fit: cover;
 }
@@ -553,22 +547,33 @@ form{
 
 }
 .prod-price{
-	font-family: "Work Sans";
+	font-family: "Arial";
 	font-size: 1.4em;
+	text-align: center;
+	font-weight: 900;
+	margin-top: -.5vh;
+}
+.prod-details{
+	width: 85%;
+	margin: 0 auto;
+	padding-left: 3vw;
 }
 .detail-list{
 	margin-top: 1vh;
-	text-align: center;
-
+	list-style-type: circle !important;
+	
 }
 .detail{
 	font-family: "buenaparkjf";
-	color: darkgrey;
-	font-size: 1.2em
+	color: black;
+	font-size: 17px;
+	font-weight: 900;
+	margin-top: .8vh;
+
 }
 .shopify-here{
 	margin:0 auto;
-	margin-top: 1vh;
+	margin-top: 2vh;
 	margin-bottom: 4vh;
 }
 
@@ -687,4 +692,12 @@ form{
 	
 	}
   }
-
+.lb-images-mobile{
+	display: block;
+}
+.lb-images{
+	display: none;
+}
+.owl-stage{
+	margin: -32px;
+}

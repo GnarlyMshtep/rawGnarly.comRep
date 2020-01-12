@@ -5,9 +5,7 @@
     font-weight: normal;
     font-style: normal;
 }
-.hide-mobile{
-	display: none;
-}
+
 .hidden-shopify{
 	display: none;
 }
@@ -192,11 +190,9 @@ body {
 	font-weight: 900;
 	color: #242426;
 	font-size: 4vw;
-	line-height: 16px;
 }
 .product-price{
 	font-family:Work Sans;
-	font-size: 1rem;
 }
 /*products style end*/
 
@@ -223,7 +219,7 @@ footer{
 	margin-top: -.5vh;
 }
 .submit-area{
-	margin-left: 0vw;
+	margin-left: 18vw;
 	margin-top: 1.2vh;
 }
  .newsletter-text-input{
@@ -262,8 +258,16 @@ input::placeholder{
 	font-size: 1rem;
 }
 .submit{
-	background-color: navy !important;
-	color: white !important;
+	font-size: 1rem;
+    font-family: Arial;
+	background-color: navy;
+	height: 5vh;
+	color: #e5cae8;
+	border-radius: 4px 0 0 4px;
+	cursor: pointer; 
+	border: none;
+	margin-right: -.4vw;
+	padding: .5rem;
 }
 .bottom-links{
 	padding: 1vh 0 2vh 3vw;
@@ -364,9 +368,10 @@ form{
 }
 .mobile-only-scroll-tag{
 	text-align: center;
+	display: block;
+	margin: -1.8vh auto .5vh;
+	font-weight: 900;
 	color: #4357AD;
-	margin: auto;
-	padding-left: 32vw;
 	font-family: "Work Sans";
 }
 #last-lb-pic-margin::after{
@@ -511,9 +516,10 @@ form{
 
 .main-prod-image{
 	width: 95vw;
-	height: 65vh;
+	height: 60vh;
 	object-fit: cover;
 	margin: 0 auto;
+	
 }
 
 .alt-images{
@@ -529,7 +535,7 @@ form{
 }
 
 .alt-image{
-	width: 20vw;
+	width: 18vw;
 	height: 12vh;
 	object-fit: cover;
 }
@@ -547,33 +553,22 @@ form{
 
 }
 .prod-price{
-	font-family: "Arial";
+	font-family: "Work Sans";
 	font-size: 1.4em;
-	text-align: center;
-	font-weight: 900;
-	margin-top: -.5vh;
-}
-.prod-details{
-	width: 85%;
-	margin: 0 auto;
-	padding-left: 3vw;
 }
 .detail-list{
 	margin-top: 1vh;
-	list-style-type: circle !important;
-	
+	text-align: center;
+
 }
 .detail{
 	font-family: "buenaparkjf";
-	color: black;
-	font-size: 17px;
-	font-weight: 900;
-	margin-top: .8vh;
-
+	color: darkgrey;
+	font-size: 1.2em
 }
 .shopify-here{
 	margin:0 auto;
-	margin-top: 2vh;
+	margin-top: 1vh;
 	margin-bottom: 4vh;
 }
 
@@ -692,12 +687,4 @@ form{
 	
 	}
   }
-.lb-images-mobile{
-	display: block;
-}
-.lb-images{
-	display: none;
-}
-.owl-stage{
-	margin: -50px;
-}
+

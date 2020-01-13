@@ -229,6 +229,7 @@ window.onload = function () {
 
 }//onload
 function changeLb(button) {
+    $('.owl-carousel').trigger('to.owl.carousel', 0)
     let lbNum = button.name;
     let temp = "";
     let lbImages = document.querySelectorAll(".lb-image");

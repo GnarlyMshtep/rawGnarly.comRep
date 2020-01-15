@@ -7,9 +7,6 @@
 button:focus, input[type="button"]:focus {
     outline: none;
 }
-img{
-	image-orientation: from-image;
-}
 
 @font-face {
     font-family: 'buenaparkjf';

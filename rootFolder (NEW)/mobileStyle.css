@@ -701,3 +701,7 @@ form{
 .owl-stage{
 	margin: -32px;
 }
+.owl-nav button{
+	outline: none !important;
+}
+

@@ -310,8 +310,8 @@ form{
 }
 
 .main-image img{
-	width: 36vw;
-	height: 90vh;
+	width: 30vw;
+	height: auto;
 	object-fit: cover;	
 	padding: 1em;
 }

@@ -7,7 +7,7 @@ var footerElement = document.createElement("e")
    <div class="submit-area">
    <form class="form-inline">
    <div class="input-group mb-3">
-   <input type="text" class="form-control" placeholder="Your Email" aria-label="Your Email" aria-describedby="button-addon2">
+   <input type="text" size="80" class="form-control" placeholder="Your Email" aria-label="Your Email" aria-describedby="button-addon2">
    <div class="input-group-append">
      <button class="btn btn-outline-secondary submit" type="button" id="button-addon2">Submit
      

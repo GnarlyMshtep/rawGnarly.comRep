@@ -291,7 +291,7 @@ form{
 }
 /*phone footer style ends*/
 	
-/*lb phone stle begins*/
+/*lb phone style begins*/
 
 .lb-page-wrapper{
 	width: 100vw;
@@ -358,7 +358,7 @@ form{
 
  .lb-image{
 	width: 80vw;
-	height: 70vh;
+	height: 83vh;
 	object-fit: cover;
 	margin: 0 5vh 0 5vh;
 }

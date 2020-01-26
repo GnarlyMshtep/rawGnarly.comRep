@@ -189,9 +189,14 @@ footer{
 	margin-top: -.5vh;
 }
 .submit-area{
-	margin-left: 30vw;
+	
 	margin-top: 1.2vh;
+	text-align: center;
 }
+.input-group{
+	margin: 0 auto;
+}
+
  .newsletter-text-input{
   width: 56vw;
   height: 6vh;

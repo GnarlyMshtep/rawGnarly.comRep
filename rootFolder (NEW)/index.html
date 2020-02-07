@@ -72,7 +72,7 @@
 						</h1>
 						<h5 style="color:white;">Beta Release</h5>-->
 			</div>
-				<div id="carousel" class="carousel-inner"  data-interval="2500">
+				<div id="carousel" class="carousel-inner" data-pause="false" data-interval="2500">
 				  <div class="carousel-item">
 					<div class="sliderLogo">
 						<img class="logo-img"src="images/colorLogo.png">
@@ -123,7 +123,7 @@
 				  </div>
 
 				</div>
-				<div id="carouselMobile" class="carousel-inner"  data-interval="2500">
+				<div id="carouselMobile" class="carousel-inner" data-pause="false"  data-interval="2500">
 					<div class="carousel-item">
 						<div class="sliderLogo">
 							<img class="logo-img"src="images/colorLogo.png">
@@ -194,6 +194,9 @@
 $(document).ready(function() {
   jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 2000  
 });
+$('.carousel').carousel({
+  pause: "false"
+})
 </script>
 
 </html>

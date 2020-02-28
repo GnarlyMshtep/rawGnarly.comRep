@@ -366,7 +366,8 @@ form{
 	text-align: center;
 	color: #4357AD;
 	margin: auto;
-	padding-left: 32vw;
+	padding-left: 8vw;
+	padding-right: 8vw;
 	font-family: "Work Sans";
 }
 #last-lb-pic-margin::after{

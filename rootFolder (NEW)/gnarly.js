@@ -130,8 +130,9 @@ document.getElementsByClassName("nav-bar")
 
 
 function changeMainImg(press){
-	let mainImg = document.getElementsByClassName("main-image-img")[0];
-	mainImg.src=press.src;
+    let mainImg = document.getElementsByClassName("main-image-img")[0];
+  
+	mainImg.src=press.src.split("/preview/")[0]+"/"+press.src.split("/preview/")[1];
 }
 
 //=== New Slider/carousel code

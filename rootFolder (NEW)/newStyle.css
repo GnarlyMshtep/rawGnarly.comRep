@@ -315,8 +315,8 @@ form{
 }
 
 .main-image img{
-	width: 30vw;
-	height: auto;
+	width: 35vw;
+	height: 90vh;
 	object-fit: cover;	
 	padding: 1em;
 }

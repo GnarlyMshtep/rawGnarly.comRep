@@ -552,9 +552,13 @@ form{
 
 
 }*/
-
-.home-page-wrapper{
+.homeImage{
+	width: 100vw;
+	height:100vh;
+	display: absolute;
+	z-index: -1;
 }
+
 .title-box-index{
 	height: 85vh;
 	margin: 0 auto;

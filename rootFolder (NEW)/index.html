@@ -1,202 +1,126 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153211573-1"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
 
-	  gtag('config', 'UA-153211573-1');
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-153211573-1');
 	</script>
 
 	<title> GNARLY! , online.</title>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<meta name = "keywords"content = "rawGnarly!,gnarly,GNARLY!">
-	<meta name = "author" content="gnarlyMshtep">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
+	<meta name="keywords" content="rawGnarly!,gnarly,GNARLY!">
+	<meta name="author" content="gnarlyMshtep">
 	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="newStyle.css" media="only screen and (min-width: 650px)">
-	<link media="only screen and (max-width: 650px)"
-	href="mobileStyle.css" type="text/css" rel="stylesheet" />
+	<link media="only screen and (max-width: 650px)" href="mobileStyle.css" type="text/css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script type="text/javascript" src="gnarly.js" ></script>
+	<script type="text/javascript" src="gnarly.js"></script>
+	<style>
+		footer {
+			position: fixed;
+			width: 100%;
+			bottom: 0;
+		}
+
+		.nav-bar {
+			background: transparent;
+		}
+
+		.nav-bar-wrapper {
+		
+		}
+		.nav-link{
+			margin: 0 !important;
+			padding: 0 !important;
+		}
+		.nav-items {
+			background: transparent;
+		}
+		.nav-image{
+			width: 40%;
+			padding: 0px;
+			margin: 0px;
+			transition: transform 0.3s ease-in-out;
+		}
+		.nav-image:hover{
+			transform: scale(1.2)
+		}
+	</style>
 </head>
+
 <body class="index-bod" onload="animateLetterSpacing()">
-	<nav class="nav-bar">
-		<div class="nav-bar-wrapper">
-				<ul class="nav-items">
 
-					<li class="nav-item">
-						<a class="nav-link" href="index.html" id="hov-red">HOME </a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="products.html" id="hov-green">PRODUCTS</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="LookBook.html" id="hov-blue">LOOKBOOK</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="extras.html" id="hov-navy">EXTRAS</a>
-					</li>
-				</ul>
-		</div>
-	</nav>
 	<div class="nav-handle" onclick="toggleNav()">Menu </div>
 
 	<div class="home-page-wrapper">
 
-		
-			
-			<div id="carouselContainer" class="carousel slide" data-ride="carousel" data-interval="2500">
-				<div class="title-box-index">
-			
-					<!--<span class="shop">SHOP</span>
-						<h1 class="main-page-normal gnarly animated bounceIn">
-							<span class="g">G</span>
-							<span class="n">N</span>
-							<span class="a">A</span>
-							<span class="r">R</span>
-							<span class="l">L</span>
-							<span class="y" id="lett-spacing-y">Y</span>
-							<span class="exclamation">!</span>
-						</h1>
-						<h5 style="color:white;">Beta Release</h5>-->
+		<div class="image2"
+			style="background-image: url('images/lb2/img1.JPG'); z-index: -1; background-size: cover; height:100vh; background-position: center top;     background-attachment: fixed; background-repeat: no-repeat; width:100%; height:100%; position:fixed;   ">
+		</div>
+		<nav class="nav-bar">
+			<div class="nav-bar-wrapper">
+				<ul class="nav-items">
+
+					<li class="nav-item">
+						<a class="nav-link" href="index.html" id="hov-red"><img class="nav-image"src="images/nav/Home.png"> </a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="products.html" id="hov-green"><img class="nav-image"src="images/nav/Products.png"></a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="LookBook.html" id="hov-blue"><img class="nav-image"src="images/nav/Lookbook.png"></a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="extras.html" id="hov-navy"><img class="nav-image"src="images/nav/Extras.png"></a>
+					</li>
+				</ul>
 			</div>
-				<div id="carousel" class="carousel-inner" data-pause="false" data-interval="2500">
-				  <div class="carousel-item">
-					<div class="sliderLogo">
-						<img class="logo-img"src="images/colorLogo.png">
-					</div>
-					  <img src="images/slider/horiz/img1.JPG" class="d-block w-100 carousel-img" alt="...">
-				  </div>
-				  <div class="carousel-item">
-					<div class="sliderLogo">
-						<img class="logo-img"src="images/colorLogo.png">
+		</nav>
 
-					</div>
-					<img src="images/slider/horiz/img2.JPG" class="d-block w-100 carousel-img" alt="...">
-				  </div>
-				  <div class="carousel-item">
-					<div class="sliderLogo">
-						<img class="logo-img"src="images/colorLogo.png">
 
-					</div>
-					<img src="images/slider/horiz/img3.JPG" class="d-block w-100 carousel-img" alt="...">
-				  </div>
-				  <div class="carousel-item">
-					<div class="sliderLogo">
-						<img class="logo-img"src="images/colorLogo.png">
-
-					</div>
-					<img src="images/slider/horiz/img4.JPG" class="d-block w-100 carousel-img" alt="...">
-				  </div>
-				  <div class="carousel-item">
-					<div class="sliderLogo">
-						<img class="logo-img"src="images/colorLogo.png">
-
-					</div>
-					<img src="images/slider/horiz/img5.JPG" class="d-block w-100 carousel-img" alt="...">
-				  </div>
-				  <div class="carousel-item">
-					<div class="sliderLogo">
-						<img class="logo-img"src="images/colorLogo.png">
-
-					</div>
-					<img src="images/slider/horiz/img6.JPG" class="d-block w-100 carousel-img"  alt="...">
-				  </div>
-				  <div class="carousel-item">
-					<div class="sliderLogo">
-						<img class="logo-img"src="images/colorLogo.png">
-
-					</div>
-					<img src="images/slider/horiz/img7.JPG" class="d-block w-100 carousel-img" alt="...">
-				  </div>
-
-				</div>
-				<div id="carouselMobile" class="carousel-inner" data-pause="false"  data-interval="2500">
-					<div class="carousel-item">
-						<div class="sliderLogo">
-							<img class="logo-img"src="images/colorLogo.png">
-
-						</div>
-						<img src="images/slider/vert/img1.JPG" class="d-block w-100 carousel-img" alt="...">
-					</div>
-					<div class="carousel-item">
-						<div class="sliderLogo">
-							<img class="logo-img"src="images/colorLogo.png">
-
-						</div>
-					  <img src="images/slider/vert/img2.JPG" class="d-block w-100 carousel-img" alt="...">
-					</div>
-					<div class="carousel-item">
-						<div class="sliderLogo">
-							<img class="logo-img"src="images/colorLogo.png">
-
-						</div>
-					  <img src="images/slider/vert/img3.JPG" class="d-block w-100 carousel-img" alt="...">
-					</div>
-					<div class="carousel-item">
-						<div class="sliderLogo">
-							<img class="logo-img"src="images/colorLogo.png">
-
-						</div>
-					  <img src="images/slider/vert/img4.JPG" class="d-block w-100 carousel-img" alt="...">
-					</div>
-					<div class="carousel-item">
-						<div class="sliderLogo">
-							<img class="logo-img"src="images/colorLogo.png">
-
-						</div>
-					  <img src="images/slider/vert/img5.JPG" class="d-block w-100 carousel-img" alt="...">
-					</div>
-					<div class="carousel-item">
-						<div class="sliderLogo">
-							<img class="logo-img"src="images/colorLogo.png">
-
-						</div>
-						<img src="images/slider/vert/img6.JPG" class="d-block w-100 carousel-img" alt="...">
-					  </div>
-					  <div class="carousel-item">
-						<div class="sliderLogo">
-							<img class="logo-img"src="images/colorLogo.png">
-
-						</div>
-						<img src="images/slider/vert/img7.JPG" class="d-block w-100 carousel-img" alt="...">
-					  </div>
-  
-				  </div>
-			  </div>
-		
-			  
-		
 	</div>
-	
 
 
-			
-			<div class="hidden-shopify">
-		
-	</div> 
+
+
+	<div class="hidden-shopify">
+
+	</div>
 	<!--<img src="images/goShop.jpg" style="max-width: 100%;">-->
 </body>
-<script type="text/javascript" src="gnarly.js" ></script>
+<script type="text/javascript" src="gnarly.js"></script>
 <script>
-$(document).ready(function() {
-  jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 2000  
-});
-$('.carousel').carousel({
-  pause: "false"
-})
+	$(document).ready(function () {
+		jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 2000
+	});
+	$('.carousel').carousel({
+		pause: "false"
+	})
 </script>
 
 </html>

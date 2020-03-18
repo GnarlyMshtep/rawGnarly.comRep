@@ -38,34 +38,51 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="gnarly.js"></script>
 	<style>
+		.modal {
+			font-family: buenaparkjf;
+			text-align: center !important;
+		}
+
 		footer {
-			position: fixed;
-			width: 100%;
-			bottom: 0;
+			display: none;
+		}
+
+		.modal-body {
+			color: #de9ecc;
+		}
+
+		.modal-title {
+			color: #DD9F32;
 		}
 
 		.nav-bar {
 			background: transparent;
 		}
 
-		.nav-bar-wrapper {
-		
-		}
-		.nav-link{
+		.nav-bar-wrapper {}
+
+		.nav-link {
 			margin: 0 !important;
 			padding: 0 !important;
 		}
+
 		.nav-items {
 			background: transparent;
 		}
-		.nav-image{
+
+		.nav-image {
 			width: 40%;
 			padding: 0px;
 			margin: 0px;
 			transition: transform 0.3s ease-in-out;
 		}
-		.nav-image:hover{
+
+		.nav-image:hover {
 			transform: scale(1.2)
+		}
+
+		.modal-footer {
+			text-align: center;
 		}
 	</style>
 </head>
@@ -77,41 +94,86 @@
 	<div class="home-page-wrapper">
 
 		<div class="image2"
-			style="background-image: url('images/lb2/img1.JPG'); z-index: -1; background-size: cover; height:100vh; background-position: center top;     background-attachment: fixed; background-repeat: no-repeat; width:100%; height:100%; position:fixed;   ">
+			style="background-image: url('images/lb2/img1FullRes.JPG'); z-index: -1; background-size: cover; height:100vh; background-position: center top;     background-attachment: fixed; background-repeat: no-repeat; width:100%; height:100%; position:fixed;   ">
 		</div>
 		<nav class="nav-bar">
 			<div class="nav-bar-wrapper">
 				<ul class="nav-items">
 
 					<li class="nav-item">
-						<a class="nav-link" href="index.html" id="hov-red"><img class="nav-image"src="images/nav/Home.png"> </a>
+						<a class="nav-link" href="index.html" id="hov-red"><img class="nav-image"
+								src="images/nav/Home.png"> </a>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="products.html" id="hov-green"><img class="nav-image"src="images/nav/Products.png"></a>
+						<a class="nav-link" href="products.html" id="hov-green"><img class="nav-image"
+								src="images/nav/Products.png"></a>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="LookBook.html" id="hov-blue"><img class="nav-image"src="images/nav/Lookbook.png"></a>
+						<a class="nav-link" href="LookBook.html" id="hov-blue"><img class="nav-image"
+								src="images/nav/LookBook.png"></a>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="extras.html" id="hov-navy"><img class="nav-image"src="images/nav/Extras.png"></a>
+						<a class="nav-link" href="extras.html" id="hov-navy"><img class="nav-image"
+								src="images/nav/Extras.png"></a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 
 
-	</div>
+
+
+		<!-- Popup -->
+		<div class="modal fade" id="newsletter" tabindex="-1" role="dialog" aria-labelledby="newsletterLabel"
+			aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+
+					<div class="modal-body">
+						<h4 class="modal-title" id="newsletterLabel">Sign up for our newsletter!</h4>
+						<h5>We avoid spamming!</h5>
+
+
+
+						<div class="submit-area">
+							<form class="form-inline">
+								<div class="input-group mb-3">
+									<input type="text" size="0" class="form-control" placeholder="Your Email"
+										aria-label="Your Email" aria-describedby="button-addon2">
+									<div class="input-group-append">
+										<button class="btn btn-outline-secondary submit"
+											style="color:white;background-color: #DE9ECC !important;" type="button"
+											id="button-addon2">YAH!
+
+											<span id="spinner" class="spinner-border spinner-border-sm d-none"
+												role="status" aria-hidden="true"></span>
+										</button>
+									</div>
+							</form>
+
+
+
+						</div><br>
+
+						<h5 class="mr-auto modal-title" id="newsletterLabel">We'll Send Yah Only Dope Stuff!</h5>
+
+					</div>
+				</div>
+			</div>
+
+
+		</div>
 
 
 
 
-	<div class="hidden-shopify">
+		<div class="hidden-shopify">
 
-	</div>
-	<!--<img src="images/goShop.jpg" style="max-width: 100%;">-->
+		</div>
+		<!--<img src="images/goShop.jpg" style="max-width: 100%;">-->
 </body>
 <script type="text/javascript" src="gnarly.js"></script>
 <script>
@@ -121,6 +183,16 @@
 	$('.carousel').carousel({
 		pause: "false"
 	})
+
+	if (window.localStorage.getItem("lastVisit") + 120000 < Math.floor(new Date().getTime() / 1000)) {
+		setTimeout(function () {
+			var time = new Date().getTime()
+			window.localStorage.setItem("lastVisit", time)
+			$('#newsletter').modal('toggle')
+
+
+		}, 2000)
+	}
 </script>
 
 </html>

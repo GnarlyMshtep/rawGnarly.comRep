@@ -59,6 +59,9 @@
 		.mobileMenu{
 			display: none;
 		}
+		.mobileMenu img{
+			width: 20%;
+		}
 		.modal-body {
 			color: #de9ecc;
 		}
@@ -96,6 +99,7 @@
 		.modal-footer {
 			text-align: center;
 		}
+		.hamburger-box{display: none;}
 
 		@media only screen and (max-width: 650px) {
 			.image1 {
@@ -111,6 +115,9 @@
 				color: white;
 				font-family: "buenaparkjf";
 				
+			}
+			.hamburger-box{
+				display: block;
 			}
 		}
 	</style>
@@ -128,10 +135,15 @@
         </div>
 	  </div>
 	  <div class="mobileMenu" id="mobileMenu"style="position: fixed; top:5%; transform:translateX(-200px) ; transition: transform 0.5s ease-in-out;">	
-		<a href="index.html">Home</a><br>
-		<a href="products.html">Products</a><br>
-		<a href="LookBook.html">LookBook</a><br>
-		<a href="extras.html">Extras</a><br>
+		<a href="index.html" id="hov-red"><img class="nav-image"
+			src="images/nav/Home.png"> </a> <br>
+			<a href="products.html" id="hov-red"><img class="nav-image"
+				src="images/nav/Products.png"> </a> <br>
+				<a href="LookBook.html" id="hov-red"><img class="nav-image"
+					src="images/nav/LookBook.png"> </a> <br>
+					<a href="Extras.html" id="hov-red"><img class="nav-image"
+						src="images/nav/Extras.png"> </a> <br>
+			
 	
 	</div>
 	<div class="home-page-wrapper">

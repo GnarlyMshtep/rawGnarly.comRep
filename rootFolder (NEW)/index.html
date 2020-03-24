@@ -134,7 +134,7 @@
 		  </div>
         </div>
 	  </div>
-	  <div class="mobileMenu" id="mobileMenu"style="position: fixed; top:5%; transform:translateX(-200px) ; transition: transform 0.5s ease-in-out; margin-top: 30px">	
+	  <div class="mobileMenu" id="mobileMenu"style="position: fixed; top:5%; transform:translateX(-300px) ; transition: transform 0.5s ease-in-out; margin-top: 30px">	
 		<a href="index.html" id="hov-red"><img class="nav-image"
 			src="images/nav/Home.png"> </a> <br>
 			<a href="products.html" id="hov-red"><img class="nav-image"
@@ -180,6 +180,7 @@
 				</ul>
 			</div>
 		</nav>
+		<img src="images/newLogo.png" style="position: fixed; width: 20vh;left: 50%; transform: translateX(-50%);top:85%;">
 
 
 
@@ -225,7 +226,8 @@
 
 		</div>
 
-
+		<!--logo-->
+		
 
 
 		<div class="hidden-shopify">
@@ -254,7 +256,7 @@
 	document.getElementById("mobileMenuBtn").addEventListener("click",function(){
 		if(document.getElementById("mobileMenuBtn").classList.contains("is-active")){ // close menu
 			document.getElementById("mobileMenuBtn").classList.remove("is-active")
-			document.getElementById("mobileMenu").style.transform = "translateX(-200px)"
+			document.getElementById("mobileMenu").style.transform = "translateX(-300px)"
 		}else{//open menu
 			document.getElementById("mobileMenuBtn").classList.add("is-active")
 			document.getElementById("mobileMenu").style.transform = "translateX(20px)"

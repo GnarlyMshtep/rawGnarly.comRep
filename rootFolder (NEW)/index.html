@@ -159,28 +159,28 @@
 				<ul class="nav-items">
 
 					<li class="nav-item">
-						<a class="nav-link" href="index.html" id="hov-red"><img class="nav-image"
+						<a onmouseover="changeLogo()" onmouseout="changeLogo()" class="nav-link" href="index.html" id="hov-red"><img class="nav-image"
 								src="images/nav/Home.png"> </a>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="products.html" id="hov-green"><img class="nav-image"
+						<a onmouseover="changeLogo()" onmouseout="changeLogo()" class="nav-link" href="products.html" id="hov-green"><img class="nav-image"
 								src="images/nav/Products.png"></a>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="LookBook.html" id="hov-blue"><img class="nav-image"
+						<a onmouseover="changeLogo()" onmouseout="changeLogo()" class="nav-link" href="LookBook.html" id="hov-blue"><img class="nav-image"
 								src="images/nav/LookBook.png" style="width: 75%;"></a>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="extras.html" id="hov-navy"><img class="nav-image"
+						<a onmouseover="changeLogo()" onmouseout="changeLogo()" class="nav-link" href="extras.html" id="hov-navy"><img class="nav-image"
 								src="images/nav/Extras.png"></a>
 					</li>
 				</ul>
 			</div>
 		</nav>
-		<img src="images/newLogo.png" style="position: fixed; width: 45vh;left: 50%; transform: translateX(-50%);top:65%;">
+		<img id="logo" src="images/newLogo.png" style="transition: opacity 0.5s ease-in-out; position: fixed; width: 45vh;left: 50%; transform: translateX(-50%);top:75%;">
 
 
 
@@ -257,12 +257,32 @@
 		if(document.getElementById("mobileMenuBtn").classList.contains("is-active")){ // close menu
 			document.getElementById("mobileMenuBtn").classList.remove("is-active")
 			document.getElementById("mobileMenu").style.transform = "translateX(-300px)"
+			document.getElementById('logo').style.opacity = "0"
+			setTimeout(function(){
+				document.getElementById('logo').src ="images/newLogo.png"
+				document.getElementById('logo').style.opacity = "1"
+			},600)
+		
 		}else{//open menu
+		
 			document.getElementById("mobileMenuBtn").classList.add("is-active")
 			document.getElementById("mobileMenu").style.transform = "translateX(20px)"
+			document.getElementById('logo').style.opacity = "0"
+			setTimeout(function(){
+				document.getElementById('logo').src ="images/colorLogo2.png"
+				document.getElementById('logo').style.opacity = "1"
+			},600)
 		}
 		
 	})
+	function changeLogo(){
+		if(document.getElementById('logo').src.split("/images")[1] == "/newLogo.png"){
+			document.getElementById('logo').src ="images/colorLogo2.png"
+		}else{
+			document.getElementById('logo').src ="images/newLogo.png"
+		}
+
+	}
 </script>
 
 </html>

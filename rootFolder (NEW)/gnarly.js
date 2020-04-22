@@ -17,7 +17,7 @@ var footerElement = document.createElement("e")
  </div>
  </form>
    </div>
-   <div class="bottom-links">				<a href="https://www.instagram.com/raw_gnarly/" class="fab fa-instagram fa fa-instagram fa-large" target="_blank" style="color:navy;"></a>				<a style="color:navy;" onclick="navToContact()" class="contact-us">contact us</a>				<a style="color:navy;"class="contact-us jobs" onclick ="navToJobs()" 	>Jobs				</a>			</div>
+   <div class="bottom-links">				<a href="https://www.instagram.com/raw_gnarly/" class="fab fa-instagram fa fa-instagram fa-large" target="_blank" style="color:navy;"></a>				<a style="color:navy;" onclick="navToContact()" class="contact-us">CONTACT US</a>				<a style="color:navy;"class="contact-us jobs" onclick ="navToJobs()" 	>JOBS				</a>			</div>
 </footer>
     `
 

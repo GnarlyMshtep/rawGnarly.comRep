@@ -392,16 +392,26 @@ form{
     white-space: nowrap;
 }
 .extras-nav-but {
-    padding: 2vh 2vw;
-    color: white;
+    padding: 2.5vh 3vw;
+    color: #de9e36;
     background-color: black;
     border: none;
     margin: none;
     cursor: pointer;
     margin: 0 -.08vw;
     font-weight: 900;
-}
+    font-family: 'buenaparkjf';
 
+}
+#extras-title{
+    color: #de9ecc;
+    font-size: 2.7rem;
+    text-align: center;
+    font-weight: 900;
+    font-family: Arial, Helvetica;
+    margin-top: -2.5vh;
+    margin-bottom: 4vh;
+}
 .extras-page{
 	min-height: 50vh;
 	width: 90%;
@@ -422,7 +432,6 @@ form{
     font-size: 2rem;
     
 }
-
 .videos-page-p {
     text-align: center;
     font-weight: 800;
@@ -447,10 +456,13 @@ form{
 	padding-bottom: 1.5vh;
 }
 .mus-el-info{
-	padding: .5vh 0 3vh 0;
-	text-align: center;
-	font-family: Arial;
-	font-weight: 900;
+	padding-top: 1vh;
+	padding-bottom: 4vh;
+	width: 98%;
+	margin: 0 auto;
+	font-family: Karla,helvetica neue,Helvetica,Arial,sans-serif;
+	font-weight: 600;
+	line-height: 3vh;
 }
 
 .contact-page-title {
@@ -463,31 +475,46 @@ form{
     font-weight: 900;
 }
 
-.info-page-title{
-	font-family: arial;
-	font-weight: 900;
-	font-size: 4vh;
-	text-align: center;
-	margin-top: -3.5vh;
-}
+
 .li-header{
 
 }
 .info-li {
     margin: 2vh 0 2vh 0;
 }
+.info-li h3{
+   font-weight: 800;
+    font-family: "buenaparkjf";
+	color: #de9e36;
+	margin-top: 2vh;
+}
+.info-h5{
+    margin-top:2vh;
+    font-weight: 300;
+    text-indent: 25px;
+    font-family: "buenaparkjf";
+    color: darkgrey;
 
-.info-h5 {
-    margin-top: 1.5vh;
-    text-decoration: underline;
+}
+.info-li p{
+	width: 98%;
+	margin: 0 auto;
+	text-indent: 25px;
+	font-family: Karla,helvetica neue,Helvetica,Arial,sans-serif;
+	font-weight: 600;
+	line-height: 4vh;
+
 }
 
-.thanked-person {
+.thanked-person{
+     color: #de9ecc;
+    font-size: 2.7rem;
     text-align: center;
-    display: block;
     font-weight: 900;
-    font-size: 2rem;
-    margin-bottom: 3vh;
+    font-family: buenaparkjf;
+    text-align:center;
+	display: block;
+ 	margin-bottom:7vh !important;
 }
 
 /*extras style ends*/

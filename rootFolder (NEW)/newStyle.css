@@ -226,12 +226,6 @@ footer{
 input:focus::placeholder{
 	color: purple;
 }
-.submit{
-
-	background-color: black !important;
-	color: white !important;
-
-}
 .bottom-links{
 	padding: 1vh 0 2vh 3vw;
 	font-weight: 800;
@@ -361,16 +355,25 @@ form{
 
 .extras-nav-but{
 	padding: 2vh 2vw;
-	color: white;
+	color: #de9e36	;
     font-weight:900;
 	background-color: black;
 	border: none;
 	margin: none;
 	cursor: pointer;
 	margin: 0.08vw;
+	font-family: 'buenaparkjf';
 
 }
-
+#extras-title{
+    color: #de9ecc;
+    font-size: 2.7rem;
+    text-align: center;
+    font-weight: 900;
+    font-family: Arial, Helvetica;
+    margin-top: -2.5vh;
+    margin-bottom: 7vh;
+}
 .extras-page{
 	min-height: 90vh;
 	width:75%;
@@ -389,14 +392,7 @@ form{
     font-weight:800;
     font-size:2.5rem;
 }
-.videos-page-p {
-    text-align: center;
-    font-weight: 800;
-    font-size: 2.5rem;
-}
-.video-grid{
-	margin-top: 6vh;
-}
+
 .music-header{
 	font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
@@ -412,10 +408,10 @@ form{
 	margin: 3vh 0 3vh 0;
 }
 .music-node-title{
-	font-family: 'Work Sans';
+    font-family: "buenaparkjf";
 	font-weight: 600;
 	font-size: 1.5rem;
-	color:purple;
+	color:#de9e36	;
 	padding: 10px;
 }
 .mus-grid{
@@ -428,41 +424,62 @@ form{
 }
 .mus-el-info{
 	padding-top: 1vh;
-	text-align: center;
-	max-width: 330px;
+	width: 98%;
+	margin: 0 auto;
+	font-family: Karla,helvetica neue,Helvetica,Arial,sans-serif;
+	font-weight: 600;
+	line-height: 3vh;
 }
 .info-page-title{
 	color: black;
     font-size: 2.7rem;
     text-align: center;
-    font-weight: 900;
+    font-weight: 600;
     font-family: Arial, Helvetica;
     margin-top: -3vh;
     padding-bottom: 1vh;
 }
 
 .info-li{
-    margin-bottom:3vh;
+  	margin-bottom:3vh;
+
+}
+.info-li h3{
+   font-weight: 800;
+    font-family: "buenaparkjf";
+	color: #de9e36	;
 }
 .info-h5{
-    margin-top:1.5vh;
-    text-decoration:underline;
+    margin-top:2vh;
+    font-weight: 300;
+    text-indent: 25px;
+    font-family: "buenaparkjf";
+    color: darkgrey;
+
 }
-#contact{
-    color: black;
+
+.info-li p{
+	width: 98%;
+	margin: 0 auto;
+	text-indent: 25px;
+	font-family: Karla,helvetica neue,Helvetica,Arial,sans-serif;
+	font-weight: 600;
+	line-height: 4vh;
+
+}
+
+.thanked-person-box{
+	margin-top: 20vh;
+}
+.thanked-person{
+     color: #de9ecc;
     font-size: 2.7rem;
     text-align: center;
     font-weight: 900;
-    font-family: Arial, Helvetica;
-    margin-top: -2.5vh;
-}
-
-.thanked-person{
+    font-family: buenaparkjf;
     text-align:center;
 	display: block;
-	font-weight: 900;
-    font-size:2rem;
-    margin-bottom:3vh;
+ 	margin-bottom:7vh !important;
 }
 
 /*extras style ends*/

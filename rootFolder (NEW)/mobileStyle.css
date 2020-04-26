@@ -309,17 +309,18 @@ form{
 
 .sidebar{
 	display: flex;
-	overflow: none;
+	overflow: scroll;
 	flex-flow: row !important;
-	justify-content: center;
-	width: 100vw;
+	justify-content: flex-start;
+	margin-bottom: -6vh;
 }
 .lb-button{
 	border: none;
 	cursor: pointer;
-	margin: -3vh 3vw;
-	font-family: "buenaparkjf";
 	background-color: transparent;
+}
+.lb-button-img{
+	max-width: 40vw;
 }
 .lb-block-this{
 	display: block;

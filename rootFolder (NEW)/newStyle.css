@@ -268,7 +268,7 @@ form{
 	margin-bottom: 4vh;
 }
 .sidebar {
-    margin-top: 3vh;
+    margin-top: 0vh;
     display: flex;
     flex-wrap: nowrap;
     flex-flow: column;
@@ -277,10 +277,15 @@ form{
 .lb-button{
 	border: none;
 	cursor: pointer;
-	margin: 4vh 0;
-	font-family: "buenaparkjf";
+	margin: 1.5vh 0;
 	background-color: transparent;
-	font-size: 1.8vh;
+	outline: none;
+}
+.lb-button-img{
+	max-width: 10vw;
+}
+button:focus { 
+	outline: none !important;
 }
 .lb-button {
     opacity: .5;

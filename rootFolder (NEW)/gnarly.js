@@ -243,3 +243,6 @@ function changeLb(button) {
     changeMainImg(lbImages[0]);
 }
 
+function alertComingSoon(){
+    alert("COMING SUPER DUPER SOON :)");
+}

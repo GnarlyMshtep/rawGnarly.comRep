@@ -38,89 +38,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="gnarly.js"></script>
 	<link href="dist/assets/burger.css" rel="stylesheet">
-	<style>
-		.modal {
-			font-family: buenaparkjf;
-			text-align: center !important;
-		}
-		.image1 {
-				display: block;
-			}
-			.image2 {
-				display: none;
-			}
-		footer {
-			display: none;
-		}
-
-		.nav-handle {
-			display: none;
-		}
-		.mobileMenu{
-			display: none;
-		}
-		.mobileMenu img{
-			width: 45%;
-		}
-		.modal-body {
-			color: #de9ecc;
-		}
-
-		.modal-title {
-			color: #DD9F32;
-		}
-
-		.nav-bar {
-			background: transparent;
-		}
-
-		.nav-bar-wrapper {}
-
-		.nav-link {
-			margin: 0 !important;
-			padding: 0 !important;
-		}
-
-		.nav-items {
-			background: transparent;
-		}
-
-		.nav-image {
-			width: 70%;
-			padding: 0px;
-			margin: -15px 10vw 0 0px;
-			/*transition: transform .175s ease-in-out;*/
-		}
-
-		.nav-image:hover {
-			transform: scale(1.2)
-		}
-
-		.modal-footer {
-			text-align: center;
-		}
-		.hamburger-box{display: none;}
-
-		@media only screen and (max-width: 650px) {
-			.image1 {
-				display: none;
-			}
-			.image2 {
-				display: block;
-			}
-			.mobileMenu{ 
-				display: block;
-			}
-			.mobileMenu a{
-				color: white;
-				font-family: "buenaparkjf";
-				
-			}
-			.hamburger-box{
-				display: block;
-			}
-		}
-	</style>
+	<link href="css/index.css" rel="stylesheet">
 </head>
 
 <body class="index-bod">
@@ -180,7 +98,7 @@
 				</ul>
 			</div>
 		</nav>
-		<img id="logo" src="images/newLogo.png" style="transition: opacity 0.2s ease-in-out; position: fixed; width: 45vh;left: 50%; transform: translateX(-50%);top:90%;">
+		<img id="logo" src="images/newLogo.png" style="transition: opacity 0.2s ease-in-out; position: fixed; width: 35vh;left: 50%; transform: translateX(-50%);top:80%;">
 
 
 
@@ -192,7 +110,11 @@
 				<div class="modal-content">
 
 					<div class="modal-body">
-						<h4 class="modal-title" id="newsletterLabel">Sign up for our newsletter!</h4>
+						<h4 class="modal-title" id="newsletterLabel">Sign up for our newsletter! 
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							  </button>
+						</h4>
 						<h5>We avoid spamming!</h5>
 
 
@@ -236,53 +158,7 @@
 		<!--<img src="images/goShop.jpg" style="max-width: 100%;">-->
 </body>
 <script type="text/javascript" src="gnarly.js"></script>
-<script>
-	$(document).ready(function () {
-		jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 2000
-	});
-	$('.carousel').carousel({
-		pause: "false"
-	})
+<script type="text/javascript" src="js/index.js"></script>
 
-	if (window.localStorage.getItem("lastVisit") + 120000 < Math.floor(new Date().getTime() / 1000)) {
-		setTimeout(function () {
-			var time = new Date().getTime()
-			window.localStorage.setItem("lastVisit", time)
-			$('#newsletter').modal('toggle')
-
-
-		}, 2000)
-	}
-	document.getElementById("mobileMenuBtn").addEventListener("click",function(){
-		if(document.getElementById("mobileMenuBtn").classList.contains("is-active")){ // close menu
-			document.getElementById("mobileMenuBtn").classList.remove("is-active")
-			document.getElementById("mobileMenu").style.transform = "translateX(-300px)"
-			document.getElementById('logo').style.opacity = "0"
-			setTimeout(function(){
-				document.getElementById('logo').src ="images/newLogo.png"
-				document.getElementById('logo').style.opacity = "1"
-			},300)
-		
-		}else{//open menu
-		
-			document.getElementById("mobileMenuBtn").classList.add("is-active")
-			document.getElementById("mobileMenu").style.transform = "translateX(20px)"
-			document.getElementById('logo').style.opacity = "0"
-			setTimeout(function(){
-				document.getElementById('logo').src ="images/colorLogo2.png"
-				document.getElementById('logo').style.opacity = "1"
-			},300)
-		}
-		
-	})
-	function changeLogo(){
-		if(document.getElementById('logo').src.split("/images")[1] == "/newLogo.png"){
-			document.getElementById('logo').src ="images/colorLogo2.png"
-		}else{
-			document.getElementById('logo').src ="images/newLogo.png"
-		}
-
-	}
-</script>
 
 </html>

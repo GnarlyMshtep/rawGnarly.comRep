@@ -1,0 +1,94 @@
+.modal {
+    font-family: buenaparkjf;
+    text-align: center !important;
+}
+
+.image1 {
+    display: block;
+}
+
+.image2 {
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
+.nav-handle {
+    display: none;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+.mobileMenu img {
+    width: 45%;
+}
+
+.modal-body {
+    color: #de9ecc;
+}
+
+.modal-title {
+    color: #DD9F32;
+}
+
+.nav-bar {
+    background: transparent;
+}
+
+.nav-bar-wrapper {}
+
+.nav-link {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.nav-items {
+    background: transparent;
+}
+
+.nav-image {
+    width: 70%;
+    padding: 0px;
+    margin: -15px 10vw 0 0px;
+    /*transition: transform .175s ease-in-out;*/
+}
+
+.nav-image:hover {
+    transform: scale(1.2)
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+.hamburger-box {
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+    .image1 {
+        display: none;
+    }
+
+    .image2 {
+        display: block;
+    }
+
+    .mobileMenu {
+        display: block;
+    }
+
+    .mobileMenu a {
+        color: white;
+        font-family: "buenaparkjf";
+
+    }
+
+    .hamburger-box {
+        display: block;
+    }
+}

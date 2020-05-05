@@ -473,6 +473,40 @@ button:focus {
 
 }
 
+.contact-us-p{
+	font-family: "buenaparkjf";
+	color: #de9ecc;
+	font-size:1.2vw;
+	text-align: center;
+	margin-top: -3vh;
+	margin-bottom: 3vh;
+}
+
+.contact-us-label{
+	text-align: center;
+	font-size: 1.8vw;
+}
+.form-container{
+	margin: 0 auto;
+	width: 55%;
+	margin-top: 2vh;
+}
+.contactForm{
+	width: 100% !important;
+}
+
+.form-control{
+	margin-bottom: 2vh;
+
+}
+
+.form-control::placeholder{
+	text-align: left;
+}
+.textarea-form{
+	height: 6vw !important;
+}
+
 .thanked-person-box{
 	margin-top: 20vh;
 }

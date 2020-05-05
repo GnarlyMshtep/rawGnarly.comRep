@@ -506,6 +506,44 @@ form{
 	line-height: 4vh;
 
 }
+.contact-us-p{
+	font-family: "buenaparkjf";
+	color: #de9ecc;
+	font-size: 1rem;
+	text-align: left;
+	margin-top: -5vh;
+	margin-bottom: 3vh;
+}
+
+.contact-us-label{
+	text-align: center;
+	font-size: 6vw;
+}
+.form-container{
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 2vh;
+}
+.contactForm{
+	width: 100% !important;
+	margin-bottom: 5vh;
+}
+
+.form-control{
+	margin-bottom: 2vh;
+
+}
+input[type=text, type=email]{
+	font-family: "buenaparkjf";
+	color: purple;
+}
+
+.form-control::placeholder{
+	text-align: left;
+}
+.textarea-form{
+	height: 13vh !important;
+}
 
 .thanked-person{
      color: #de9ecc;

@@ -217,10 +217,9 @@ footer{
 
 ::-webkit-input-placeholder{
 	font-family: lato;
-	font-weight: 700
-;	color: navy;
+	font-weight: 700;
+	color: navy;
 	text-indent: 2px;
-	text-transform: capitalize;
 	text-align: center; 
 }
 input:focus::placeholder{

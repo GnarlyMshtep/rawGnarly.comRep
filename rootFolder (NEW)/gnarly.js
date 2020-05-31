@@ -20,7 +20,7 @@ footerElement.innerHTML = `
    <div class="bottom-links">				<a href="https://www.instagram.com/raw_gnarly/" class="fab fa-instagram fa fa-instagram fa-large" target="_blank" style="color:navy;"></a>				<a style="color:navy;" onclick="navToContact()" class="contact-us">CONTACT US</a>				 				</a>			</div>
 </footer>
     `
-
+// products on hover change to on hover image on off mouse change back
 var path = window.location.pathname;
 var page = path.split("/").pop();
 if (page == "products.html") {
@@ -52,16 +52,31 @@ function extraInit() {
     console.log("ONLOAD RUNS");
 
 
+    //present only one extras page
+    if (page == "extras.html") {
+        var exPage = document.querySelectorAll('.extras-page');
+        for (let i = 0, length1 = exPage.length; i < length1; i++) {
+            exPage[i].style.display = "none";
+        }
+        try {
+            exPage[0].style.display = "block";
+        } catch (e) {
+            console.log(e);
+        }
 
-
-    var exPage = document.querySelectorAll('.extras-page');
-    for (let i = 0, length1 = exPage.length; i < length1; i++) {
-        exPage[i].style.display = "none";
-    }
-    try {
-        exPage[0].style.display = "block";
-    } catch (e) {
-        console.log(e);
+        //change page on click
+        function changeExtrasPage(button) {
+            var exPage = document.querySelectorAll('.extras-page');
+            console.log("buttonClick!");
+            for (let i = 0, length1 = exPage.length; i < length1; i++) {
+                exPage[i].style.display = "none";
+            }
+            try {
+                exPage[button.id].style.display = "block";
+            } catch (e) {
+                console.log(e);
+            }
+        }
     }
 
     if (window.location.href.split("#")[1]) {
@@ -82,18 +97,7 @@ function extraInit() {
 
 }
 
-function changeExtrasPage(button) {
-    var exPage = document.querySelectorAll('.extras-page');
-    console.log("buttonClick!");
-    for (let i = 0, length1 = exPage.length; i < length1; i++) {
-        exPage[i].style.display = "none";
-    }
-    try {
-        exPage[button.id].style.display = "block";
-    } catch (e) {
-        console.log(e);
-    }
-}
+
 
 
 function toggleNav() {

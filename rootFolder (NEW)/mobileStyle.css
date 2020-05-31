@@ -535,7 +535,6 @@ form{
 }
 input[type=text, type=email]{
 	font-family: "buenaparkjf";
-	color: purple;
 }
 
 .form-control::placeholder{

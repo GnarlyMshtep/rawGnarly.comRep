@@ -1,5 +1,5 @@
 var footerElement = document.createElement("e")
-    footerElement.innerHTML = `
+footerElement.innerHTML = `
     
     <footer>
    <h2 class="newsletter-title">SIGN UP FOR OUR NEWSLETTER!</h2>
@@ -17,12 +17,29 @@ var footerElement = document.createElement("e")
  </div>
  </form>
    </div>
-   <div class="bottom-links">				<a href="https://www.instagram.com/raw_gnarly/" class="fab fa-instagram fa fa-instagram fa-large" target="_blank" style="color:navy;"></a>				<a style="color:navy;" onclick="navToContact()" class="contact-us">CONTACT US</a>				<a style="color:navy;"class="contact-us jobs" onclick ="navToJobs()" 	>JOBS				</a>			</div>
+   <div class="bottom-links">				<a href="https://www.instagram.com/raw_gnarly/" class="fab fa-instagram fa fa-instagram fa-large" target="_blank" style="color:navy;"></a>				<a style="color:navy;" onclick="navToContact()" class="contact-us">CONTACT US</a>				 				</a>			</div>
 </footer>
     `
 
+var path = window.location.pathname;
+var page = path.split("/").pop();
+if (page == "products.html") {
 
+    var prodImages = document.getElementsByClassName("prodImg");
+    var i;
 
+    for (i = 0; i < prodImages.length; i++) {
+        prodImages[i].addEventListener("mouseover", function (e) {
+            e.target.src = e.target.src.substring(0, e.target.src.indexOf("prodImg1")) + "onHover.JPG";
+        }, false);
+    }
+
+    for (i = 0; i < prodImages.length; i++) {
+        prodImages[i].addEventListener("mouseout", function (e) {
+            e.target.src = e.target.src.substring(0, e.target.src.indexOf("onHover")) + "prodImg1.JPG";
+        }, false);
+    }
+}
 /*
 	console.log("windowLoaded");
 	let x= document.getElementsByClassName('hidden-shopify')
@@ -31,10 +48,10 @@ var footerElement = document.createElement("e")
 */
 
 //extras js begins
-function extraInit(){
-        console.log("ONLOAD RUNS");
-        
-        
+function extraInit() {
+    console.log("ONLOAD RUNS");
+
+
 
 
     var exPage = document.querySelectorAll('.extras-page');
@@ -47,13 +64,13 @@ function extraInit(){
         console.log(e);
     }
 
-    if(window.location.href.split("#")[1]){
+    if (window.location.href.split("#")[1]) {
 
         var url = window.location.href.split("#")[1]
-        if(url == "jobs"){
+        if (url == "jobs") {
             changeExtrasPage(document.getElementById("4"))
         }
-        if(url == "contact"){
+        if (url == "contact") {
             changeExtrasPage(document.getElementById("3"))
 
         }
@@ -64,23 +81,24 @@ function extraInit(){
 
 
 }
-    function changeExtrasPage(button) {
-        var exPage = document.querySelectorAll('.extras-page');
-        console.log("buttonClick!");
-        for (let i = 0, length1 = exPage.length; i < length1; i++) {
-            exPage[i].style.display = "none";
-        }
-        try {
-            exPage[button.id].style.display = "block";
-        } catch (e) {
-            console.log(e);
-        }
+
+function changeExtrasPage(button) {
+    var exPage = document.querySelectorAll('.extras-page');
+    console.log("buttonClick!");
+    for (let i = 0, length1 = exPage.length; i < length1; i++) {
+        exPage[i].style.display = "none";
     }
+    try {
+        exPage[button.id].style.display = "block";
+    } catch (e) {
+        console.log(e);
+    }
+}
 
 
-function toggleNav(){
-	console.log("handle clicked")
-	var element = document.getElementsByClassName("nav-items")[0];
+function toggleNav() {
+    console.log("handle clicked")
+    var element = document.getElementsByClassName("nav-items")[0];
     element.classList.toggle("nav-items-showing");
     document.getElementsByClassName("nav-handle")[0].classList.toggle("nav-handle-color");
 }
@@ -129,38 +147,38 @@ document.getElementsByClassName("nav-bar")
 */
 
 
-function changeMainImg(press){
+function changeMainImg(press) {
     let mainImg = document.getElementsByClassName("main-image-img")[0];
-  
-	mainImg.src=press.src.split("/preview/")[0]+"/"+press.src.split("/preview/")[1];
+
+    mainImg.src = press.src.split("/preview/")[0] + "/" + press.src.split("/preview/")[1];
 }
 
 //=== New Slider/carousel code
-try{
-var carouselDiv = null
+try {
+    var carouselDiv = null
 
-if(window.innerWidth < 601){
-    carouselDiv = document.getElementById('carouselMobile') // Get the div with the images on mobile
-}else{
-    carouselDiv = document.getElementById('carousel') // Get the div with the images
-}
+    if (window.innerWidth < 601) {
+        carouselDiv = document.getElementById('carouselMobile') // Get the div with the images on mobile
+    } else {
+        carouselDiv = document.getElementById('carousel') // Get the div with the images
+    }
 
 
-var slides = carouselDiv.children // Get all the images
-slides[0].classList.add("active")
-}catch(e){
+    var slides = carouselDiv.children // Get all the images
+    slides[0].classList.add("active")
+} catch (e) {
 
 }
 
 //productX js begins
-function changeMainProdImg(press){
-	let mainImg = document.getElementsByClassName("main-prod-image")[0];
-	mainImg.src=press.src;
+function changeMainProdImg(press) {
+    let mainImg = document.getElementsByClassName("main-prod-image")[0];
+    mainImg.src = press.src;
 }
 
 //productX js ends
 
-   
+
 
 
 //extras js ends
@@ -168,14 +186,16 @@ function changeMainProdImg(press){
 
 //footer js
 var extrasPage = 0;
-function navToJobs(){
+
+function navToJobs() {
     extrasPage = 1;
-	window.location.href = "extras.html#jobs";
-	console.log(extrasPage)
+    window.location.href = "extras.html#jobs";
+    console.log(extrasPage)
 }
-function navToContact(){
+
+function navToContact() {
     window.location.href = "extras.html#contact";
-	console.log(extrasPage)
+    console.log(extrasPage)
 }
 
 
@@ -191,30 +211,33 @@ window.onload = function () {
         subButs[i].addEventListener("click", onClickSubmit);
 
     }
+
     function onClickSubmit() {
         if (formValid()) {
             document.getElementById("spinner").classList.remove("d-none")
             fetch('https://script.google.com/macros/s/AKfycbzAnt30FYFnG41WUfKHagJFjWa54yvM9qpiTJWU537ji-1UdA/exec', {
                 method: 'post',
-                headers: {"Content-Type":"application/x-www-form-urlencoded"},
-                body: 'email='+document.forms[0].elements[0].value
-              }).then(function(response) {
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: 'email=' + document.forms[0].elements[0].value
+            }).then(function (response) {
                 return response.json();
-              }).then(function(data) {
-               if(data.result == "success"){
-                document.getElementById("spinner").classList.add("d-none")
-                alert("Signed Up!")
-               }else{
-                document.getElementById("spinner").classList.add("d-none")
-                alert("Unable to sign you up, please try again later!")
-               }
-              
-              });
+            }).then(function (data) {
+                if (data.result == "success") {
+                    document.getElementById("spinner").classList.add("d-none")
+                    alert("Signed Up!")
+                } else {
+                    document.getElementById("spinner").classList.add("d-none")
+                    alert("Unable to sign you up, please try again later!")
+                }
+
+            });
         }
     }
 
     function formValid() {
-    
+
         let email = document.forms[0].elements[0].value;
         if (email.includes("@") == false) {
             alert("please complete the form before submission");
@@ -222,13 +245,13 @@ window.onload = function () {
         }
         return true;
     }
-  
+
 
     //slide
-  
 
 
-}//onload
+
+} //onload
 function changeLb(button) {
     $('.owl-carousel').trigger('to.owl.carousel', 0)
     let lbNum = button.name;
@@ -237,12 +260,20 @@ function changeLb(button) {
 
     for (var i = 0; i < lbImages.length; i++) {
         temp = lbImages[i].src;
-        temp = temp.replace(temp.slice(temp.lastIndexOf("/") -3, temp.lastIndexOf("/") ), "lb" + lbNum);
+        temp = temp.replace(temp.slice(temp.lastIndexOf("/") - 3, temp.lastIndexOf("/")), "lb" + lbNum);
         lbImages[i].src = temp;
     }
     changeMainImg(lbImages[0]);
 }
 
-function alertComingSoon(){
+function alertComingSoon() {
     alert("COMING SUPER DUPER SOON :)");
+}
+
+function spicoliHoverOn(img) {
+    img.src = "images/submit/hover.PNG";
+}
+
+function spicoliHoverOff(img) {
+    img.src = "images/submit/regular.PNG";
 }

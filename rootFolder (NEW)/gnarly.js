@@ -150,30 +150,30 @@ document.getElementsByClassName("nav-bar")
 
 */
 
+if (page == "lookbook.html") {
+    function changeMainImg(press) {
+        let mainImg = document.getElementsByClassName("main-image-img")[0];
 
-function changeMainImg(press) {
-    let mainImg = document.getElementsByClassName("main-image-img")[0];
-
-    mainImg.src = press.src.split("/preview/")[0] + "/" + press.src.split("/preview/")[1];
-}
-
-//=== New Slider/carousel code
-try {
-    var carouselDiv = null
-
-    if (window.innerWidth < 601) {
-        carouselDiv = document.getElementById('carouselMobile') // Get the div with the images on mobile
-    } else {
-        carouselDiv = document.getElementById('carousel') // Get the div with the images
+        mainImg.src = press.src.split("/preview/")[0] + "/" + press.src.split("/preview/")[1];
     }
 
+    //=== New Slider/carousel code
+    try {
+        var carouselDiv = null
 
-    var slides = carouselDiv.children // Get all the images
-    slides[0].classList.add("active")
-} catch (e) {
+        if (window.innerWidth < 601) {
+            carouselDiv = document.getElementById('carouselMobile') // Get the div with the images on mobile
+        } else {
+            carouselDiv = document.getElementById('carousel') // Get the div with the images
+        }
 
+
+        var slides = carouselDiv.children // Get all the images
+        slides[0].classList.add("active")
+    } catch (e) {
+
+    }
 }
-
 //productX js begins
 function changeMainProdImg(press) {
     let mainImg = document.getElementsByClassName("main-prod-image")[0];

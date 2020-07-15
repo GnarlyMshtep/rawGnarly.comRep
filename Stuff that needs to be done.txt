@@ -1,0 +1,4 @@
+-All Images need to be resized to the samllest possible size.
+-Product reviews need to be added thru google.
+	-for that configure google shopping.
+-clean up css (A LOTTA dead css).

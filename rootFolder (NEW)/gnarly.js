@@ -20,26 +20,26 @@ footerElement.innerHTML = `
    <div class="bottom-links">				<a href="https://www.instagram.com/raw_gnarly/" class="fab fa-instagram fa fa-instagram fa-large" target="_blank" style="color:navy;"></a>				<a style="color:navy;" onclick="navToContact()" class="contact-us">CONTACT US</a>				 				</a>			</div>
 </footer>
     `
-// products on hover change to on hover image on off mouse change back
-var path = window.location.pathname;
-var page = path.split("/").pop();
-if (page == "products.html") {
+// // products on hover change to on hover image on off mouse change back
+// var path = window.location.pathname;
+// var page = path.split("/").pop();
+// if (page == "products.html") {
 
-    var prodImages = document.getElementsByClassName("prodImg");
-    var i;
+//     var prodImages = document.getElementsByClassName("prodImg");
+//     var i;
 
-    for (i = 0; i < prodImages.length; i++) {
-        prodImages[i].addEventListener("mouseover", function (e) {
-            e.target.src = e.target.src.substring(0, e.target.src.indexOf("prodImg1")) + "onHover.JPG";
-        }, false);
-    }
+//     for (i = 0; i < prodImages.length; i++) {
+//         prodImages[i].addEventListener("mouseover", function (e) {
+//             e.target.src = e.target.src.substring(0, e.target.src.indexOf("prodImg1")) + "onHover.JPG";
+//         }, false);
+//     }
 
-    for (i = 0; i < prodImages.length; i++) {
-        prodImages[i].addEventListener("mouseout", function (e) {
-            e.target.src = e.target.src.substring(0, e.target.src.indexOf("onHover")) + "prodImg1.JPG";
-        }, false);
-    }
-}
+//     for (i = 0; i < prodImages.length; i++) {
+//         prodImages[i].addEventListener("mouseout", function (e) {
+//             e.target.src = e.target.src.substring(0, e.target.src.indexOf("onHover")) + "prodImg1.JPG";
+//         }, false);
+//     }
+// }
 /*
 	console.log("windowLoaded");
 	let x= document.getElementsByClassName('hidden-shopify')

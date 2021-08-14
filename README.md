@@ -1,1 +1,2 @@
-# rawGnarly.comRep is the official brand of my currently inactive fashion brand, RAWGNARLY!
+# rawGnarly.comRep 
+is the official brand of my currently inactive fashion brand, RAWGNARLY!

@@ -11,3 +11,6 @@ rootFolder (NEW)/.idea/rootFolder (NEW).iml
 rootFolder (NEW)/.idea/vcs.xml
 rootFolder (NEW)/.idea/modules.xml
 rootFolder (NEW)/.idea/workspace.xml
+.vs/ProjectSettings.json
+*.sqlite
+.vs/VSWorkspaceState.json

@@ -4,7 +4,7 @@ If it was through garment design, seller negotiations, creative photography, onl
 Feel free to surf around! 
 
 ## Contact Me!
-If you have any questions about the project, need advice on cultivating an independent fashion-brand, or would like to source my talents for any interesting projects, please, do no hesitate to contact me at *{firstName}.{lastName}@gmail.com*. I am always more than stoked to assist where I can!
+If you have any questions about the project, need advice on cultivating an independent fashion-brand, or would like to source my talents for any interesting projects, please, do no hesitate to contact me at {*firstName*}.{*lastName*}@gmail.com. I am always more than stoked to assist where I can!
 
 ### Todo
 A short list of things you can expect (not necessarily in the near future 😋)

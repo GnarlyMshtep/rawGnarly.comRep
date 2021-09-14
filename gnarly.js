@@ -21,25 +21,25 @@ footerElement.innerHTML = `
 </footer>
     `
 // // products on hover change to on hover image on off mouse change back
-// var path = window.location.pathname;
-// var page = path.split("/").pop();
-// if (page == "products.html") {
+var path = window.location.pathname;
+var page = path.split("/").pop();
+if (page == "products.html") {
 
-//     var prodImages = document.getElementsByClassName("prodImg");
-//     var i;
+    var prodImages = document.getElementsByClassName("prodImg");
+    var i;
 
-//     for (i = 0; i < prodImages.length; i++) {
-//         prodImages[i].addEventListener("mouseover", function (e) {
-//             e.target.src = e.target.src.substring(0, e.target.src.indexOf("prodImg1")) + "onHover.JPG";
-//         }, false);
-//     }
+    for (i = 0; i < prodImages.length; i++) {
+        prodImages[i].addEventListener("mouseover", function (e) {
+            e.target.src = e.target.src.substring(0, e.target.src.indexOf("prodImg1")) + "onHover.JPG";
+        }, false);
+    }
 
-//     for (i = 0; i < prodImages.length; i++) {
-//         prodImages[i].addEventListener("mouseout", function (e) {
-//             e.target.src = e.target.src.substring(0, e.target.src.indexOf("onHover")) + "prodImg1.JPG";
-//         }, false);
-//     }
-// }
+    for (i = 0; i < prodImages.length; i++) {
+        prodImages[i].addEventListener("mouseout", function (e) {
+            e.target.src = e.target.src.substring(0, e.target.src.indexOf("onHover")) + "prodImg1.JPG";
+        }, false);
+    }
+}
 /*
 	console.log("windowLoaded");
 	let x= document.getElementsByClassName('hidden-shopify')
@@ -47,22 +47,25 @@ footerElement.innerHTML = `
 //nav js begins
 */
 
+//should be in extras, don't know why this is so badly made. 
+function changeExtrasPage(button) {
+    var exPage = document.querySelectorAll('.extras-page');
+    console.log("buttonClick!");
+    for (let i = 0, length1 = exPage.length; i < length1; i++) {
+        exPage[i].style.display = "none";
+    }
+    try {
+        exPage[button.id].style.display = "block";
+    } catch (e) {
+        console.log(e);
+    }
+}
 //extras js begins
 function extraInit() {
     console.log("ONLOAD RUNS");
 
 
-    //present only one extras page
-    if (page == "extras.html") {
-        var exPage = document.querySelectorAll('.extras-page');
-        for (let i = 0, length1 = exPage.length; i < length1; i++) {
-            exPage[i].style.display = "none";
-        }
-        try {
-            exPage[0].style.display = "block";
-        } catch (e) {
-            console.log(e);
-        }
+    if (page === "extras.html") {
 
         //change page on click
         function changeExtrasPage(button) {
@@ -77,6 +80,18 @@ function extraInit() {
                 console.log(e);
             }
         }
+
+        var exPage = document.querySelectorAll('.extras-page');
+        for (let i = 0, length1 = exPage.length; i < length1; i++) {
+            exPage[i].style.display = "none";
+        }
+        try {
+            exPage[0].style.display = "block";
+        } catch (e) {
+            console.log(e);
+        }
+
+
     }
 
     if (window.location.href.split("#")[1]) {
@@ -150,7 +165,8 @@ document.getElementsByClassName("nav-bar")
 
 */
 
-if (page == "lookbook.html") {
+if (page === "LookBook.html") {
+
     function changeMainImg(press) {
         let mainImg = document.getElementsByClassName("main-image-img")[0];
 

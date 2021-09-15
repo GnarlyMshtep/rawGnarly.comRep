@@ -268,7 +268,7 @@ form {
 .contact-us {
 	text-decoration: none;
 	font-size: 2vh;
-
+	cursor: pointer;
 }
 
 .jobs {

@@ -36,7 +36,7 @@ if (page == "products.html") {
 
     for (i = 0; i < prodImages.length; i++) {
         prodImages[i].addEventListener("mouseout", function (e) {
-            alert(e.target.src.substring(e.target.src.indexOf("/images"), e.target.src.indexOf("onHover")) + "prodImg1.JPG")
+            console.log(e.target.src.substring(e.target.src.indexOf("/images"), e.target.src.indexOf("onHover")) + "prodImg1.JPG")
             e.target.src = e.target.src.substring(e.target.src.indexOf("/images"), e.target.src.indexOf("onHover")) + "prodImg1.JPG";
         }, false);
     }

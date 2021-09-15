@@ -30,13 +30,14 @@ if (page == "products.html") {
 
     for (i = 0; i < prodImages.length; i++) {
         prodImages[i].addEventListener("mouseover", function (e) {
-            e.target.src = e.target.src.substring(0, e.target.src.indexOf("prodImg1")) + "onHover.JPG";
+            e.target.src = e.target.src.substring(e.target.src.indexOf("/images"), e.target.src.indexOf("prodImg1")) + "onHover.JPG";
         }, false);
     }
 
     for (i = 0; i < prodImages.length; i++) {
         prodImages[i].addEventListener("mouseout", function (e) {
-            e.target.src = e.target.src.substring(0, e.target.src.indexOf("onHover")) + "prodImg1.JPG";
+            //alert(e.target.src.substring(e.target.src.indexOf("/images"), e.target.src.indexOf("onHover")) + "prodImg1.JPG")
+            e.target.src = e.target.src.substring(e.target.src.indexOf("/images"), e.target.src.indexOf("onHover")) + "prodImg1.JPG";
         }, false);
     }
 }

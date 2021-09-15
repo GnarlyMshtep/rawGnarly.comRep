@@ -566,7 +566,7 @@ button:focus {
 
 }
 
-#myimage: active {
+#myimage:active {
 	border: none;
 	outline: none;
 }
